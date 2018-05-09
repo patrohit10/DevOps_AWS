@@ -1,0 +1,8 @@
+otr.moremenu.myaccountpage.heading.lbl = {\"locator\":\"xpath=//*[contains(@text,'Mijn account')]\",\"desc\":\"My Account Heading page label\"}
+otr.moremenu.myaccountpage.accntdtls.lbl = {\"locator\":\"xpath=//*[contains(@text,'Accountgegevens')]\",\"desc\":\"Account details label on My Account page\"}
+otr.moremenu.myaccountpage.accountsync.lnk = {\"locator\":\"xpath=//*[contains(@text,'Synchroniseren met account')]\",\"desc\":\"Another account sync link\"}
+otr.moremenu.myaccountpage.lastsync.lbl = {\"locator\":\"xpath=//*[contains(@text,'Laatste synchronisatie')]\",\"desc\":\"Last Sync Label on My account page\"}
+otr.moremenu.myaccountpage.withmeter.lbl = {\"locator\":\"xpath=//*[contains(@text,'Met meter')]\",\"desc\":\"Sync with meter label on my account page\"}
+otr.moremenu.myaccountpage.withaccount.lbl = {\"locator\":\"xpath=//*[contains(@text,'Met account')]\",\"desc\":\"Sync with account label\"}
+otr.moremenu.myaccountpage.statictext.lbl = {\"locator\":\"xpath=//*[contains(@text,'%s')]\",\"desc\":\"Static text label on my account page\"}
+otr.moremenu.myaccountpage.keepmeloggedin.lbl = {\"locator\":\"xpath=//*[contains(@text,'Ingelogd blijven')]\",\"desc\":\"Keep me logged in label\"}

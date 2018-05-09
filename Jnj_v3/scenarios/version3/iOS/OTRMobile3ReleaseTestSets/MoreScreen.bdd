@@ -1,0 +1,35 @@
+SCENARIO: To verify available options on more screen
+META-DATA: {"description":"Verification of available options on more screen","author":"Gaurav Bhamare","testCaseId":"19267","groups": ["iOSMoreScreen"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	When user click on more menu
+	Then user verify available options in More menu
+	And user closes the app
+END
+
+SCENARIO:User click on Privacy Policy from More Menu.
+META-DATA: {"description":"Verify Privacy Policy link from More menu","author":"Gaurav Bhamare","testCaseId":"19268","groups": ["iOSMoreScreen"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	When user click on more menu
+	Then user clicks Privacy Policy link and verify
+	And user closes the app
+END
+
+SCENARIO:User click on Terms of Use from More Menu.
+META-DATA: {"description":"Verify Terms of Use link from More menu","author":"Gaurav Bhamare","testCaseId":"19269","groups": ["iOSMoreScreen"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	When user click on more menu
+	Then user clicks on Terms Of Use link and verify
+	And user closes the app
+END

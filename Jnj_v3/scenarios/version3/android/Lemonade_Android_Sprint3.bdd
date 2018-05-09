@@ -1,0 +1,118 @@
+
+SCENARIO: Verify Home Page with no Events
+META-DATA : {"description": "Verify Home Page with no Events", "author":"steve gunther","testCaseId":"19294"}
+
+	Given user resets app
+	And user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And user enters signup details using 'signup.user1'
+	Then user clicks on signup button
+	And user click on skip button
+	And user verify navigation bar on homescreen
+	Then user verifies the homepage with no events
+	And user closes the app
+	And user resets app
+END
+
+####################LOGINFLOW#######################################
+
+
+SCENARIO: Logbook Classic View Manual Entry BG from Classic Log View
+META-DATA : {"description": "Verify a Manual BG Entry is displayed on the Logbook Classic View screen", "author":"Gaurav Bhamare","testCaseId":"19299","groups": ["ANDROIDREGRESSIONLOGINSPRINT3"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	Then user clicks on login button
+	And user clicks on Logbook tab
+	Then user clicks on Add Event
+	When user select log event type as 'GLUCOSE'
+	And user add blood glucose details using 'addGlucose1'
+	And user clicks on classic view tab and select current date
+	And user verify added BG on classic view using 'addGlucose1'
+	Then user closes the app
+END
+
+
+
+SCENARIO: Verify My Meters Page Time Update Switch
+META-DATA : {"description": "Verify a user can toggle the time update switch on", "author":"steve gunther","testCaseId":"19297","groups": ["ANDROIDREGRESSIONLOGINSPRINT3"]}
+	
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	And user click on more menu
+	And user clicks on My Meters
+	Then user taps time update switch
+	And user closes the app
+END
+
+
+SCENARIO: Verify My Meters Page
+META-DATA : {"description": "Verify the UI of the My Meters Page", "author":"steve gunther","testCaseId":"19296","groups": ["ANDROIDSMOKELOGINSPRINT3","ANDROIDREGRESSIONLOGINSPRINT3"]}
+	
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	And user click on more menu
+	And user clicks on My Meters
+	Then user verifies My Meters page UI
+	And user closes the app
+END
+
+
+SCENARIO: Verify navigating back to Home Page after clicking Add Event
+META-DATA : {"description": "User redirected to Home Page when tapping back arrow", "author":"steve gunther","testCaseId":"19396"}
+	
+	Given user resets app
+	And user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And user enters signup details using 'signup.user1'
+	Then user clicks on signup button
+	And user click on skip button
+	And user verify navigation bar on homescreen
+	And user clicks Add an Event
+	Then user verifies Add Event Screen
+	And user taps back arrow
+	Then user verifies the homepage with no events
+	And user closes the app
+END
+
+SCENARIO:User redirected to Home Page when tapping device back button
+META-DATA : {"description": "Verify navigating back to Home Page after clicking Add Event using device back button", "author":"steve gunther","testCaseId":"19431","groups": ["P3android"]}
+	
+	Given user resets app
+	And user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And user enters signup details using 'signup.user1'
+	Then user clicks on signup button
+	And user click on skip button
+	And user verify navigation bar on homescreen
+	And user clicks Add an Event
+	Then user verifies Add Event Screen
+	And user taps device back button
+	Then user verifies the homepage with no events
+	And user closes the app
+END
+
+SCENARIO: Verify user can add an event from the homepage
+META-DATA : {"description": "Verify Home Page Add Event option", "author":"Gaurav Bhamare","testCaseId":"19295"}
+	
+	Given user opens app
+	When user select country '${countryname}' from country list
+	Then user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	When user clicks Add an Event
+	And user select log event type as 'GLUCOSE'
+	And user add blood glucose details using 'addGlucose'
+	Then user verrify added event 'addGlucose' on home screen
+	And user closes the app
+END

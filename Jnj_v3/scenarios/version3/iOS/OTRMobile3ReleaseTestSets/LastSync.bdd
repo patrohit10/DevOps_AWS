@@ -1,0 +1,46 @@
+SCENARIO: To Verify Last Sync with Meter screen does not display manually entered BG reading
+META-DATA : {"description": "Verify Last Sync with Meter screen does not display manually entered BG reading", "author":"Gaurav Bhamare","testCaseId":"19355","groups": ["iOSLastSync"]}
+
+	Given user opens app
+ 	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+ 	And user enters login details using 'Login.UserDetail'
+ 	Then user clicks on login button
+ 	When user clicks on last sync reading tab
+ 	Then user check total BG count on last sync screen
+	And user clicks on All events link
+	When user clicks on Add Event
+	And user select log event type as 'GLUCOSE'
+	Then user add blood glucose details using 'addGlucose'
+ 	When user clicks on last sync reading tab
+ 	Then user verifies no of count after adding manual BG
+ 	And user closes the app
+END
+
+SCENARIO: To verify last meter sync screen
+META-DATA : {"description": "To verify last meter sync screen", "author":"Gaurav Bhamare","testCaseId":"19409","groups": ["iOSLastSync"]}
+
+ Given user opens app
+ When user select country '${countryname}' from country list
+ And user redirects to 'LOG-IN' Page
+ And user enters login details using 'Login.UserDetail'
+ Then user clicks on login button
+ When user clicks on last sync reading tab
+ Then user verifies last meter sync screen
+ And user closes the app
+END
+
+
+SCENARIO: To navigate through All Events from Last Sync
+META-DATA : {"description": "To navigate through All Events from Last Sync", "author":"Gaurav Bhamare","testCaseId":"19371","groups": ["iOSLastSync"]}
+
+ Given user opens app
+ When user select country '${countryname}' from country list
+ And user redirects to 'LOG-IN' Page
+ And user enters login details using 'Login.UserDetail'
+ Then user clicks on login button
+ When user clicks on last sync reading tab
+ And user clicks on All events link
+ Then user verify all events
+ And user closes the app
+END

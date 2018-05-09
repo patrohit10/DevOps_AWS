@@ -1,0 +1,63 @@
+SCENARIO: Verify My Account Page
+META-DATA : {"description": "Verify the UI of the My Account Page", "author":"Milan","testCaseId":"19325","groups": ["iOSMyAccount"]}
+	
+	Given user opens app
+	When user select country '${countryname}' from country list
+	Then user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	And user click on more menu
+	And user clicks on My Account
+	Then user verify my account screen using 'Login.UserDetail'
+	And user closes the app
+END
+
+SCENARIO: Select opt-in option on My Account page
+META-DATA : {"description": "User can select opt-in option on My Account page", "author":"Milan","testCaseId":"19326","groups": ["iOSMyAccount"]}
+	
+	Given user opens app
+	When user select country '${countryname}' from country list
+	Then user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	And user click on more menu
+	And user clicks on My Account
+	Then user verify Opt-in selection my account page
+	And user closes the app
+END
+
+SCENARIO: Verify in my account selecting Opt-in at registration
+META-DATA : {"description": "Verify Opt-in option on My Account page matches that selected at registration when user opts is", "author":"Gaurav Bhamare","testCaseId":"19319","groups": ["iOSMyAccount"]}
+	
+	Given user resets app
+	And user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And user enters signup details using 'signup.user1'
+	And user select opt-in as 'I Agree' in sign up page
+	Then user clicks on signup button
+	And user click on skip button
+	When user click on more menu
+	And user clicks on My Account
+	Then user verify Opt-in selection my account page
+	And user closes the app
+	
+END
+
+SCENARIO:  Verify in my account without selecting Opt-in at registration
+META-DATA : {"description": "Verify Opt-in option on My Account page matches that selected at registration when user does not opt in", "author":"Gaurav Bhamare","testCaseId":"19324","groups": ["iOSMyAccount"]}
+	
+	Given user resets app
+	And user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And user enters signup details using 'signup.user1'
+	And user select opt-in as 'I Agree' in sign up page
+	Then user clicks on signup button
+	And user click on skip button
+	When user click on more menu
+	And user clicks on My Account
+	Then user verify Opt-in selection my account page
+	And user closes the app
+	
+END

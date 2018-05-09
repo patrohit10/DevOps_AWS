@@ -1,0 +1,162 @@
+SCENARIO: Logbook Classic View Manual Entry BG from Classic Log View
+META-DATA : {"description": "Verify a Manual BG Entry is displayed on the Logbook Classic View screen", "author":"Gaurav Bhamare","testCaseId":"19299","groups": ["iOSLogBook"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	Then user clicks on login button
+	And user clicks on Logbook tab
+	When user clicks on Add Event
+	And user select log event type as 'GLUCOSE'
+	Then user add blood glucose details using 'addGlucose1'
+	And user verify added BG on classic view using 'addGlucose1'
+	Then user closes the app
+END
+
+SCENARIO: Logbook Classic View BG Event 365 days in Past
+META-DATA : {"description": "Logbook Classic View BG Event 365 days in Past", "author":"Gaurav Bhamare","testCaseId":"19354","groups": ["iOSLogBook"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	Then user clicks on login button	
+	When user clicks on Logbook tab
+	Then user verify 365 day in logbook classic view
+	And user closes the app
+END
+
+
+SCENARIO: To add edit and delete Glucose week view screen
+META-DATA : {"description": "To add edit and delete Glucose week view screen", "author":"Gaurav Bhamare","testCaseId":"19399","groups": ["iOSLogBook"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	And user clicks on Logbook tab
+	Then user clicks on Add Event
+	When user add random glucose
+	And user clicks on week view
+	And user click on today from week view
+	Then user edit random glucose week view
+	And user click on today from week view
+	And user delete random glucose week view
+	And user closes the app
+END
+
+SCENARIO: To add edit and delete Carb week view screen
+META-DATA : {"description": "To add edit and delete Carb week view screen", "author":"Gaurav Bhamare","testCaseId":"19402","groups": ["iOSLogBook"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	And user clicks on Logbook tab
+	Then user clicks on Add Event
+	When user add random carb
+	And user clicks on week view
+	And user click on today from week view
+	Then user edit random carb week view
+	And user click on today from week view
+	And user delete random carb week view
+	And user closes the app
+END
+
+SCENARIO: To add edit and delete Insulin week view screen
+META-DATA : {"description": "To add edit and delete Insulin week view screen", "author":"Gaurav Bhamare","testCaseId":"19403","groups": ["iOSLogBook"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	And user clicks on Logbook tab
+	Then user clicks on Add Event
+	When user add random insulin
+	And user clicks on week view
+	And user click on today from week view
+	Then user edit random insulin week view
+	And user click on today from week view
+	And user delete random insulin week view
+	And user closes the app
+END
+
+SCENARIO: To add edit and delete Activity week view screen
+META-DATA : {"description": "To add edit and delete Activity week view screen", "author":"Gaurav Bhamare","testCaseId":"19404","groups": ["iOSLogBook"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	And user clicks on Logbook tab
+	Then user clicks on Add Event
+	When user add random activity
+	And user clicks on week view
+	And user click on today from week view
+	Then user edit random activity week view
+	And user click on today from week view
+	And user delete random activity week view
+	And user closes the app
+END
+
+
+SCENARIO: Logbook Week view Insulin section not displayed when disabled
+META-DATA : {"description": "Logbook Week view Insulin section not displayed when disabled", "author":"Gaurav Bhamare","testCaseId":"19406","groups": ["iOSLogBook"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	And user click on more menu
+	And user clicks on My Settings
+	Then user redirect to setting Page
+	And user clicks on insulin switch
+	And user clicks back button
+	And user clicks back button
+	And user clicks on Logbook tab
+	And user clicks on week view
+	Then user verify insulin section not displaying week view
+	And user click on more menu
+	And user clicks on My Settings
+	Then user redirect to setting Page
+	And user clicks on insulin switch
+	And user closes the app
+END
+
+SCENARIO: Logbook Info icon displays Logbook Information screen
+META-DATA : {"description": "Logbook Info icon displays Logbook Information screen", "author":"Gaurav Bhamare","testCaseId":"19401","groups": ["iOSLogBook"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	And user clicks on Logbook tab
+	And user clicks on week view
+	Then user click and verify logbook info screen
+	And user closes the app
+END
+
+SCENARIO: To add edit and delete Glucose Carb Activity from classic view screen
+META-DATA : {"description": "To add edit and delete Glucose Carb Activity from classic view", "author":"Gaurav Bhamare","testCaseId":"19341","groups": ["iOSLogBook"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	And user clicks on Logbook tab
+	Then user clicks on Add Event
+	When user add glucose carb activity
+	And user click on logbook classic view added glucose
+	Then user edit glucose carb activity from classic view
+	And user click on logbook classic view added glucose
+	And user delete glucose carb activity from classic view
+	And user closes the app
+END
+

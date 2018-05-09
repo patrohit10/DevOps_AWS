@@ -1,0 +1,33 @@
+otr.homepage.moremenu.termsofusepage.lbl = {\"locator\":\"xpath=//*[contains(@resource-id,'id/webview_toolbar_title')]|//*[contains(@resourceid,'id/webview_toolbar_title')]\",\"desc\":\"Terms of Use Page label\"}
+otr.homepage.moremenu.connections.officecode.txt = {\"locator\":\"xpath=//*[contains(@resource-id,'cf_field_%s')]\",\"desc\":\"Office code for Connections page\"}
+otr.homepage.moremenu.connections.search.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'action_office_search')]\",\"desc\":\"Search button on Connections page\"}
+otr.homepage.moremenu.addofficecode.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'b_add_office')]\",\"desc\":\"Add office code button on connection page\"}
+otr.moremenu.myreminderspage.myreminders.lbl = {\"locator\":\"xpath=//*[contains(@text,'My Reminders')]|//*[text()=\\\"My Reminders\\\"]\",\"desc\":\"My Reminders Label on My Reminders page\"}
+otr.moremenu.myreminderspage.noreminders.lbl = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_no_reminders')]\",\"desc\":\"No reminders label on My reminders page\"}
+otr.moremenu.myreminderspage.addreminder.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'add_reminder')]\",\"desc\":\"To Add reminder\"}
+otr.moremenu.myreminderspage.staticText.btn = {\"locator\":\"xpath=//*[contains(@text,'%s')]\",\"desc\":\"Static text\"}
+otr.moremenu.myreminderspage.newreminder.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_new_reminder')]\",\"desc\":\"To add Custom reminders\"}
+otr.moremenu.myreminderspage.savereminder.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'i_save_reminder')]\",\"desc\":\"To save newly added reminder\"}
+otr.moremenu.myreminderspage.remember.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_remember_set_title')]\",\"desc\":\"to rememberselected reminder\"}
+otr.moremenu.myreminderspage.enterdescription.txt = {\"locator\":\"xpath=//*[contains(@resource-id,'et_remember_set_description')]\",\"desc\":\"To enter description for added reminder\"}
+otr.moremenu.myreminderspage.selectdatetime.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_reminder_set_date_value')]\",\"desc\":\"To select date and time for selected reminder\"}
+otr.moremenu.myreminderspage.selectrepeatoption.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_reminder_set_status_value')]\",\"desc\":\"To select repeate option for selected remindr\"}
+otr.moremenu.myreminderspage.saveddatetime.lbl = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_reminder_date')]\",\"desc\":\"Saved Date and Time label of selected reminder\"}
+otr.moremenupagereminderdeteletpopupdelete.btn = {\"locator\":\"xpath=//*[@resource-id=\\\"android:id/button1\\\"]\",\"desc\":\"To delete Added reminder\"}
+otr.homepage.moremenu.connections.officename.lbl = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_clinic_name')]\",\"desc\":\"Office name\"}
+otr.homepage.moremenu.connections.officenumber.lbl = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_clinic_phone')]\",\"desc\":\"Office number\"}
+otr.homepage.moremenu.connections.done.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'action_legal_notice_done')]\",\"desc\":\"Done button\"}
+otr.homepage.moremenu.connections.officeaccept.chkbox = {\"locator\":\"xpath=//*[contains(@resource-id,'cb_legal_notice_consent')]\",\"desc\":\"Checkbox for accepting office\"}
+otr.homepage.moremenu.connections.walgreen.tglbtn = {\"locator\":\"xpath=//*[contains(@resource-id,'/sw_enable_partners')]\",\"desc\":\"Walgreens ON/OFF toggle\"}
+otr.homepage.moremenu.reminders.bgtest.temp.btm = {\"locator\":\"xpath=//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.ScrollView[1]/android.widget.LinearLayout[1]/android.support.v7.widget.RecyclerView[1]/android.widget.LinearLayout[1]/android.widget.TextView[1]\",\"desc\":\"Temperary button to remind\"}
+otr.homepage.moremenu.connections.walgreen.chkbx = {\"locator\":\"xpath=//*[contains(@resource-id,'/ck_enable_partners')]\",\"desc\":\"Walgreen checkbox\"}
+otr.homepage.moremenu.addcliniccode.YES.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'bt_yes')]\",\"desc\":\"YES button on add clinic page\"}
+otr.homepage.moremenu.clinic.confirmation.field = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_clinic_confirmation')]\",\"desc\":\"Clinic confirmation field\"}
+otr.moremenu.syncreminder.lbl = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_time_change_title')]\",\"desc\":\"Reminder Sync label on My reminder screen\"}
+otr.moremenu.syncreminder.toggle.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'sw_enable_smart_bg_reminder')]\",\"desc\":\"Toggle button to on off sync reminder\"}
+otr.walgreenpage.username.txtfld = {\"locator\":\"xpath=//*[@resource-id=\\\"signin-username\\\"]\",\"desc\":\"Username textfield on walgreen page\"}
+otr.walgreenpage.password.txtfld = {\"locator\":\"xpath=//*[@resource-id=\\\"signin-password\\\"]\",\"desc\":\"Password textfield on walgreen page\"}
+otr.walgreenpage.signin.btn = {\"locator\":\"xpath=//*[@resource-id=\\\"signin-signinbtn\\\"]\",\"desc\":\"Sign in button on walgreen page\"}
+otr.walgreenpage.autologin.yes.btn = {\"locator\":\"xpath=//*[@resource-id=\\\"autologin_yes\\\"]\",\"desc\":\"Auto login button on walgreen confirmation page\"}
+otr.walgreenpage.finishlogin.btn = {\"locator\":\"xpath=//*[@resource-id=\\\"wag-regoptions-signupforrx\\\"]\",\"desc\":\"Finish login button on walgreen page\"}
+otr.walgreenpage.iagree.chkbx = {\"locator\":\"xpath=//*[@resource-id=\\\"agree\\\"]\",\"desc\":\"I agree checkbox on walgreen page\"}

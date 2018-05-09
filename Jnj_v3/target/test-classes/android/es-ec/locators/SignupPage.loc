@@ -1,0 +1,1 @@
+otr.signuppage.dynamic.txt = {\"locator\":\"xpath=//*[@text='%s']\",\"desc\":\"Dynamic textss\"}

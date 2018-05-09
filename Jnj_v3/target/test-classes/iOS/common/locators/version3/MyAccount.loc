@@ -1,0 +1,8 @@
+otrios.moremenu.myaccountpage.useremail.lbl = {\"locator\":\"xpath=//UIAStaticText[2]\",\"desc\":\"Logged in user mail id label\"}
+otrios.moremenu.myaccountpage.logout.btn = {\"locator\":\"xpath=//UIAScrollView[1]/UIAButton[1]|//*[contains(@label,'Log Out')]\",\"desc\":\"Logout button on My Account page\"}
+otrios.moremenu.myaccountpage.metersynctime.lbl = {\"locator\":\"xpath=//UIAScrollView[1]/UIAStaticText[5]|//*[contains(@label,'\u2014')]\",\"desc\":\"Value of last sync meter time\"}
+otrios.moremenu.myaccountpage.accountlastsynctime.lbl = {\"locator\":\"xpath=//UIAScrollView[1]/UIAStaticText[7]|//*[contains(@label,'Today,')]\",\"desc\":\"Value of last sync account time\"}
+otrios.moremenu.myaccountpage.keepmelogin.switch = {\"locator\":\"xpath=//UIAWindow[1]/UIASwitch[1]|//*[@value=\\\"0\\\"]\",\"desc\":\"Keep me login switch\"}
+otrios.moremenu.myaccountpage.statictext.lbl = {\"locator\":\"xpath=//*[contains(@label,'%s')]\",\"desc\":\"static text\"}
+otrios.moremenu.myaccountpage.optin.title.lbl = {\"locator\":\"xpath=//*[@label='Opt In']\",\"desc\":\"Opt-in title\"}
+otrios.moremenu.myaccountpage.optin.chkbox = {\"locator\":\"xpath=//*[@name='checkbox']|//UIAScrollView/UIAButton[2]\",\"desc\":\"Opt-in checkbox\"}

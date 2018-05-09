@@ -1,0 +1,208 @@
+#SCENARIO: Verify Help page available option
+#META-DATA: {"description":"Verify option available on home page","author":"Steve Gunther","testCaseId":"","groups": ["IOSREGRESSION"]}
+#	Given user opens app
+#	When user select country '${country.unitedState}' from country list
+#	And user redirects to 'LOG-IN' Page
+#	And user enters login details using 'Login.UserDetail'
+#	And user clicks on login button	
+#	When user click on more menu
+#	And user clicks help option
+#	Then user verify help page options
+#	And user closes the app
+#END
+
+#SCENARIO: Verify Introduction Help page available options
+#META-DATA: {"description":"Verify options available on Introduction help page","author":"Steve Gunther","testCaseId":"","groups": ["IOSREGRESSION"]}
+#	Given user opens app
+#	When user select country '${country.unitedState}' from country list
+#	And user redirects to 'LOG-IN' Page
+#	And user enters login details using 'Login.UserDetail'
+#	And user clicks on login button	
+#	When user click on more menu
+#	And user clicks help option
+#	Then user verifies help introduction page
+#	#Then user verifies OTR Mobile App Page
+#	Then user verifies Supported Devices Page
+#	Then user verifies Apple Legal Page
+##	Then user verifies Android Legal Page
+#	Then user verifies Google Legal Page
+#	Then user verifies Bluetooth Trademark Page
+#	Then user verifies Intended Use Page
+#	And user closes the app
+#END
+
+#SCENARIO: Verify Introduction Help page available options
+#META-DATA: {"description":"Verify options available on Getting started help page","author":"Steve Gunther","testCaseId":"","groups": ["IOSREGRESSION","HELP"]}
+#	Given user opens app
+#	When user select country '${country.unitedState}' from country list
+#	And user redirects to 'LOG-IN' Page
+#	And user enters login details using 'Login.UserDetail'
+#	And user clicks on login button	
+#	When user click on more menu
+#	And user clicks help option
+#	Then user verifies Getting Started Page
+#	Then user verifies Getting Started Subpage
+#	Then user verifies Create Account Page
+#	Then user verifies Pairing Page
+#	Then user verifies Pairing Flex Meter Page
+#	Then user verifies Unpairing Page
+#END
+#
+#SCENARIO: Verify Overview Help page available options
+#META-DATA: {"description":"Verify options available on App Overview help page","author":"Gaurav Bhamare","testCaseId":"","groups": ["IOSREGRESSION"]}
+# Given user opens app
+# When user select country '${country.unitedState}' from country list
+# And user redirects to 'LOG-IN' Page
+# And user enters login details using 'Login.UserDetail'
+# And user clicks on login button
+# When user click on more menu
+# And user clicks help option
+# And user verifies App Overview Page
+# And user verifies Symbol and icon Page
+# Then user verifies overview more Page
+# And user verifies Syncing Meter page
+# And user verifies Special Message page
+# And user verifies Synchronizing data page
+# And user closes the app
+#END
+#
+#SCENARIO: Verify Navigation Help page available options
+#META-DATA: {"description":"Verify options available on App Navigation help page","author":"Gaurav Bhamare","testCaseId":"","groups": ["IOSREGRESSION"]}
+# Given user opens app
+# When user select country '${country.unitedState}' from country list
+# And user redirects to 'LOG-IN' Page
+# And user enters login details using 'Login.UserDetail'
+# And user clicks on login button
+# When user click on more menu
+# And user clicks help option
+# And user verifies app navigation page
+# And user verifies help navigation home page
+# Then user verifies help navigation Logbook page
+# And user verifies help navigation last reading page
+# And user verifies help navigation pattern page
+# And user verifies help navigation avarage page
+# And user closes the app
+# 
+#END
+#
+#SCENARIO: Verify Logbook Help page available options
+#META-DATA: {"description":"Verify options available on App Logbook help page","author":"Gaurav Bhamare","testCaseId":"","groups": ["IOSREGRESSION"]}
+# Given user opens app
+# When user select country '${country.unitedState}' from country list
+# And user redirects to 'LOG-IN' Page
+# And user enters login details using 'Login.UserDetail'
+# And user clicks on login button
+# When user click on more menu
+# And user clicks help option
+# And user verifies help logbook page
+# And user verifies help logbook page
+# Then user verifies help logbook view date page
+# And user verifies help logbook add meal page
+# And user verifies help logbook adding note page
+# And user verifies help logbook add carb page
+# And user verifies help logbook add insulin page
+# And user verifies help logbook add activity page
+# And user verifies help logbook add reading page
+# And user verifies help logbook each day page
+# And user verifies help logbook view pattern page
+# And user closes the app
+# 
+#END
+#
+#SCENARIO: Verify Patterns Help page available options
+#META-DATA: {"description":"Verify options available on App Pattern help page","author":"Gaurav Bhamare","testCaseId":"","groups": ["IOSREGRESSION"]}
+# Given user opens app
+# When user select country '${country.unitedState}' from country list
+# And user redirects to 'LOG-IN' Page
+# And user enters login details using 'Login.UserDetail'
+# And user clicks on login button
+# When user click on more menu
+# And user clicks help option
+# Then user verifies help patterns page
+# Then user verifies help patterns detecting patterns page
+# Then user verifies help patterns viewing pattern details page
+# Then user verifies help patterns receiving pattern messages page
+# And user closes the app
+# 
+# END
+# 
+# SCENARIO: Verify More Menu Help page available options
+#META-DATA: {"description":"Verify options available on App More Menu help page","author":"Gaurav Bhamare","testCaseId":"","groups": ["IOSREGRESSION"]}
+# Given user opens app
+# When user select country '${country.unitedState}' from country list
+# And user redirects to 'LOG-IN' Page
+# And user enters login details using 'Login.UserDetail'
+# And user clicks on login button
+# When user click on more menu
+# And user clicks help option
+# Then user verifies help more menu page
+# Then user verifies help more menu more menu page
+# Then user verifies help more menu my settings page
+# Then user verifies help more menu my range page
+# Then user verifies help more menu high and low limits page
+# Then user verifies help more menu my meters page
+# Then user verifies help more menu auto update time page
+# Then user verifies help more menu my reminders page
+# Then user verifies help more menu my account page
+# Then user verifies help more menu login preferences page
+# Then user verifies help more menu optin preferences page
+# Then user verifies help more menu connections page
+# Then user verifies help more menu apps page
+# Then user verifies help more menu help page
+# Then user verifies help more menu terms of service page
+# Then user verifies help more menu privacy policy page
+# Then user verifies help more menu log out page
+# And user closes the app
+# 
+#END
+# 
+#SCENARIO: Verify Reminders Help page available options
+#META-DATA: {"description":"Verify options available on App Reminders help page","author":"Gaurav Bhamare","testCaseId":"","groups": ["IOSREGRESSION"]}
+# Given user opens app
+# When user select country '${country.unitedState}' from country list
+# And user redirects to 'LOG-IN' Page
+# And user enters login details using 'Login.UserDetail'
+# And user clicks on login button
+# When user click on more menu
+# And user clicks help option
+# Then user verifies help reminders page
+# Then user verifies help reminders reminders page
+# Then user verifies help reminders adding a reminder page
+# Then user verifies help reminders deleting a reminder page
+# Then user verifies help reminders receiving reminders page
+# And user closes the app
+#END
+#
+#SCENARIO: Verify Troubleshooting Help page available options
+#META-DATA: {"description":"Verify options available on troubleshooting help page","author":"Gaurav Bhamare","testCaseId":"","groups": ["IOSREGRESSION"]}
+# Given user opens app
+# When user select country '${country.unitedState}' from country list
+# And user redirects to 'LOG-IN' Page
+# And user enters login details using 'Login.UserDetail'
+# And user clicks on login button
+# When user click on more menu
+# And user clicks help option
+# Then user verifies help troubleshooting page
+# Then user verifies help troubleshooting frequently asked questions page
+# Then user verifies help troubleshooting app error and other messages page
+# Then user verifies help troubleshooting data access error page
+# Then user verifies help troubleshooting app will not launch page
+# Then user verifies help troubleshooting app and and Meter Use Differnt Units of Measure page
+# Then user verifies help troubleshooting different range page
+# Then user verifies help troubleshooting improper blood sugar value page
+# Then user verifies help troubleshooting improper carbohydrate value page
+# Then user verifies help troubleshooting improper insulin value page
+# Then user verifies help troubleshooting improper manual blood sugar value page
+# And user closes the app
+#END
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

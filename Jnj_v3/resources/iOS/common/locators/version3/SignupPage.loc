@@ -1,0 +1,45 @@
+otrios.signupPage.oneTouch.icon = {\"locator\":\"xpath=//*[@name=\\\"OTRLogo\\\"]\",\"desc\":\"OTR logo on sign up page\"}
+otrios.signupPage.termOfService.cBox = {\"locator\":\"xpath=//UIAScrollView/UIAButton[1]|//*[contains(@label,'checkbox')]\",\"desc\":\"Terms of service check box\"}
+otrios.signupPage.countryTerms.cBox = {\"locator\":\"xpath=//*[contains(@label,'checkbox')]|//*[@name='checkbox']\",\"desc\":\"Privecy police text for agreeing data accss outside country check box\"}
+otrios.signupPage.signUp.btn = {\"locator\":\"xpath=//*[@name=\\\"otr.signuppage.signUp.btn\\\"]\",\"desc\":\"Signup and continue button\"}
+otrios.signupPage.haveAccount.lbl = {\"locator\":\"xpath=//*[@name=\\\"otr.signuppage.alreadyHaveAccount.lbl\\\"]\",\"desc\":\"Already have account text\"}
+otrios.signupPage.login.lnk = {\"locator\":\"xpath=//*[@name=\\\"otr.signuppage.login.btn\\\"]|//*[@label=\\\"Log In\\\"]\",\"desc\":\"Login link on sign up page\"}
+otrios.signupPage.email.check.img = {\"locator\":\"xpath=//UIAScrollView/UIAImage[3]\",\"desc\":\"Email validate check image\"}
+otrios.signupPage.confirmEmail.check.img = {\"locator\":\"xpath=//UIAScrollView/UIAImage[4]\",\"desc\":\"Confirm email valid check image\"}
+otrios.signupPage.accessQuestion.lbl = {\"locator\":\"xpath=//*[@name=\\\"otr.signuppage.unlockOTRWithTouchId.lbl\\\"]\",\"desc\":\"Access question lable\"}
+otrios.signupPage.enableTouchID.btn = {\"locator\":\"xpath=//*[@name=\\\"otr.loginpage.enableTouchId.btn\\\"]\",\"desc\":\"Enable touch ID label\"}
+otrios.signupPage.keepMeLogIn.btn = {\"locator\":\"xpath=//*[@name=\\\"otr.loginpage.keepMeLoggedIn.txt\\\"]/following-sibling::UIASwitch[1]\",\"desc\":\"Keep me login label\"}
+otrios.signupPage.requirLogin.btn = {\"locator\":\"xpath=//*[@name=\\\"otr.signuppage.requireLogin.btn\\\"]\",\"desc\":\"Requir Login label\"}
+otrios.signupPage.static.lbl = {\"locator\":\"xpath=//*[contains(@label,\\\"%s\\\")]\",\"desc\":\"Static label\"}
+otrios.signuppage.birthday.month.pkr = {\"locator\":\"xpath=//UIAPickerWheel[1]\",\"desc\":\"Date picker wheel\"}
+otrios.signuppage.birthday.date.pkr = {\"locator\":\"xpath=//UIAPickerWheel[2]\",\"desc\":\"Hour picker on picker wheel\"}
+otrios.signuppage.timingPicker.year.pkr = {\"locator\":\"xpath=//UIAPickerWheel[3]\",\"desc\":\"Minute picker wheel\"}
+otrios.signuppage.optin.title.lbl = {\"locator\":\"xpath=//*[@label=\\\"Opt In\\\"]\",\"desc\":\"Opt title\"}
+otrios.signuppage.greeCheck.img = {\"locator\":\"xpath=//*[@name='green_check']\",\"desc\":\"Green correct image\"}
+otrios.signuppage.checkebox = {\"locator\":\"xpath=//*[@label='checkbox']|//*[@name='checkbox']\",\"desc\":\"Signup check box\"}
+otrios.signuppage.hcp.email.txt = {\"locator\":\"xpath=//UIAScrollView[1]/UIATextField[1]\",\"desc\":\"Email user name text field\"}
+otrios.signuppage.hcp.pass.txt = {\"locator\":\"xpath=//UIASecureTextField[1]\",\"desc\":\"password field hcp user\"}
+otrios.signuppage.hcp.confirmpass.txt = {\"locator\":\"xpath=//UIASecureTextField[2]\",\"desc\":\"Confirm password field for hcp\"}
+otrios.signuppage.hcp.datofbirth.txt = {\"locator\":\"xpath=//UIAScrollView[1]/UIATextField[2]\",\"desc\":\"Date of birth field hcp\"}
+otrios.signuppage.hcp.term.chk = {\"locator\":\"xpath=//UIAScrollView[1]/UIAButton[1]\",\"desc\":\"Term and privecy check box\"}
+otrios.signuppage.hcp.diabetes.chk = {\"locator\":\"xpath=//UIAScrollView[1]/UIAButton[2]\",\"desc\":\"Diabetes checkbox\"}
+otrios.signuppage.hcp.dateofbirth.greencheck.img = {\"locator\":\"xpath=//UIAScrollView[1]/UIAImage[5]\",\"desc\":\"Date of birth green check image\"}
+otrios.signuppage.term.lnk = {\"locator\":\"xpath=//UIAStaticText[@name=\\\"Terms of Use\\\"]|//UIALink[1]\",\"desc\":\"Terms of service link on signup first screen\"}
+otrios.signuppage.term.lnk = {\"locator\":\"xpath=//UIAStaticText[@name=\\\"Terms of Use\\\"]\",\"desc\":\"Terms of service link on signup first screen\"}
+otrios.signuppage.privecy.lnk = {\"locator\":\"xpath=//UIAStaticText[@name=\\\"Privacy Policy\\\"]|//UIALink[2]\",\"desc\":\"Privecy policy link sign up first page\"}
+otrios.signuppage.privecy.lnk = {\"locator\":\"xpath=//UIAStaticText[@name=\\\"Privacy Policy\\\"]\",\"desc\":\"Privecy policy link sign up first page\"}
+otrios.signupPage.dateOfBirth.tBox = {\"locator\":\"xpath=//*[contains(@value,'Date of Birth')]|//UIATextField[3]\",\"desc\":\"Date of birth text box\"}
+otrios.signuppage.firstname.txt = {\"locator\":\"xpath=//*[contains(@value,'First Name')]|//UIATextField[1]\",\"desc\":\"User First name textfield\"}
+otrios.signuppage.lastname.txt = {\"locator\":\"xpath=//*[contains(@value,'Last Name')]|//UIATextField[2]\",\"desc\":\"User Last name textfield\"}
+otrios.signupPage.emailAdress.tBox = {\"locator\":\"xpath=//*[@value='Email Address']|//UIATextField[1]\",\"desc\":\"Email adress Text box\"}
+otrios.signupPage.confirmEmailAdress.tBox = {\"locator\":\"xpath=//*[contains(@value,'Confirm Email address')]|//UIATextField[2]\",\"desc\":\"Confirm email adress text box\"}
+otrios.signupPage.password.tBox = {\"locator\":\"xpath=//*[@value='Password']|//UIASecureTextField[1]\",\"desc\":\"Password text box\"}
+otrios.signuppage.officecode.txt = {\"locator\":\"xpath=//UIATextField[3]|//*[@value='Clinic Code (optional)']\",\"desc\":\"Offcie code text field\"}
+otrios.signupPage.meterskip.btn = {\"locator\":\"xpath=//UIAButton[1]\",\"desc\":\"Meter page skip button\"}
+otrios.signuppage.confirmpassword.txt = {\"locator\":\"xpath=//*[@value='Confirm Password']|//UIASecureTextField[2]\",\"desc\":\"Confirm password window\"}
+otrios.germansignuppage.uomselect.mgdl.btn = {\"locator\":\"xpath=//*[contains(@label,'120 mg/dL')]/following-sibling::UIAButton[1]\",\"desc\":\"mg/dL Unit of measurement\"}
+otrios.germansignuppage.uomselect.mmol.btn = {\"locator\":\"xpath=//*[contains(@label,'7,0 mmol/L')]/following-sibling::UIAButton[1]\"}
+otrios.signupPage.notification.dontallow.popup = {\"locator\":\"xpath=//UIAScrollView[2]/UIAButton[1]|//UIACollectionCell[1]/UIAButton[1]\",\"desc\":\"Notification Dont Allow Pop up\"}
+otrios.signupPage.notification.allow.popup = {\"locator\":\"xpath=//UIAAlert/UIAScrollView[2]/UIAButton[2]|//UIAAlert[1]/UIACollectionView[1]/UIACollectionCell[2]/UIAButton[1]\",\"desc\":\"Notification Allow pop up\"}
+otrios.signupPage.errorMessage.txt = {\"locator\":\"xpath=//UIAScrollView[1]/UIAStaticText[1]\",\"desc\":\"Error message text for invalid input\"}
+otrios.signupPage.errorCancel.img = {\"locator\":\"xpath=//UIAScrollView/UIAImage[3]\",\"desc\":\"Error cancel cross image\"}

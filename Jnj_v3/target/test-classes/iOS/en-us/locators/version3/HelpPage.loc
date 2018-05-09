@@ -1,0 +1,49 @@
+otrios.helpPage.search.box = {\"locator\":\"//*[@label=\\\"Search\\\"]\",\"desc\":\"Search text box\"}
+otrios.helpPage.back.btn = {\"locator\":\"//*[@label=\\\"Back\\\"]\",\"desc\":\"Back button\"}
+otrios.helpPage.Introduction.btn = {\"locator\":\"//*[@label=\\\"Introduction\\\"]\",\"desc\":\"Introduction button\"}
+otrios.helpPage.title.lbl = {\"locator\":\"//UIANavigationBar//*[@label=\\\"Help\\\"]\",\"desc\":\"Help page title\"}
+otrios.helpPage.gettingstarted.btn = {\"locator\":\"//*[@label=\\\"Getting Started\\\"]\",\"desc\":\"Getting Started button\"}
+otrios.helpPage.appoverview.btn = {\"locator\":\"//*[@label=\\\"App Overview\\\"]\",\"desc\":\"App Overview button\"}
+otrios.helpPage.logbook.btn = {\"locator\":\"//*[@label=\\\"Logbook\\\"]\",\"desc\":\"Logbook button\"}
+otrios.helpPage.patterns.btn = {\"locator\":\"//*[@label=\\\"Patterns\\\"]\",\"desc\":\"Patterns button\"}
+otrios.helpPage.aboutme.btn = {\"locator\":\"//*[@label=\\\"About Me\\\"]\",\"desc\":\"About Me button\"}
+otrios.helpPage.mymeter.btn = {\"locator\":\"//*[@label=\\\"My Meters\\\"]\",\"desc\":\"My Meters button\"}
+otrios.helpPage.remnder.btn = {\"locator\":\"//*[@label=\\\"Reminders\\\"]\",\"desc\":\"Reminders button\"}
+otrios.helpPage.account.btn = {\"locator\":\"//*[@label=\\\"Account\\\"]\",\"desc\":\"Account button\"}
+otrios.helpPage.help.btn = {\"locator\":\"//UIATableCell[@name=\\\"Help\\\"]//*[@label=\\\"Help\\\"]\",\"desc\":\"Help button\"}
+otrios.helpPage.contactus.btn = {\"locator\":\"//*[@label=\\\"Contact Us\\\"]\",\"desc\":\"Contact Us button\"}
+otrios.helpPage.termsofuse.btn = {\"locator\":\"//*[@label=\\\"Terms of Use and Privacy Policy\\\"]\",\"desc\":\"Terms of Use and Privacy Policy button\"}
+otrios.helpPage.troubleshoot.btn = {\"locator\":\"//*[@label=\\\"Troubleshooting\\\"]\",\"desc\":\"Troubleshooting button\"}
+otrios.helpPage.hcp.btn = {\"locator\":\"//*[@label=\\\"For your healthcare professional (HCP) only\\\"]\",\"desc\":\"HCP button\"}
+otrios.helpPage.about.btn = {\"locator\":\"//*[@label=\\\"About\\\"]\",\"desc\":\"About button\"}
+otrios.helpPage.Navigation.btn = {\"locator\":\"//*[@label=\\\"Navigation Bar\\\"]|//UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIATableCell[4]/UIAStaticText[1]\",\"desc\":\"Navigation\"}
+otrios.helpPage.average.btn = {\"locator\":\"//*[@label=\\\"Averages\\\"]\",\"desc\":\"Average button\"}
+otrios.helpPage.moremenu.btn = {\"locator\":\"//*[@label=\\\"More Menu\\\"]\",\"desc\":\"MoreMenu button\"}
+otrios.helpPage.Introduction.OTRMobileApp.btn = {\"locator\":\"//*[@label=\\\"OneTouch Reveal\u00AE mobile app\\\"]\",\"desc\":\"One Touch Reveal Mobile App\"}
+otrios.helpPage.Introduction.OTRMobileApp.txt = {\"locator\":\"//*[text()=\\\"OneTouch\u00A0Reveal\u00AE mobile app\\\"]\",\"desc\":\"One Touch Reveal Mobile App page header\"}
+otrios.helpPage.Introduction.body.txt = {\"locator\":\"//device/view/window[2]/view[1]/view[1]/view[1]/view[1]/webview[1]/scrollview[1]/view[1]\",\"desc\":\"Content of OTR Mobile App page\"}
+otrios.helpPage.Introduction.backButton.txt = {\"locator\":\"//view[contains(@name,'Back')]\",\"desc\":\"Back button\"}
+otrios.helpPage.Introduction.supportedDevices.btn = {\"locator\":\"//*[@label=\\\"Supported Devices and System Requirements\\\"]\",\"desc\":\"Supported Devices\"}
+otrios.helpPage.Introduction.supportedDevices.txt = {\"locator\":\"//*[@label=\\\"Supported Devices and Sy\u2026\\\"]\",\"desc\":\"Supported Devices header\"}
+otrios.helpPage.Introduction.appleLegalNotice.btn = {\"locator\":\"//*[@label=\\\"Apple\u00AE Legal Notice\\\"]\",\"desc\":\"Apple Legal Notice\"}
+otrios.helpPage.Introduction.appleLegalNotice.txt = {\"locator\":\"//*[@label=\\\"Apple\u00AE Legal Notice\\\"]\",\"desc\":\"Apple Legal Notice page header\"}
+otrios.helpPage.Introduction.appleLegalNotice.body.txt = {\"locator\":\"//device/view/window[2]/view[1]/view[1]/view[1]/view[1]/webview[1]/scrollview[1]/view[1]\",\"desc\":\"Apple Legal Notice body\"}
+otrios.helpPage.Introduction.androidLegal.Notice.btn = {\"locator\":\"//*[@label=\\\"AndroidTM Legal Notice\\\"]\",\"desc\":\"Android Legal Notice button\"}
+otrios.helpPage.Introduction.googleLegal.Notice.btn = {\"locator\":\"//*[@label=\\\"Google PlayTM Legal Notice\\\"]\",\"desc\":\"Google legal notice\"}
+otrios.helpPage.Introduction.bluetooth.trademark.btn = {\"locator\":\"//*[@label=\\\"Bluetooth\u00AE Trademark\\\"]\",\"desc\":\"Bluetooth trademark\"}
+otrios.helpPage.Introduction.intendedUse.btn = {\"locator\":\"//*[@label=\\\"Intended Use\\\"]\",\"desc\":\"Intended Use\"}
+otrios.helpPage.gettingstarted.gettingstarted.btn = {\"locator\":\"//*[@label=\\\"Getting Started\\\"]\",\"desc\":\"Getting Started Page button\"}
+otrios.helpPage.gettingstarted.createaccount.btn = {\"locator\":\"//*[@label=\\\"Creating your OneTouch Reveal\u00AE account\\\"]\",\"desc\":\"Createing acount Button\"}
+otrios.helpPage.gettingstarted.pairing.btn = {\"locator\":\"//*[@label=\\\"Pairing\\\"]\",\"desc\":\"Pairing\"}
+otrios.helpPage.gettingstarted.pairingFlexMeter.btn = {\"locator\":\"//*[@label=\\\"Instructions for pairing your OneTouch Verio Flex\u00AE meter\\\"]\",\"desc\":\"Pairing Flex Meter\"}
+otrios.helpPage.gettingstarted.unpairing.btn = {\"locator\":\"//*[@label=\\\"Unpairing\\\"]\",\"desc\":\"Unpairing\"}
+otrios.helpPage.Introduction.androidLegal.Noice.txt = {\"locator\":\"//*[text()=\\\"AndroidTM Legal Notice\\\"]\",\"desc\":\"Androi Legal Notice text\"}
+otrios.helpPage.Introduction.googleLegal.Noice.txt = {\"locator\":\"//*[@label=\\\"Google PlayTM Legal Noti\u2026\\\"]\",\"desc\":\"Google Legal Text\"}
+otrios.helpPage.Introduction.BluetoothTrademark.txt = {\"locator\":\"//*[@label=\\\"Bluetooth\u00AE Trademark\\\"]\",\"desc\":\"Bluetooth Trademark\"}
+otrios.helpPage.Introduction.IntendedUse.txt = {\"locator\":\"//*[@label=\\\"Intended Use\\\"]\",\"desc\":\"Intended Use Text\"}
+otrios.helpPage.gettingstarted.gettingstarted.txt = {\"locator\":\"//*[text()=\\\"Getting Started\\\"]\",\"desc\":\"Getting Started Text\"}
+otrios.helpPage.gettingstarted.createaccount.txt = {\"locator\":\"//*[text()=\\\"Creating your OneTouch\u00A0Reveal\u00AE account\\\"]\",\"desc\":\"Create Account Text\"}
+otrios.helpPage.gettingstarted.pairing.txt = {\"locator\":\"//*[text()=\\\"Pairing\\\"]\",\"desc\":\"Pairing Text\"}
+otrios.helpPage.gettingstarted.pairingFlexMeter.txt = {\"locator\":\"xpath=//*[contains(@label,'Instructions for pairing')]\",\"desc\":\"Verio Flex Pairing Text\"}
+otrios.helpPage.gettingstarted.unpairing.txt = {\"locator\":\"//*[text()=\\\"Unpairing\\\"]\",\"desc\":\"Unpairing Text\"}
+otrios.helpPage.static.txt = {\"locator\":\"xpath=//*[contains(@label,'%s')]\",\"desc\":\"Static text help page\"}

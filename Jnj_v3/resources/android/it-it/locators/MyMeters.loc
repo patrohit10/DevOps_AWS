@@ -1,0 +1,3 @@
+otr.mymeterspage.title.lbl = {\"locator\":\"xpath=//*[@text=\\\"I miei glucometri\\\"]\",\"desc\":\"My Meters page Header\"}
+otr.mymeterspage.pairanotherdevice.txt = {\"locator\":\"xpath=//*[@text=\\\"Associa un altro dispositivo\\\"]|//*[@text=\\\"Associa un altro dispositivo\\\"]\",\"desc\":\"Pair Another Device\"}
+otr.mymeterspage.pairmeter.selectyourmeter.txt = {\"locator\":\"xpath=//*[@text=\\\"Seleziona glucometro\\\"]\",\"desc\":\"select your meter\"}

@@ -1,0 +1,286 @@
+
+SCENARIO: To add and delete Glucose week view screen and verify deleted event
+META-DATA : {"description": "To add and delete Glucose week view screen and verify deleted event", "author":"Sangram Jadhav","testCaseId":"19601"}
+
+	Given user resets app
+	And user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And user enters signup details using 'signup.user1'
+	And user select opt-in as 'I Agree' in sign up page
+	Then user clicks on signup button
+	And user click on skip button
+	And user clicks on Logbook tab
+	Then user clicks on Add Event
+	When user add random glucose
+	And user clicks on week view
+	And user click on today from week view
+	And user delete random glucose week view
+	And user verify deleted glucose on home screen
+	And user closes the app
+END
+
+Scenario: Verify the app displays toggle option on My Reminders page
+META-DATA: {"description":"Verify the app displays pre-defined reminder toggle option on My Reminders page","author":"Sangram Jadhav","testCaseId":"19602"}
+	
+	Given user resets app
+	And user opens app
+	When user select country 'United States' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	When user click on more menu
+	Then user verifies toggle button to sync my readings
+	And user closes the app
+END
+
+SCENARIO : Verify toggle button should ON and disabled state when user denies notification
+META-DATA: {"description":"Verify toggle button should OFF when user denies notification","author":"Sangram Jadhav","testCaseId":"19603"}
+
+	
+SCENARIO : Verify toggle button should ON when user allows notification
+META-DATA: {"description":"Verify toggle button should ON when user allows notification","author":"Sangram Jadhav","testCaseId":"19604"}
+	
+	Given user resets app
+	And user opens app
+	When user select country 'United States' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	When user click on more menu
+	Then user verifies toggle button is ON
+	And user closes the app
+END
+
+SCENARIO: Create Account with invalid characters in First and Last Name
+META-DATA: {"description":"Create Account with invalid characters in First Name","author":"Sangram Jadhav","testCaseId":"19605"}
+	Given user resets app
+	And user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And user verify invalid First and Last Name
+	Then user closes the app
+END
+
+SCENARIO : Validate email address on Forgot Password screen
+META-DATA: {"description":"Validate email adress on Forgot Password screen","author":"Sangram Jadhav","testCaseId":"19606"}
+	Given user resets app
+	And user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user click on forgot password link
+	Then user validate email with special characters
+	And user closes the app
+	
+END
+
+SCENARIO:User verify Rate us label below Rate app button
+META-DATA: {"description":"user verify Rate us label below Rate app button","author":"Sangram Jadhav","testCaseId":"19607"}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	And user click on more menu
+	And user select Contact Us
+	Then user verify Rate us label
+	And user closes the app
+ 
+END
+
+SCENARIO: User can Delete Event from period results page
+META-DATA : {"description": "User can open Edit Event from period results page", "author":"Sangram Jadhav","testCaseId":"19612","groups": ["IOSREGRESSIONLOGINSPRINT4"]}
+	
+	Given user resets app
+	And user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And user enters signup details using 'signup.user1'
+	Then user clicks on signup button
+	And user click on skip button
+	And user clicks on Logbook tab
+	Then user clicks on Add Event
+	When user select log event type as 'GLUCOSE'
+	Then user add blood glucose details using 'addGlucose'
+	When user clicks on Last Readings Summary tab
+	And user click on '90 DAYS' over view tab
+	And user click on reading button on lastreading screen
+	And user click on added glucose last reading screen using 'addGlucose'
+	And user verify the delete event flow
+	Then user verify added BG get deleted using 'addGlucose'
+	And user closes the app
+	And user resets app
+END
+
+SCENARIO: To verify timeframe sequence for share reports
+META-DATA : {"description": "To verify TimeFrame sequence for PDF and CSV share", "author":"Sangram Jadhav","testCaseId":"19611"}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	Then user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	When user clicks on Logbook tab
+	And user redirects to logbook page
+	Then user clicks on Add Event
+	When user select log event type as 'GLUCOSE'
+	And user add blood glucose details using 'addGlucose'
+	And user clicks on Home tab
+	Then user click on share button
+	And user verify share pdf timeframe sequence
+	And user verify share CSV timeFrame sequence
+	And user closes the app
+END
+
+SCENARIO: To verify average reading units are displayed in numeric form
+META-DATA : {"description": "To verify average reading units are displayed in numeric form", "author":"Sangram Jadhav","testCaseId":"19610"}
+ 
+	Given user resets app
+	And user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And user enters signup details using 'signup.user1'
+	And user select opt-in as 'I Agree' in sign up page
+	Then user clicks on signup button
+	And user click on skip button
+	And user clicks on Logbook tab
+	When user clicks on Add Event
+	And user select log event type as 'GLUCOSE'
+	Then user add blood glucose details using 'addGlucose'
+	When user clicks on Last Readings Summary tab
+	And user click on '90 DAYS' over view tab
+	And user click on reading button on lastreading screen
+	Then user verify manually added glucose last reading screen using 'addGlucose'
+	And user add random BG before '90' day
+	When user clicks back button
+	And user click on '90 DAYS' over view tab
+	Then user verify average reading units
+	And user closes the app
+	And user resets app
+END
+
+SCENARIO: User verify if meter sync fail app redirects to homepage
+META-DATA: {"description" : "To verify if meter sync fail app redirects to homepage","author":"Sangram Jadhav","testCaseId":"19609"}
+
+	Given user resets app
+	And user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	When user click on more menu
+	And user clicks on My Meters
+	Then user click to pair meter
+	And user navigates to homepage
+	And user closes the app
+END
+
+SCENARIO: To Verify Last Sync with Meter screen does not display BG reading
+META-DATA : {"description": "Verify Last Sync with Meter screen does not display manually entered BG reading", "author":"Sangram Jadhav","testCaseId":"19608"}
+
+#	Given user resets app
+	And user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And user enters signup details using 'signup.user1'
+	Then user clicks on signup button
+	And user click on skip button
+	And user clicks on Logbook tab
+	When user clicks on Add Event
+	And user select log event type as 'GLUCOSE'
+	Then user add blood glucose details using 'addGlucose2'
+	And user clicks on Home tab
+	And user verify added event 'addGlucose2' on last sync with meter page
+	Then user click on new added event '${addGlucose2.amount}' on home screen
+	And user verify the delete event flow
+	And user verify deleted event 'addGlucose2' on last sync with meter page
+	And user verrify event 'addGlucose2' is deleted on home screen
+	And user closes the app
+END
+
+SCENARIO: To Share reports with blank data
+META-DATA : {"description": "Sharing reports from Homescreen with blank data", "author":"Sangram Jadhav","testCaseId":"19613"}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And user enters signup details using 'signup.user1'
+	Then user clicks on signup button
+	And user click on skip button
+	Then user click on share button
+	When user verify share page
+	And user click on share pdf
+	And user click on export data csv
+	And user closes the app
+END
+
+SCENARIO: To delete articles from timeline
+META-DATA : { "author":"Gaurav Bhamare","testCaseId":""}
+	
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And user enters signup details using 'signup.user1'
+	Then user clicks on signup button
+	And user click on skip button
+	When user verify welcome article on homepage
+	And user delete the article from homepage
+	Then user closes the app
+	
+END
+
+SCENARIO: Verify event separation for today and yesterday
+META-DATA : {"description": "Verify event separation for today and yesterday", "author":"Gaurav Bhamare","testCaseId":""}
+
+# Given user resets app
+	And user opens app
+	When user select country '${countryname}' from country list
+	And user enters signup details using 'signup.user1'
+	Then user clicks on signup button
+	And user click on skip button
+	When user clicks on Logbook tab
+	Then user clicks on Add Event
+	And user select log event type as 'GLUCOSE'
+	When user add random BG for today and yesterday
+	And user clicks on Home tab
+	Then user verify today and yesterday added eventicon home screen
+	And user closes the app
+	And user resets app
+END
+
+SCENARIO: To delete articles from timeline
+META-DATA : {"description": "To delete articles from homepage timeline", "author":"Gaurav Bhamare","testCaseId":""}
+ 
+	Given user resets app
+	And user opens app
+	When user select country '${countryname}' from country list
+	And user enters signup details using 'signup.user1'
+	Then user clicks on signup button
+	And user click on skip button
+	And user delete the article from homepage
+	Then user closes the app
+ 
+END
+
+
+SCENARIO: To verify default and last added Insulin type
+META-DATA : {"description": "User verify default for first user and last added insulin type", "author":"Gaurav Bhamare","testCaseId":""}
+
+	Given user resets app
+	And user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And user enters signup details using 'signup.user1'
+	Then user clicks on signup button
+	And user click on skip button
+	And user clicks on Logbook tab
+	Then user clicks on Add Event
+	When user select log event type as 'INSULIN'
+	Then user verify default insulin type
+	And user add insulin details using 'addInsulin'
+	When user clicks on Add Event
+	And user select log event type as 'INSULIN'
+	Then user verify last added insulin type as default
+	And user closes the app
+END
+

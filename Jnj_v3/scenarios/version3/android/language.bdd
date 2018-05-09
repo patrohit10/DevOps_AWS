@@ -1,0 +1,30 @@
+SCENARIO: To verify Walgreens user can disable Walgreens connection
+META-DATA: {"description":"Walgreens user can disable Walgreens connection from Connections page","author":"","testCaseId":"19413"}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	Then user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.WallgreensDetial1'
+	And user clicks on login button
+	When user click on more menu
+	And user clicks Connections
+	Then walgreen user try to switch off walgreen switch
+	And user closes the app
+	And user resets app
+
+END
+
+SCENARIO: To verify non-Walgreens user can connect to Walgreens
+META-DATA: {"description":"To verify non-Walgreens user can connect to Walgreens","author":"","testCaseId":"19414"}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	Then user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	When user click on more menu
+	And user clicks Connections
+	Then non walgreen user connect walgreen using 'Login.UserDetail'
+	And user closes the app
+
+END

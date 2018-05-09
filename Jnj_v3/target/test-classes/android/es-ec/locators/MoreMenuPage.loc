@@ -1,0 +1,13 @@
+otr.homepage.moremenu.settings.btn = {\"locator\":\"xpath=//*[contains(@text,'Configuraci\u00F3n')]|//*[text()=\\\"Configuraci\u00F3n\\\"]\",\"desc\":\"Settings Menu in More Menu\"}
+otr.homepage.moremenu.mymeters.btn = {\"locator\":\"xpath=//*[contains(@text,'Mis medidores')]|//*[text()=\\\"Mis medidores\\\"]\",\"desc\":\"My Meters Menu in More Menu\"}
+otr.homepage.moremenu.reminders.btn = {\"locator\":\"xpath=//*[contains(@text,'recordatorios')]|//*[text()=\\\"recordatorios\\\"]\",\"desc\":\"Reminders Menu in More Menu\"}
+otr.homepage.moremenu.account.btn = {\"locator\":\"xpath=//*[contains(@text,'cuenta')]|//*[text()=\\\"cuenta\\\"]\",\"desc\":\"Accounts Menu in More Menu\"}
+otr.homepage.moremenu.help.btn = {\"locator\":\"xpath=//*[contains(@text,'Ayuda')]|//*[text()=\\\"Ayuda\\\"]\",\"desc\":\"Help Menu in More Menu\"}
+otr.homepage.moremenu.contactus.btn = {\"locator\":\"xpath=//*[contains(@text,'Cont\u00E1ctenos')]|//*[text()=\\\"Cont\u00E1ctenos\\\"]\",\"desc\":\"Contact Us Menu in More Menu\"}
+otr.homepage.moremenu.termsofuse.btn = {\"locator\":\"xpath=//*[contains(@text,'las Condiciones de uso')]|//*[text()=\\\"las Condiciones de uso\\\"]\",\"desc\":\"Terms of Use Menu in More Menu\"}
+otr.homepage.moremenu.privacypolicy.btn = {\"locator\":\"xpath=//*[contains(@text,'Pol\u00EDtica de privacidad')]|//*[text()=\\\"Pol\u00EDtica de privacidad\\\"]\",\"desc\":\"Privacy Policy Menu in More Menu\"}
+otr.homepage.moremenu.logout.btn = {\"locator\":\"xpath=//*[contains(@text,'Cerrar sesi\u00F3n')]|//*[text()=\\\"Cerrar sesi\u00F3n\\\"]\",\"desc\":\"Logout Button in More Menu\"}
+otr.homepage.moremenu.connections.btn = {\"locator\":\"xpath=//*[contains(@text,'Conexiones')]\",\"desc\":\"Connections button on more menu\"}
+otr.moremenu.myreminderspage.myreminders.lbl = {\"locator\":\"xpath=//*[contains(@text,'Mis recordatorios')]|//*[text()=\\\"Mis recordatorios\\\"]\",\"desc\":\"My Reminders Label on My Reminders page\"}
+otr.moremenu.myreminderspage.staticText.btn = {\"locator\":\"xpath=//*[contains(@text,'%s')]\",\"desc\":\"Static text\"}
+otr.homepage.moremenu.connections.walgreens.lbl = {\"locator\":\"xpath=//*[contains(@text,'Walgreens')]\",\"desc\":\"Walgreens label\"}

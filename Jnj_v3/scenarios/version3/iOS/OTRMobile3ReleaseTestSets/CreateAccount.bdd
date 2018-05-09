@@ -1,0 +1,117 @@
+
+
+SCENARIO: Create Account Clinic Code validation with non-existent and different country clinic code
+META-DATA : {"description": "Create Account Clinic Code validation with non-existent and different country clinic code", "author":"Gaurav Bhamare","testCaseId":"19352","groups": ["iOSCreateAccount"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And user verify invalid and other country clinic code using 'signup.user1'
+	And user closes the app
+	And user resets app
+END
+
+
+
+SCENARIO: Create Account without Last Name
+META-DATA : {"description": "Verify a user cannot create an account without a valid last name", "author":"Gaurav Bhamare","testCaseId":"19257","groups": ["iOSCreateAccount"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And user enters signup details without lastname using 'signup.user1'
+	Then user closes the app
+END
+
+SCENARIO: Create Account without Date of Birth,includes dob under 18
+META-DATA : {"description": "Verify a user cannot create an account without a valid date of birth", "author":"Gaurav Bhamare","testCaseId":"19258","groups": ["iOSCreateAccount"]}
+	Given user resets app
+	And user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And user enters signup details with birthdate under age using 'signup.user2'
+	Then user closes the app
+END
+
+SCENARIO: Create Account without Date of Birth includes no dob
+META-DATA : {"description": "Verify a user cannot create an account without a valid date of birth", "author":"Gaurav Bhamare","testCaseId":"19259","groups": ["iOSCreateAccount"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And user enters signup details without birthdate using 'signup.user1'
+	Then user closes the app
+END
+
+SCENARIO: Create Account without selecting Terms of Use/Privacy Policy
+META-DATA : {"description": "Verify a user cannot create an account without accepting the terms of use/privacy policy", "author":"Gaurav Bhamare","testCaseId":"19260","groups": ["iOSCreateAccount"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And user enters signup details without TOU using 'signup.user1'
+	Then user closes the app
+END
+
+SCENARIO: Create Account Email validation includes no email
+META-DATA : {"description": "Verify a user cannot create an account without email address ", "author":"Gaurav Bhamare","testCaseId":"19261","groups": ["iOSCreateAccount"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And user enters signup details without emailId using 'signup.user1'
+	Then user closes the app
+END
+SCENARIO: Create Account Email validation includes invalid email and with 75 chars
+META-DATA : {"description": "Verify a user cannot create an account with an invalid email address ", "author":"Gaurav Bhamare","testCaseId":"19262","groups": ["iOSCreateAccount"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And Signup details with invalid user id and email length more than 75 chars using 'signup.user1'
+	Then user closes the app
+END
+
+SCENARIO: Create Account Email and Confirm Email validation
+META-DATA : {"description": "Verify a user cannot create an account without correct confirmation email address ", "author":"Gaurav Bhamare","testCaseId":"19263","groups": ["iOSCreateAccount"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And Signup details with email and confirm email validation using 'signup.user1'
+	Then user closes the app
+END
+
+SCENARIO: Create Account Password validation includes no password
+META-DATA : {"description": "Verify a user cannot create an account with no password ", "author":"Gaurav Bhamare","testCaseId":"19264","groups": ["iOSCreateAccount"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And Signup details without password using 'signup.user1'
+	Then user closes the app
+END
+
+SCENARIO: Create Account Password validation includes invalid password and max 16 chars
+META-DATA : {"description": "Verify a user cannot create an account with an invalid password ", "author":"Gaurav Bhamare","testCaseId":"19265","groups": ["iOSCreateAccount"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And Signup details with invalid password and less than 16 chars using 'signup.user1'
+	Then user closes the app
+END  
+
+SCENARIO: Create Account existing user
+META-DATA : {"description": "Verify a user cannot create an account with an email address already in use", "author":"Gaurav Bhamare","testCaseId":"19266","groups": ["iOSCreateAccount"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And Signup details with already registered email id using 'signup.user1'
+	Then user closes the app
+END 
+
+
+
+SCENARIO: Create Account
+META-DATA : {"description": "Verify a user can create an account", "author":"Gaurav Bhamare","testCaseId":"19298","groups": ["iOSCreateAccount"]}
+	Given user resets app
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user enters signup details using 'signup.user1'
+	Then user clicks on signup button
+	And user click on skip button
+	And user closes the app
+	And user resets app
+END

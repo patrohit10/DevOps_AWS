@@ -1,0 +1,22 @@
+otr.moremenu.helppage.help.lbl = {\"locator\":\"xpath=//*[contains(@text,'Aide')]\",\"desc\":\"Help label on help page\"}
+otr.moremenu.helppage.search.txt = {\"locator\":\"xpath=//*[contains(@text,'Search')]|//*[contains(@resource-id,'edit_text_search')]\",\"desc\":\"Search text box on Help Page\"}
+otr.moremenu.helppage.search.btn = {\"locator\":\"xpath=//*[@class=\\\"android.widget.ImageView\\\"]\",\"desc\":\"Search button on help page\"}
+otr.moremenu.helppage.introduction.btn = {\"locator\":\"xpath=//*[contains(@text,'Introduction')]\",\"desc\":\"Introduction tab on help page\"}
+otr.moremenu.helppage.gettingstarted.btn = {\"locator\":\"xpath=//*[contains(@text,'Getting Started')]\",\"desc\":\"Getting Started tab on help menu\"}
+otr.moremenu.helppage.appoverview.btn = {\"locator\":\"xpath=//*[contains(@text,'App Overview')]\",\"desc\":\"App Overview tab on help menu\"}
+otr.moremenu.helppage.home.btn = {\"locator\":\"xpath=//*[contains(@text,'Home')]\",\"desc\":\"Home tab on help page\"}
+otr.moremenu.helppage.logbook.btn = {\"locator\":\"xpath=//*[contains(@text,'Logbook')]\",\"desc\":\"Logbook tab on help page\"}
+otr.moremenu.helppage.patterns.btn = {\"locator\":\"xpath=//*[contains(@text,'Patterns')]\",\"desc\":\"Patterns tab on help page\"}
+otr.moremenu.helppage.graphs.btn = {\"locator\":\"xpath=//*[contains(@text,'Graphs')]\",\"desc\":\"Graphs tab on help page\"}
+otr.moremenu.helppage.aboutme.btn = {\"locator\":\"xpath=//*[contains(@text,'About Me')]\",\"desc\":\"About me tab on help page\"}
+otr.moremenu.helppage.mymeters.btn = {\"locator\":\"xpath=//*[contains(@text,'My Meters')]\",\"desc\":\"My Meters tab on help page\"}
+otr.moremenu.helppage.settings.btn = {\"locator\":\"xpath=//*[contains(@text,'Settings')]|//*[@text=\\\"Settings\\\"]\",\"desc\":\"Settings tab on help page\"}
+otr.moremenu.helppage.reminders.btn = {\"locator\":\"xpath=//*[contains(@text,'Reminders')]|//*[@text=\\\"Reminders\\\"]\",\"desc\":\"Reminders tab on help page\"}
+otr.moremenu.helppage.account.btn = {\"locator\":\"xpath=//*[contains(@text,'Account')]|//*[@text=\\\"Account\\\"]\",\"desc\":\"Account tab on help page\"}
+otr.moremenu.helppage.help.btn = {\"locator\":\"xpath=//*[@resource-id=\\\"android:id/text1\\\" and @text=\\\"Help\\\"]\",\"desc\":\"Help tab on help page\"}
+otr.moremenu.helppage.contactus.btn = {\"locator\":\"xpath=//*[contains(@text,'Contact Us')]\",\"desc\":\"Contact us tab on help page\"}
+otr.moremenu.helppage.tosandpp.btn = {\"locator\":\"xpath=//*[contains(@text,'Terms of Use and Privacy Policy')]\",\"desc\":\"TOS and PP tab on help page\"}
+otr.moremenu.helppage.troubleshooting.btn = {\"locator\":\"xpath=//*[contains(@text,'Troubleshooting')]\",\"desc\":\"Troubleshooting tab on help page\"}
+otr.moremenu.helppage.hcp.btn = {\"locator\":\"xpath=//*[contains(@text,'For your healthcare professional (HCP) only')]\",\"desc\":\"HCP tab on help page\"}
+otr.moremenu.helppage.about.btn = {\"locator\":\"xpath=//*[contains(@text,'About')]\",\"desc\":\"About tab on help page\"}
+otr.moremenu.helppage.statictext.txt = {\"locator\":\"xpath = //*[contains(@text,'%s')]\",\"desc\":\"Static text field for Help page\"}

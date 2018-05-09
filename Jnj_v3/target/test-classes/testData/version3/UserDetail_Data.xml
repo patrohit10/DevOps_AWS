@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<Login>
+		<UserDetail>
+			<emailID>gaurav.bhamare@infostretch.com</emailID>
+			<password>abcd123#</password>
+			<firstName>sangram</firstName>
+			<lastName>jadhav</lastName>
+			<username>gaurav.bhamare@infostretch.com</username>
+		</UserDetail>
+		<WallgreensDetial>
+			<username>vandavasinaveen+210lemo@gmail.com</username>
+			<password>c0nn3ct10</password>
+		</WallgreensDetial>
+		<WallgreensDetial1>
+			<username>gaurav.bhamare@infostretch.com</username>
+			<password>abcd123#</password>
+		</WallgreensDetial1>
+		<UserDetailPastEntries>
+			<emailId>bgTest@example.com</emailId>
+			<password>abcd123#</password>
+			<firstName>test</firstName>
+			<lastName>test</lastName>
+			<username>bgTest@example.com</username>
+		</UserDetailPastEntries>
+		<BGUser>
+			<emailId>joe123@example.com</emailId>
+			<password>abcd123#</password>
+			<firstName>joe</firstName>
+			<lasName>joe</lasName>
+			<username>joe123@example.com</username>
+		</BGUser>
+	</Login>
+	<contactDetail>
+		<contact1>
+			<name>Gmb</name>
+		</contact1>
+	</contactDetail>
+
+
+	<clinic>
+		<tridentClinic>
+			<clinicCode>TTCTTC</clinicCode>
+			<officName>Trident Training Clinic</officName>
+			<officeNumber>5551231245</officeNumber>
+		</tridentClinic>
+		<tridentClinic_Updated>
+		    <clinicCode>TTCTTC</clinicCode>
+		    <officeDetails>Trident Training Clinic(555) 123-1245</officeDetails>
+		</tridentClinic_Updated>
+		<gplClinic>
+			<emailID>msmith_en_us</emailID>
+			<password>c0nn3ct</password>
+			<clinicCode>TTCTTC</clinicCode>
+			<officName>GPL Clinic en_US</officName>
+			<officeNumber>(604) 333-3333</officeNumber>
+		</gplClinic>
+		<clinicCode>
+			<us>
+				<code1>XSPPAM</code1>
+			</us>
+			<nl> 
+				<code1>PAYCWY</code1>
+			</nl>
+			<fr> 
+				<code1>WJTHCN</code1>
+			</fr>
+			<cn> 
+				<code1>YJMVXS</code1>
+			</cn>
+			
+			
+			
+		</clinicCode>
+	</clinic>
+
+	<hcpUser>
+		<user1>
+			<username>JSangram</username>
+			<emailID>san@hhhh.com</emailID>
+			<password>y3gQD6TcA$</password>
+		</user1>
+		<user2>
+			<emailID>test1999@gmail.com</emailID>
+			<password> abcd123# </password>
+		</user2>
+		<user3>
+			<username>SRam</username>
+			<password>G7kTPQ$aC6</password>
+			<emailID>testr1.user@gmail.com</emailID>
+		</user3>
+		<user4>
+		<username>utest1</username>
+		<emailID>test1.user@gmail.com</emailID>
+		<password>ENK3@qAB5D</password>
+		</user4>
+	</hcpUser>
+
+	<signup>
+		<user1>
+			<firstName>lemonade</firstName>
+			<lastName>user</lastName>
+			<birthdayMonth>February</birthdayMonth>
+			<birthdayDate>1</birthdayDate>
+			<birthdayYear>1998</birthdayYear>
+			<emailID>sgunthe1@its.jnj.com</emailID>
+			<password>abcd123#</password>
+		</user1>
+		<user2>
+			<firstName>lemonade</firstName>
+			<lastName>user</lastName>
+			<birthdayMonth>November</birthdayMonth>
+			<birthdayDate>1</birthdayDate>
+			<birthdayYear>2016</birthdayYear>
+			<emailID>sgunthe1@its.jnj.com</emailID>
+			<password>abcd123#</password>
+		</user2>
+	</signup>
+	
+
+</root>

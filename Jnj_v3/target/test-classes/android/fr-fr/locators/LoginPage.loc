@@ -1,0 +1,3 @@
+otr.loginpage.enabletouchid.lbl = {\"locator\":\"xpath=//*[@text=\\\"Activer Touch ID\\\"]|//*[text()=\\\"Activer Touch ID\\\"]\",\"desc\":\"Touch Id label\"}
+otr.loginpage.keepmelogin.lbl = {\"locator\":\"xpath=//*[@text=\\\"Maintenir la connexion\\\"]|//*[text()=\\\"Maintenir la connexion\\\"]\",\"desc\":\"Keep me login Label\"}
+otr.forgotpassword.statictext.btn = {\"locator\":\"xpath=//*[contains(@text,'%s')]\",\"desc\":\"Static text label for any label value\"}

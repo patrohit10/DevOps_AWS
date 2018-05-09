@@ -1,0 +1,4 @@
+otr.sharepage.lastreadingshare.lbl = {\"locator\":\"xpath=//*[text()=\\\"Condividi ultimo risultato\\\"]|//*[@text=\\\"Condividi ultimo risultato\\\"]\",\"desc\":\"Last reading share label on share page\"}
+otr.sharepage.sharewithemail.btn = {\"locator\":\"xpath=//*[contains(@text,'E-mail')]|//*[contains(@text(),'E-mail')]\",\"desc\":\"Sharing via email on share page\"}
+otr.sharepage.exportdata.lbl = {\"locator\":\"xpath=//*[contains(@text,'Esporta dati')]|//*[contains(@text(),'Esporta dati')]\",\"desc\":\"Export data sharing on share page\"}
+otr.sharepage.exportdata.csvformat.btn = {\"locator\":\"xpath=//*[contains(@text,'CSV')]|//*[contains(@text(),'CSV')]\",\"desc\":\"Export data in CSV format on share page\"}

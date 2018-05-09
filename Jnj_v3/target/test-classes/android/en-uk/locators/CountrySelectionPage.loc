@@ -1,0 +1,4 @@
+otr.countryselect.unitedstates.btn = {\"locator\":\"xpath=//*[text()=\\\"United States\\\"]|//*[@text=\\\"United States\\\"]\",\"desc\":\"United States as a selected country\"}
+otr.countryselect.spain.btn = {\"locator\":\"xpath=//*[text()=\\\"Spain\\\"]\"}
+otr.countryselectukireland.btn = {\"locator\":\"xpath=//*[text()=\\\"United Kingdom and Ireland\\\"]\"}
+otr.countryselectionpage.statictext.lbl = {\"locator\":\"xpath=//*[contains(@text,\\\"%s\\\")]\",\"desc\":\"Static text lable\"}

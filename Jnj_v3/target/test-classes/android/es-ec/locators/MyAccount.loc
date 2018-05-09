@@ -1,0 +1,8 @@
+otr.moremenu.myaccountpage.heading.lbl = {\"locator\":\"xpath=//*[contains(@text,'Mi cuenta')]\",\"desc\":\"My Account Heading page label\"}
+otr.moremenu.myaccountpage.accntdtls.lbl = {\"locator\":\"xpath=//*[contains(@text,'Datos de la cuenta')]\",\"desc\":\"Account details label on My Account page\"}
+otr.moremenu.myaccountpage.accountsync.lnk = {\"locator\":\"xpath=//*[contains(@text,'Sincronizar con cuenta')]\",\"desc\":\"Another account sync link\"}
+otr.moremenu.myaccountpage.lastsync.lbl = {\"locator\":\"xpath=//*[contains(@text,'\u00DAltima sincronizaci\u00F3n')]\",\"desc\":\"Last Sync Label on My account page\"}
+otr.moremenu.myaccountpage.withmeter.lbl = {\"locator\":\"xpath=//*[contains(@text,'Con medidor')]\",\"desc\":\"Sync with meter label on my account page\"}
+otr.moremenu.myaccountpage.withaccount.lbl = {\"locator\":\"xpath=//*[contains(@text,'Con cuenta')]\",\"desc\":\"Sync with account label\"}
+otr.moremenu.myaccountpage.statictext.lbl = {\"locator\":\"xpath=//*[contains(@text,'%s')]\",\"desc\":\"Static text label on my account page\"}
+otr.moremenu.myaccountpage.keepmeloggedin.lbl = {\"locator\":\"xpath=//*[contains(@text,'Mantener sesi\u00F3n abierta')]\",\"desc\":\"Keep me logged in label\"}

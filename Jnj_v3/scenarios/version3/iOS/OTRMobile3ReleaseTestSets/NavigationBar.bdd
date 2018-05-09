@@ -1,0 +1,30 @@
+SCENARIO: To verify navigation of tab bars on homescreen
+META-DATA: {"description":"Verification of navigation of tab bar menus on homescreen","author":"Gaurav Bhamare","testCaseId":"19275","groups": ["iOSNavBar"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	And user verify navigation bar on homescreen
+	When user clicks on Logbook tab
+	Then user redirects to logbook page
+	When user clicks on Last Readings Summary tab
+	When user clicks on Patterns tab
+	When user clicks on Last Readings Summary tab
+	Then user redirects to Last Readings Summary page
+	When user clicks on Home tab
+	Then user redirects to Home page
+	And user closes the app
+END
+
+Scenario: To verify navigation bar on home screen
+META-DATA : {"description": "Navigation bar verification on Home screen", "author":"Gaurav Bhamare","testCaseId":"19276","groups": ["iOSNavBar"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	Then user verify navigation bar on homescreen
+	And user closes the app
+END

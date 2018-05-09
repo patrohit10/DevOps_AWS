@@ -1,0 +1,85 @@
+
+SCENARIO: To verify Connections page
+META-DATA: {"description":"User can open and verify Connection page UI","author":"Steve Gunther","testCaseId":"19302","groups": ["iOSConnections"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	When user click on more menu
+	And user clicks Connections
+	Then user verifies Connections page
+	And user closes the app
+END
+
+SCENARIO: User can toggle Apple Health on and off from Connections page, off by default
+META-DATA: {"description":"User can toggle Apple Health on and off from Connections page, off by default","author":"Steve Gunther","testCaseId":"19410","groups": ["iOSConnections"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	When user click on more menu
+	And user clicks Connections
+	Then user toggle apple health switch
+	And user closes the app
+END
+
+SCENARIO: User cannot add office with invalid clinic code
+META-DATA: {"description":"User cannot add office with invalid clinic code","author":"Steve Gunther","testCaseId":"19304","groups": ["iOSConnections"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	When user click on more menu
+	And user clicks Connections
+	Then user enter and verify invalid clinic code
+	And user closes the app
+END
+
+SCENARIO: Invalid characters are not registered in clinic code field
+META-DATA: {"description":"Invalid characters are not registered in clinic code field","author":"Steve Gunther","testCaseId":"19397","groups": ["iOSConnections"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	When user click on more menu
+	And user clicks Connections
+	Then user verify invalid clinic code format
+	And user closes the app
+END
+
+
+
+SCENARIO: User cannot add office with code from another country
+META-DATA: {"description":"User cannot add office with code from another country","author":"Steve Gunther","testCaseId":"19353","groups": ["iOSConnections"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	When user click on more menu
+	And user clicks Connections
+	Then user enter and verify other country clinic code
+	And user closes the app
+END
+
+SCENARIO: User can add an office from Connections page
+META-DATA: {"description":"User can add an office from Connections page","author":"Gaurav Bhamare","testCaseId":"19303","groups": ["iOSConnections"]}
+	
+	Given user resets app
+	And user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And user enters signup details using 'signup.user1'
+	Then user clicks on signup button
+	And user click on skip button
+	When user click on more menu
+	And user clicks Connections
+	Then user add office using 'clinic.tridentClinic'
+	And user closes the app
+	And user resets app
+	
+END

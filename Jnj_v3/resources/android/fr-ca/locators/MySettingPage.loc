@@ -1,0 +1,3 @@
+otr.mysettingpage.gender.txt = {\"locator\":\"xpath=//*[contains(@text,'Sexe')]\",\"desc\":\"Text_Gender\"}
+otr.mysettingpage.range.txt = {\"locator\":\"xpath=//*[contains(@text,'Plage')]\",\"desc\":\"Text_Range\"}
+otr.mysettingpage.diabetiesMng.txt = {\"locator\":\"xpath=//*[contains(@text,'Gestion du diab\u00E8te')]\",\"desc\":\"Diabeties_Mng_txt\"}

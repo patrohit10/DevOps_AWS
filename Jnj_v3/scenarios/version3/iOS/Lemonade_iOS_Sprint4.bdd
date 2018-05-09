@@ -1,0 +1,250 @@
+SCENARIO: User can add an office from Connections page
+META-DATA: {"description":"User can add an office from Connections page","author":"Gaurav Bhamare","testCaseId":"19303","groups": ["IOSREGRESSIONSIGNUPSPRINT4","P2"]}
+	
+	Given user resets app
+	And user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And user enters signup details using 'signup.user1'
+	Then user clicks on signup button
+	And user click on skip button
+	When user click on more menu
+	And user clicks Connections
+	Then user add office using 'clinic.tridentClinic'
+	And user closes the app
+	And user resets app
+	
+END
+
+#################LOGINFLOW###########################
+
+
+SCENARIO: To verify Last Readings summary page
+META-DATA: {"description":"Verification of Last Readings Summary page UI","author":"Steve Gunther","testCaseId":"19300","groups": ["IOSREGRESSIONLOGINSPRINT4","P1"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	When user clicks on Last Readings Summary tab
+	Then user redirects to Last Readings Summary page
+	Then user verifies Last Readings Summary page
+	And user closes the app
+END
+
+SCENARIO: To verify Navigating to 14, 30, and 90 Day views
+META-DATA: {"description":"Verification of navigating 14, 30, and 90 Day views on Last Readings Summary Page","author":"Steve Gunther","testCaseId":"19301","groups": ["IOSREGRESSIONLOGINSPRINT4","P2"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	When user clicks on Last Readings Summary tab
+	Then user redirects to Last Readings Summary page
+	Then user clicks and verify 14, 30, and 90 Day views
+	And user closes the app
+END
+
+SCENARIO: To verify Connections page
+META-DATA: {"description":"User can open and verify Connection page UI","author":"Steve Gunther","testCaseId":"19302","groups": ["IOSREGRESSIONLOGINSPRINT4","P2"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	When user click on more menu
+	And user clicks Connections
+	Then user verifies Connections page
+	And user closes the app
+END
+
+SCENARIO: User can toggle Apple Health on and off from Connections page, off by default
+META-DATA: {"description":"User can toggle Apple Health on and off from Connections page, off by default","author":"Steve Gunther","testCaseId":"19410","groups": ["IOSSMOKELOGINSPRINT4","IOSREGRESSIONLOGINSPRINT4","P1iOS"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	When user click on more menu
+	And user clicks Connections
+	Then user toggle apple health switch
+	And user closes the app
+END
+
+SCENARIO: User cannot add office with invalid clinic code
+META-DATA: {"description":"User cannot add office with invalid clinic code","author":"Steve Gunther","testCaseId":"19304","groups": ["IOSREGRESSIONLOGINSPRINT4","P2"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	When user click on more menu
+	And user clicks Connections
+	Then user enter and verify invalid clinic code
+	And user closes the app
+END
+
+SCENARIO: Invalid characters are not registered in clinic code field
+META-DATA: {"description":"Invalid characters are not registered in clinic code field","author":"Steve Gunther","testCaseId":"19397","groups": ["IOSREGRESSIONLOGINSPRINT4","P3"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	When user click on more menu
+	And user clicks Connections
+	Then user verify invalid clinic code format
+	And user closes the app
+END
+
+SCENARIO: Verify Help page available option
+META-DATA: {"description":"Verify option available on home page","author":"Steve Gunther","testCaseId":"19305","groups": ["IOSREGRESSIONLOGINSPRINT4","P3"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	When user click on more menu
+	And user clicks help option
+	Then user verify help page options
+	And user closes the app
+END
+
+
+SCENARIO: To navigate through All Events from Last Sync
+META-DATA : {"description": "To navigate through All Events from Last Sync", "author":"Gaurav Bhamare","testCaseId":"19371","groups": ["IOSREGRESSIONLOGINSPRINT4","P2"]}
+
+ Given user opens app
+ When user select country '${countryname}' from country list
+ And user redirects to 'LOG-IN' Page
+ And user enters login details using 'Login.UserDetail'
+ Then user clicks on login button
+ When user clicks on last sync reading tab
+ And user clicks on All events link
+ Then user verify all events
+ And user closes the app
+END
+
+SCENARIO: To verify last meter sync screen
+META-DATA : {"description": "To verify last meter sync screen", "author":"Gaurav Bhamare","testCaseId":"19409","groups": ["IOSREGRESSIONLOGINSPRINT4","P3"]}
+
+ Given user opens app
+ When user select country '${countryname}' from country list
+ And user redirects to 'LOG-IN' Page
+ And user enters login details using 'Login.UserDetail'
+ Then user clicks on login button
+ When user clicks on last sync reading tab
+ Then user verifies last meter sync screen
+ And user closes the app
+END
+
+SCENARIO: To Verify Last Sync with Meter screen does not display manually entered BG reading
+META-DATA : {"description": "Verify Last Sync with Meter screen does not display manually entered BG reading", "author":"Gaurav Bhamare","testCaseId":"19355","groups": ["IOSREGRESSIONLOGINSPRINT4","P2"]}
+
+	Given user opens app
+ 	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+ 	And user enters login details using 'Login.UserDetail'
+ 	Then user clicks on login button
+ 	When user clicks on last sync reading tab
+ 	Then user check total BG count on last sync screen
+	And user clicks on All events link
+	When user clicks on Add Event
+	And user select log event type as 'GLUCOSE'
+	Then user add blood glucose details using 'addGlucose'
+ 	When user clicks on last sync reading tab
+ 	Then user verifies no of count after adding manual BG
+ 	And user closes the app
+END
+
+SCENARIO: Verify UI of recent events page
+META-DATA : {"description": "verify recently added BG detail on last sync tab", "author":"Gaurav Bhamare","testCaseId":"19306","groups": ["IOSREGRESSIONLOGINSPRINT4","P3"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	Then user clicks on login button
+	And user clicks on Logbook tab
+	When user clicks on Add Event
+	And user select log event type as 'GLUCOSE'
+	Then user add blood glucose details using 'addGlucose1'
+	And user verify recent added BG on last sync tab using 'addGlucose1'
+	Then user closes the app
+END
+
+
+SCENARIO: User can navigate back to recent events from period results page
+META-DATA : {"description": "Verify User can navigate back to recent events from period results page", "author":"Gaurav Bhamare","testCaseId":"19307","groups": ["IOSREGRESSIONLOGINSPRINT4","P2"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	Then user clicks on login button
+	When user clicks on Last Readings Summary tab
+	And user redirects to Last Readings Summary page
+	And user clicks on last sync reading tab
+ 	Then user verifies last meter sync screen
+	And user closes the app
+END
+
+SCENARIO: Verify UI of Period results page from the period overview page
+META-DATA : {"description": "Verify UI of Period results page from the period overview page", "author":"Gaurav Bhamare","testCaseId":"19308","groups": ["IOSREGRESSIONLOGINSPRINT4","P3"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	Then user clicks on login button
+	When user clicks on Last Readings Summary tab
+	And user click on '30 DAYS' over view tab
+	Then user verify BG period result popup
+	And user closes the app
+END
+
+SCENARIO:User can update BG range when meal tagging is disabled
+META-DATA: {"description":"User can update BG range when meal tagging is disabled","author":"","testCaseId":"19356","groups": ["IOSREGRESSIONLOGINSPRINT4","P1"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	Then user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	And user click on more menu
+	And user clicks on My Settings
+	Then user redirect to setting Page
+	And user make meal tagging switch 'off'
+	And user change Bg value
+	And user make meal tagging switch 'on'
+	And user closes the app
+END
+
+SCENARIO:User can see the readings range popup on period overview page
+META-DATA : {"description": "User can see the readings range popup on period overview page", "author":"","testCaseId":"19309","groups": ["IOSSMOKELOGINSPRINT4","IOSREGRESSIONLOGINSPRINT4","P2"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	Then user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	When user clicks on Last Readings Summary tab
+	Then user redirects to Last Readings Summary page
+	And user verify period result popup value
+	And user closes the app
+END
+
+SCENARIO:Verify default ranges for Time of Day ranges on Settings page
+META-DATA: {"description":"Verify default ranges for Time of Day ranges on Settings page","author":"","testCaseId":"19357","groups": ["IOSSMOKELOGINSPRINT4","IOSREGRESSIONLOGINSPRINT4","P3"]}
+	Given user resets app
+	Given user opens app
+	And user opens app
+	And user select country '${countryname}' from country list
+	When user redirects to 'SIGN-UP' Page
+	And user enters signup details using 'signup.user1'
+	And user clicks on signup button
+	And user click on skip button
+	Then user click on more menu
+	And user clicks on My Settings
+	Then user redirect to setting Page
+	And user verify default ranges for Time of Day
+	And user closes the app
+END	

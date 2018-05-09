@@ -1,0 +1,12 @@
+SCENARIO: Verify Help page available option
+META-DATA: {"description":"Verify option available on home page","author":"Steve Gunther","testCaseId":"19305","groups": ["iOSHelp"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	When user click on more menu
+	And user clicks help option
+	Then user verify help page options
+	And user closes the app
+END

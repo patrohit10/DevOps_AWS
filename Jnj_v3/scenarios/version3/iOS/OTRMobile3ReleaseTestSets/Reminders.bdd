@@ -1,0 +1,123 @@
+SCENARIO: Setup new reminder for Eat a Snack
+META-DATA: {"description":"User can create a snack reminder","author":"Gaurav Bhamare","testCaseId":"19314","groups": ["iOSReminders"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	When user click on more menu
+	Then user set up a new reminder using '${reminder.snack}'
+	And user closes the app
+END
+
+SCENARIO: Setup new reminder for Eat
+META-DATA: {"description":"User can create a eat reminder","author":"Gaurav Bhamare","testCaseId":"19315","groups": ["iOSReminders"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	When user click on more menu
+	Then user set up a new reminder using '${reminder.eat}'
+	And user closes the app
+END
+
+SCENARIO: Setup new reminder for Bolus
+META-DATA: {"description":"User can create n bolus reminder","author":"Gaurav Bhamare","testCaseId":"19360","groups": ["iOSReminders"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	When user click on more menu
+	Then user set up a new reminder using '${reminder.bolus}'
+	And user closes the app
+END
+
+
+SCENARIO: Setup new reminder for Activity
+META-DATA: {"description":"User can create n activity reminder","author":"Gaurav Bhamare","testCaseId":"19316","groups": ["iOSReminders"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	When user click on more menu
+	Then user set up a new reminder using '${reminder.activity}'
+	And user closes the app
+END
+
+SCENARIO: Setup new reminder for Buy Strips
+META-DATA: {"description":"User can create a buy strips reminder","author":"Gaurav Bhamare","testCaseId":"19317","groups": ["iOSReminders"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	When user click on more menu
+	Then user set up a new reminder using '${reminder.strips}'
+	And user closes the app
+END
+
+SCENARIO: Setup new reminder for Take Medication
+META-DATA: {"description":"User can create a take medication reminder","author":"Gaurav Bhamare","testCaseId":"19318","groups": ["iOSReminders"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	When user click on more menu
+	Then user set up a new reminder using '${reminder.medication}'
+	And user closes the app
+END
+
+SCENARIO: Setup new reminder for GLucose
+META-DATA: {"description":"User can create n glucose reminder","author":"Gaurav Bhamare","testCaseId":"19412","groups": ["iOSReminders"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	When user click on more menu
+	Then user set up a new reminder using '${reminder.glucose}'
+	And user closes the app
+	And user resets app
+END
+
+
+SCENARIO:  Verification of reminder description length and  time in the past
+META-DATA: {"description":"User cannot create a reminder with a description more than 60 characters and a reminder time in the past","author":"","testCaseId":"19328","groups": ["iOSReminders"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	When user click on more menu
+	And user clicks on My Reminder
+	Then user verify description length past time not allowed for reminder picker
+	And user closes the app
+END
+
+SCENARIO: Setup a new reminder type
+META-DATA: {"description":"User setup a new reminder type","author":"Gaurav Bhamare","testCaseId":"19278","groups": ["iOSReminders"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	When user click on more menu
+	Then user create a new reminder type
+	And user closes the app
+END
+
+SCENARIO: Verify reminder screen flow
+META-DATA: {"description":"Verify reminder screen flow","author":"Gaurav Bhamare","testCaseId":"19279","groups": ["iOSReminders"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	When user click on more menu
+	Then user verify reminder screens
+	And user closes the app
+END

@@ -1,0 +1,9 @@
+otr.countryselectionpage.next.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'iv_next')]|//*[contains(@resourceid,'iv_next')]\",\"desc\":\"Next button\"}
+otr.countryselect.wheredoyoulive.txt = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_where_do_you_live')]|//*[contains(@resourceid,'tv_where_do_you_live')]\",\"desc\":\"Heading\"}
+otr.countryselectionpage.heading.lbl = {\"locator\":\"xpath=//*[contains(@resource-id,'app_logo')]|//*[contains(@resourceid,'app_logo')]|//*[contains(@resource-id,'tb_toolbar')]/android.widget.ImageView[1]\",\"desc\":\"OneTouchReveal Logo\"}
+otr.countryselectionpage.countryselection.lst = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_country')]|//*[contains(@resourceid,'tv_country')]\"}
+otr.countryselectionpage.back.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'iv_back')]|//*[contains(@resource-id,'tv_cancel')]\",\"desc\":\"Back Button\"}
+otr.countryselectionpage.statictext.lbl = {\"locator\":\"xpath=//*[contains(@text,\\\"%s\\\")]\",\"desc\":\"Static text lable\"}
+otr.countryselectionpage.selectcountry.txt = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_select_country')]\",\"desc\":\"Select country text\"}
+otr.countryselectionpage.countryselected.correct.img = {\"locator\":\"xpath=//*[contains(@resource-id,'iv_country_selected')]\",\"desc\":\"Correct image for country is selected\"}
+otr.countryselectionpage.countryselected.iagree.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_agree')]\",\"desc\":\"i agree button on all language page\"}

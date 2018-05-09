@@ -1,0 +1,11 @@
+otrios.homepage.addevent.btn = {\"locator\":\"xpath=//*[contains(@label,'Een gebeurtenis toevoegen')]\",\"desc\":\"Add event button\"}
+otrios.homepage.pairdevice.btn = {\"locator\":\"xpath=//*[contains(@label,'Mijn meter koppelen')]\",\"desc\":\"Pair Meter button on homepage\"}
+otrios.homepage.lastreadingdetialReadingsperday.txt = {\"locator\":\"xpath=//*[@label=\\\"Waarden/dag\\\"]\",\"desc\":\"Readings per day text\"}
+otrios.homepage.lastsyncwithmeter.lbl = {\"locator\":\"xpath=//*[@label=\\\"Laatste synchronisatie met meter\\\"]\",\"desc\":\"Last sync with meter title lable\"}
+otrios.homepage.lastsyncwithmeter.viewallevent.lnk = {\"locator\":\"xpath=//*[@label=\\\"Alle gebeurtenissen in logboek weergeven\\\"]\",\"desc\":\"View all event link\"}
+otrios.homepage.lastsyncwithmeter.totalreading.lbl = {\"locator\":\"xpath=//*[contains(@label,'Waarden')]\",\"desc\":\"Total reading\"}
+otrios.homepage.lastreading.recentBGValue.lbl = {\"locator\":\"xpath=//*[@label=\\\"Gemiddeld\\\"]/preceding-sibling::UIAStaticText[2]\",\"desc\":\"Value of recent added BG\"}
+otrios.homepage.lastreading.recentBGUnit.lbl = {\"locator\":\"xpath=//*[@label=\\\"Gemiddeld\\\"]/preceding-sibling::UIAStaticText[1]\",\"desc\":\"Unit of recent added BG\"}
+otrios.homepage.readarticle.lnk = {\"locator\":\"xpath=//*[@label=\\\"READ ARTICLE >\\\"]\",\"desc\":\"Read article link\"}
+otrios.homepage.lastreading.noavarage.lbl = {\"locator\":\"xpath=//*[@label=\\\"Geen gemiddelden om weer te geven\\\"]\",\"desc\":\"No avarage label last reading screen\"}
+otrios.homepage.lastreadingdetialReadingsleft.txt = {\"locator\":\"xpath=//*[@label=\\\"Waarden\\\"]\",\"desc\":\"Readings left cell\"}

@@ -1,0 +1,9 @@
+
+SCENARIO: Verify Country selection page
+META-DATA: {"description":"Verify Country selection page","author":"Milan","testCaseId":"19246","groups": ["IOSSMOKESIGNUP","IOSREGRESSIONSIGNUPSPRINT1"]}
+	
+	Given user resets app
+	When user opens app
+	Then user verify country selection Page
+	And user closes the app
+END

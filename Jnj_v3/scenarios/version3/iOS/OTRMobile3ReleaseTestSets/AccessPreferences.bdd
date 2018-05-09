@@ -1,0 +1,30 @@
+SCENARIO: Verify authentication type keep me login flow
+META-DATA: {"description":"Verify authentication type keep me login flow","author":"Milan","testCaseId":"19272","groups": ["iOSAccessPreferences"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	Then user select authentication type as "KEEP ME LOGIN"
+	And user clicks on login button
+	Then user redirects to Home page
+	When user closes the app
+	And user opens app
+	Then user redirects to Home page
+	When user click on more menu
+	Then user clicks on logout button
+	And user closes the app
+END
+
+SCENARIO: Verify authentication type require login flow
+META-DATA: {"description":"Verify authentication type require login flow","author":"Milan","testCaseId":"19273","groups": ["iOSAccessPreferences"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	Then user select authentication type as "REQUIRE LOGIN"
+	And user clicks on login button
+	When user closes the app
+	And user opens app
+	Then user verify login page
+	And user closes the app
+END

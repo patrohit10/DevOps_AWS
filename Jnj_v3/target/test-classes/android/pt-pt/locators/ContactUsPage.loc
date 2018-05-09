@@ -1,0 +1,1 @@
+otr.homepage.moremenu.contactus.contactus.lbl = {\"locator\":\"xpath=//*[contains(@text,'Contacte-nos')]|//*[text()=\\\"Contacte-nos\\\"]\",\"desc\":\"Contact Us label on Contact Us page in More Menu\"}

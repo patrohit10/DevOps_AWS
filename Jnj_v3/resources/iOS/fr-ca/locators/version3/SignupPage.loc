@@ -1,0 +1,4 @@
+otrios.signupPage.termOfService.lbl = {\"locator\":\"xpath=//*[contains(@label,'En cr\u00E9ant un compte')]\",\"desc\":\"Terms of service and Privecy police text\"}
+otrios.signupPage.countryTerms.lbl = {\"locator\":\"xpath=//*[contains(@label,'Aux fins de cette application')]\",\"desc\":\"Privecy police text for agreeing data accss outside country\"}
+otrios.signupPage.createAccount.lbl = {\"locator\":\"xpath=//*[@label=\\\"create-account.copyright\\\"]\",\"desc\":\"Copy Right create account text\"}
+otrios.signupPage.meterskip.btn = {\"locator\":\"xpath=//*[contains(@label,'Sauter')]\",\"desc\":\"Meter page skip button\"}

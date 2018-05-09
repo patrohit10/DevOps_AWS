@@ -1,0 +1,8 @@
+otr.moremenu.myaccountpage.heading.lbl = {\"locator\":\"xpath=//*[contains(@text,'Mio account')]\",\"desc\":\"My Account Heading page label\"}
+otr.moremenu.myaccountpage.accntdtls.lbl = {\"locator\":\"xpath=//*[contains(@text,'Dettagli account')]\",\"desc\":\"Account details label on My Account page\"}
+otr.moremenu.myaccountpage.accountsync.lnk = {\"locator\":\"xpath=//*[contains(@text,'Sincronizza con account')]\",\"desc\":\"Another account sync link\"}
+otr.moremenu.myaccountpage.lastsync.lbl = {\"locator\":\"xpath=//*[contains(@text,'Ultima sincr')]\",\"desc\":\"Last Sync Label on My account page\"}
+otr.moremenu.myaccountpage.withmeter.lbl = {\"locator\":\"xpath=//*[contains(@text,'Con glucometro')]\",\"desc\":\"Sync with meter label on my account page\"}
+otr.moremenu.myaccountpage.withaccount.lbl = {\"locator\":\"xpath=//*[contains(@text,'Con account')]\",\"desc\":\"Sync with account label\"}
+otr.moremenu.myaccountpage.statictext.lbl = {\"locator\":\"xpath=//*[contains(@text,'%s')]\",\"desc\":\"Static text label on my account page\"}
+otr.moremenu.myaccountpage.keepmeloggedin.lbl = {\"locator\":\"xpath=//*[contains(@text,'Mantienimi connesso')]\",\"desc\":\"Keep me logged in label\"}

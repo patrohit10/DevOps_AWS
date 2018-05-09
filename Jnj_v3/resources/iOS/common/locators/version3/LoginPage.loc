@@ -1,0 +1,16 @@
+otrios.loginPage.enableTouchID.switch = {\"locator\":\"xpath=//*[@value=\\\"0\\\"]|//UIAScrollView/UIASwitch[1]\",\"desc\":\"Switch for enableing touch ID\"}
+otrios.loginPage.keepMeLogin.switch = {\"locator\":\"xpath=//*[@name=\\\"%s\\\"]/following-sibling::UIASwitch[1]\",\"desc\":\"Switch for keep me login\"}
+otrios.loginPage.title.lbl = {\"locator\":\"xpath=//*[@name=\\\"OTRLogo\\\"]\",\"desc\":\"Login page OTR Title\"}
+otrios.loginPage.touchID.img = {\"locator\":\"xpath=//*[@label=\\\"touchID\\\"]\",\"desc\":\"Touch finger image\"}
+otrios.loginPage.forgotpwd.close.btn = {\"locator\":\"xpath=//*[@label=\\\"popup close\\\"]\",\"desc\":\"X close button\"}
+otrios.loginPage.statictext.lbl = {\"locator\":\"xpath=//*[contains(@label,\\\"%s\\\")]\",\"desc\":\"Static text\"}
+otrios.loginpage.updatepage.agree.chkbx = {\"locator\":\"xpath=//*[@name=\\\"checkbox\\\"]|//*[@class=\\\"UIAScrollView\\\"]/button[4]\",\"desc\":\"New update page checkbox to accept changes\"}
+otrios.loginPage.emailAdress.tBox = {\"locator\":\"xpath=//*[@value='Username or Email']|//UIATextField[1]\",\"desc\":\"Email text field on sign in page\"}
+otrios.loginPage.password.tBox = {\"locator\":\"xpath=//*[@value='Password']|//UIASecureTextField[1]\",\"desc\":\"Password on sign in page\"}
+otrios.loginPage.forgotpwd.send.btn = {\"locator\":\"xpath=//*[@name='otr.signuppage.signUp.btn']\",\"desc\":\"send button\"}
+otrios.loginPage.forgotpwd.emailfield.txt = {\"locator\":\"xpath=//UIATextField[1]\",\"desc\":\"email field\"}
+otrios.loginPage.meterskip.btn = {\"locator\":\"xpath=//*[@label='Skip']|//UIAButton[1]\",\"desc\":\"Meter page skip button\"}
+otrios.loginPage.updateNotice.lbl = {\"locator\":\"xpath=//*[contains(@label,'%s')]|//UIAScrollView[1]/UIAStaticText[1]\",\"desc\":\"Update notice\"}
+otrios.loginPage.forgotPassword.emailError.txt = {\"locator\":\"xpath=//UIAWindow[1]/UIAStaticText[1]\",\"desc\":\"Invalid email message on forgot pass field\"}
+otrios.loginPage.cancelErrorMsg.img = {\"locator\":\"xpath=//UIAWindow[1]/UIAImage[2]\",\"desc\":\"Cancel error message\"}
+otrios.loginPage.forgotPassword.OTRLogo.img = {\"locator\":\"xpath=//UIAWindow[1]/UIAImage[1]\",\"desc\":\"OTR logo on forgot passpage\"}

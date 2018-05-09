@@ -1,0 +1,338 @@
+
+
+
+SCENARIO: To verify allowed blood blucose range
+META-DATA : {"description": "Verify not allowed a BG reading that exceeds allowed range 20 -600 mg/dL for US", "author":"Gaurav Bhamare","testCaseId":"19289","groups": ["IOSSMOKESIGNUPSPRINT2","IOSREGRESSIONSIGNUPSPRINT2","P2"]}
+
+	Given user resets app
+	When user opens app
+	And user select country '${country.unitedState}' from country list
+	When user redirects to 'SIGN-UP' Page
+	And user enters signup details using 'signup.user1'
+	And user clicks on signup button
+	And user click on skip button	
+	And user clicks on Logbook tab
+	Then user clicks on Add Event
+	When user select log event type as 'GLUCOSE'
+	Then user verify blood glucose range for 'BG.unitMGDL'
+	And user closes the app
+	And user resets app
+END
+
+SCENARIO: To verify allowed blood blucose range
+META-DATA : {"description": "Verify not allowed a BG reading that exceeds allowed range 1.1 -3.33 mmol/L for canada", "author":"Gaurav Bhamare","testCaseId":""}
+	
+	Given user resets app
+	And user opens app
+	And user select country '${countryname}' from country list
+	When user redirects to 'SIGN-UP' Page
+	And user enters signup details using 'signup.user1'
+	And user clicks on signup button
+	And user click on skip button	
+	And user clicks on Logbook tab
+	Then user clicks on Add Event
+	When user select log event type as 'GLUCOSE'
+	Then user verify blood glucose range for 'BG.unitMMOL'
+	And user closes the app
+	And user resets app
+END
+
+
+#########################LOGIN FLOW#######################
+
+SCENARIO: To Share reports
+META-DATA : {"description": "Sharing reports from Homescreen", "author":"Gaurav Bhamare","testCaseId":"19277","groups": ["IOSSMOKELOGINSPRINT2","IOSREGRESSIONLOGINSPRINT2","P1"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	Then user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	When user clicks on Logbook tab
+	And user redirects to logbook page
+	Then user clicks on Add Event
+	When user select log event type as 'GLUCOSE'
+	And user add blood glucose details using 'addGlucose'
+	And user clicks on Home tab
+	Then user click on share button
+	When user verify share page
+	And user click on share pdf
+	And user click on export data csv
+	Then user click on share last reading using text
+	And user click on share last reading using email
+	And user closes the app
+END
+
+SCENARIO: Setup a new reminder type
+META-DATA: {"description":"User setup a new reminder type","author":"Milan","testCaseId":"19278","groups": ["IOSSMOKELOGINSPRINT2","IOSREGRESSIONLOGINSPRINT2","P1"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	When user click on more menu
+	Then user create a new reminder type
+	And user closes the app
+END
+
+SCENARIO: Verify reminder screen flow
+META-DATA: {"description":"Verify reminder screen flow","author":"Milan","testCaseId":"19279","groups": ["IOSREGRESSIONLOGINSPRINT2","P2"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	When user click on more menu
+	Then user verify reminder screens
+	And user closes the app
+END
+
+
+SCENARIO: To add edit and delete Blood glucose from home screen
+META-DATA : {"description": "To add edit and delete Blood glucose from home screen", "author":"Gaurav Bhamare","testCaseId":"19280","groups": ["IOSSMOKELOGINSPRINT2","IOSREGRESSIONLOGINSPRINT2","P2"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	And user clears homepage events	
+	And user clicks on Logbook tab
+	Then user clicks on Add Event
+	When user select log event type as 'GLUCOSE'
+	And user add blood glucose details using 'addGlucose'
+	And user clicks on Home tab
+	And user verrify added event 'addGlucose' on home screen
+	Then user click on added event '${addGlucose.amount}' on home screen
+	And user edit blood glucose details using 'editGlucose'
+	And user verrify added event 'editGlucose' on home screen
+	Then user click on added event '${editGlucose.amount}' on home screen
+	And user verify the delete event flow
+	And user verrify event 'editGlucose' is deleted on home screen
+	And user closes the app
+END
+
+SCENARIO: To add edit and delete carbs from home screen
+META-DATA : {"description": "To add edit and delete carbs from home screen", "author":"Gaurav Bhamare","testCaseId":"19281","groups": ["IOSSMOKELOGINSPRINT2","IOSREGRESSIONLOGINSPRINT2","P2"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	And user clicks on Logbook tab
+	Then user clicks on Add Event
+	When user select log event type as 'CARBS'
+	And user add carbs details using 'addCarb'
+	And user clicks on Home tab
+	And user verrify added event 'addCarb' on home screen
+	Then user click on added event '${addCarb.amount}' on home screen
+	And user edit carbs details using 'editCarb'
+	And user verrify added event 'editCarb' on home screen
+	Then user click on added event '${editCarb.amount}' on home screen
+	And user verify the delete event flow
+	And user verrify event 'editCarb' is deleted on home screen
+	And user closes the app
+END
+
+SCENARIO: To add edit and delete insulin from home screen
+META-DATA : {"description": "To add edit and delete insulin from home screen", "author":"Gaurav Bhamare","testCaseId":"19282","groups": ["IOSSMOKELOGINSPRINT2","IOSREGRESSIONLOGINSPRINT2","P1"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	And user clicks on Logbook tab
+	And user redirects to logbook page
+	Then user clicks on Add Event
+	When user select log event type as 'INSULIN'
+	And user add insulin details using 'addInsulin'
+	And user clicks on Home tab
+	And user verrify added event 'addInsulin' on home screen
+	Then user click on added event '${addInsulin.amount}' on home screen
+	And user edit insulin details using 'editInsulin'
+	And user verrify added event 'editInsulin' on home screen
+	Then user click on added event '${editInsulin.amount}' on home screen
+	And user verify the delete event flow
+	And user verrify event 'editInsulin' is deleted on home screen
+	And user closes the app
+END
+
+SCENARIO: To add edit and delete activity from home screen
+META-DATA : {"description": "To add edit and delete activity from home screen", "author":"Gaurav Bhamare","testCaseId":"19283","groups": ["IOSSMOKELOGINSPRINT2","IOSREGRESSIONLOGINSPRINT2","P2"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	And user clicks on Logbook tab
+	Then user clicks on Add Event
+	When user select log event type as 'ACTIVITY'
+	And user add activity details using 'addActivity'
+	And user clicks on Home tab
+	And user verrify added event 'addActivity' on home screen
+	Then user click on added event '${addActivity.amount}' on home screen
+	And user add activity details using 'editActivity'
+	And user verrify added event 'editActivity' on home screen
+	Then user click on added event '${editActivity.amount}' on home screen
+	And user verify the delete event flow
+	And user verrify event 'editActivity' is deleted on home screen
+	And user closes the app
+END
+
+SCENARIO: To verify manual add blood glucose flow
+META-DATA : {"description": "To verify manual add blood glucose flow", "author":"Gaurav Bhamare","testCaseId":"19284","groups": ["IOSREGRESSIONLOGINSPRINT2","P2"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	And user clicks on Logbook tab
+	And user redirects to logbook page
+	Then user clicks on Add Event
+	When user select log event type as 'GLUCOSE'
+	Then user verify blood glucose event flow
+	And user closes the app
+END
+
+SCENARIO: To verify add carbs flow
+META-DATA : {"description": "To verify add carbs flow", "author":"Gaurav Bhamare","testCaseId":"19285","groups": ["IOSREGRESSIONLOGINSPRINT2","P2"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	And user clicks on Logbook tab
+	And user redirects to logbook page
+	Then user clicks on Add Event
+	When user select log event type as 'CARBS'
+	Then user verify carbs event flow
+	And user closes the app
+#END
+
+SCENARIO: To verify add insulin flow
+META-DATA : {"description": "To verify add insulin flow", "author":"Gaurav Bhamare","testCaseId":"19286","groups": ["IOSREGRESSIONLOGINSPRINT2","P2"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	And user clicks on Logbook tab
+	Then user clicks on Add Event
+	When user select log event type as 'INSULIN'
+	Then user verify insulin event flow
+	And user closes the app
+END
+
+SCENARIO: To verify add activity flow
+META-DATA : {"description": "To verify add activity flow", "author":"Gaurav Bhamare","testCaseId":"19287","groups": ["IOSREGRESSIONLOGINSPRINT2","P2"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	And user clicks on Logbook tab
+	Then user clicks on Add Event
+	When user select log event type as 'ACTIVITY'
+	Then user verify activity event flow
+	And user closes the app
+END
+
+SCENARIO: To add multiple event and verify on home screen
+META-DATA : {"description": "To add multiple event and verify on home screen", "author":"Gaurav Bhamare","testCaseId":"19288","groups": ["IOSREGRESSIONLOGINSPRINT2","P2"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	And user clicks on Logbook tab
+	Then user clicks on Add Event
+	When user select log event type as 'GLUCOSE'
+	Then user add multiple event and verify
+	And user closes the app
+END
+
+
+
+
+
+SCENARIO: To add Blood Glucose entries manually
+META-DATA : {"description": "Adding Blood Glucose entries manually", "author":"Gaurav Bhamare","testCaseId":"19290","groups": ["IOSREGRESSIONLOGINSPRINT2","P2"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	When user clicks on logbook tab
+	And user redirects to logbook page
+	Then user clicks on Add Event
+	When user select log event type as 'GLUCOSE'
+	And user add blood glucose details using 'addGlucose'
+	And user clicks on Home tab
+	Then user verrify added event 'addGlucose' on home screen
+	And user closes the app
+END
+
+
+SCENARIO: To add Carb entries manually
+META-DATA : {"description": "Adding Carb entries manually", "author":"Gaurav Bhamare","testCaseId":"19291","groups": ["IOSREGRESSIONLOGINSPRINT2","P2"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	When user clicks on logbook tab	
+	And user redirects to logbook page
+	Then user clicks on Add Event
+	When user select log event type as 'CARBS'
+	Then user add carbs details using 'addCarb'
+	And user clicks on Home tab
+	Then user verrify added event 'addCarb' on home screen
+	And user closes the app
+END
+
+
+SCENARIO: To add Insulin entries manually
+META-DATA : {"description": "Adding Insulin entries manually", "author":"Gaurav Bhamare","testCaseId":"19292","groups": ["IOSREGRESSIONLOGINSPRINT2","P2"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	When user clicks on logbook tab
+	And user redirects to logbook page
+	Then user clicks on Add Event
+	When user select log event type as 'INSULIN'
+	Then user add insulin details using 'addInsulin'
+	And user clicks on Home tab
+	Then user verrify added event 'addInsulin' on home screen
+	And user closes the app
+END
+
+SCENARIO: To add Activity entries manually
+META-DATA : {"description": "Adding Activity entries manually", "author":"Gaurav Bhamare","testCaseId":"19293","groups": ["IOSREGRESSIONLOGINSPRINT2","P2"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	When user clicks on logbook tab
+	And user redirects to logbook page
+	Then user clicks on Add Event
+	When user select log event type as 'ACTIVITY'
+	Then user add activity details using 'addActivity'
+	And user clicks on Home tab
+	Then user verrify added event 'addActivity' on home screen
+	And user closes the app
+END

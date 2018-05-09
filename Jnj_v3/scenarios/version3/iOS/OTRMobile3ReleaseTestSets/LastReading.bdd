@@ -1,0 +1,12 @@
+SCENARIO: To verify Last Readings summary page
+META-DATA: {"description":"Verification of Last Readings Summary page UI","author":"Steve Gunther","testCaseId":"19300","groups": ["iOSLastReading"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	When user clicks on Last Readings Summary tab
+	Then user redirects to Last Readings Summary page
+	Then user verifies Last Readings Summary page
+	And user closes the app
+END

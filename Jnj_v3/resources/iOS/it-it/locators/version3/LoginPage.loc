@@ -1,0 +1,2 @@
+otrios.loginPage.enableTouchID.lbl = {\"locator\":\"xpath=//*[@label=\\\"Abilita Touch ID\\\"]\",\"desc\":\"Enable touch id lable\"}
+otrios.loginPage.meterskip.btn = {\"locator\":\"xpath=//*[contains(@label,'Salta')]\",\"desc\":\"Meter page skip button\"}

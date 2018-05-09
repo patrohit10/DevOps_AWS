@@ -1,0 +1,3 @@
+otr.mymeterspage.title.lbl = {\"locator\":\"xpath=//*[@text=\\\"Meine Messsysteme\\\"]\",\"desc\":\"My Meters page Header\"}
+otr.mymeterspage.pairanotherdevice.txt = {\"locator\":\"xpath=//*[@text=\\\"Weiteres Ger\u00E4t koppeln\\\"]|//*[@text=\\\"Add a meter\\\"]\",\"desc\":\"Pair Another Device\"}
+otr.mymeterspage.pairmeter.selectyourmeter.txt = {\"locator\":\"xpath=//*[@text=\\\"W\u00E4hlen Sie Ihr Messsystem aus\\\"]\",\"desc\":\"select your meter\"}

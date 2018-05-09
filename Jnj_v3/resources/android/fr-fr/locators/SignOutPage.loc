@@ -1,0 +1,2 @@
+otr.hamburgermenu.account.btn = {\"locator\":\"xpath=//*[contains(@text,'compte')]\",\"desc\":\"account button on hamburger menu\"}
+otr.accountpage.signout.btn = {\"locator\":\"xpath=//*[contains(@text,'D\u00E9connexion')]\",\"desc\":\"signout button on account page\"}

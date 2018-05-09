@@ -1,0 +1,5 @@
+otrios.mysettingpage.genderMale.btn = {\"locator\":\"//*[@label=\\\"Male\\\"]\",\"desc\":\"Male button\"}
+otrios.mysettingpage.genderFemale.btn = {\"locator\":\"//*[@label=\\\"Female\\\"]\",\"desc\":\"Female button\"}
+otrios.mysettingpage.back.btn = {\"locator\":\"//*[@name=\\\"Voltar\\\"]\",\"desc\":\"Back buttom\"}
+otrios.mysettingpage.Done = {\"locator\":\"//*[contains(@label,\\\"Conclu\u00EDdo\\\")]\",\"desc\":\"Done\"}
+otrios.mysettingpage.timeOfDay.Breakfast.lbl = {\"locator\":\"//*[contains(@label,\\\"Pequeno-almo\\\")]\",\"desc\":\"Breakfast lable\"}

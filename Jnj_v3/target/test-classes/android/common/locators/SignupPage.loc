@@ -1,0 +1,38 @@
+otr.signuppage.email.txt = {\"locator\":\"xpath=//*[contains(@resourceid,'et_email_address')]|//*[contains(@resource-id,'et_email_address')]\",\"desc\":\"Email text field\"}
+otr.signuppage.confirmemail.txt = {\"locator\":\"xpath=//*[contains(@resourceid,'et_confirm_email_username')]|//*[contains(@resource-id,'et_confirm_email_username')]\",\"desc\":\"Confirm Email field\"}
+otr.signuppage.password.txt = {\"locator\":\"xpath=//*[contains(@resourceid,'et_password')]|//*[contains(@resource-id,'et_password')]\",\"desc\":\"Password field\"}
+otr.signuppage.signup.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'bn_sign_up')]|//*[contains(@resourceid,'bn_sign_up')]\",\"desc\":\"Sign up button\"}
+otr.signuppage.termofservice.check.box = {\"locator\":\"xpath=//*[contains(@resource-id,'cb_create_account_confirm')]|//*[@resourceid=\\\"com.lifescan.reveal.lemonade.adhoctest:id/cb_create_account_confirm\\\"]\",\"desc\":\"Terms of service check box\"}
+otr.signuppage.onetouch.logo = {\"locator\":\"xpath=//*[contains(@resource-id,'id/iv_app_logo')]\",\"desc\":\"One touch logo\"}
+otr.signuppage.back.btn = {\"locator\":\"xpath=//*[@resource-id=\\\"com.lifescan.reveal:id/iv_back\\\"]\",\"desc\":\"Back button\"}
+otr.signuppage.login.lnk = {\"locator\":\"xpath=//*[contains(@resourceid,'tv_login_sign_up')]|//*[contains(@resource-id,'tv_login_sign_up')]\",\"desc\":\"Login navigation link\"}
+otr.signuppage.termofservice.lnk = {\"locator\":\"xpath=//*[@resource-id=\\\"com.lifescan.reveal:id/tv_create_account_confirm\\\"]\",\"desc\":\"Terms of service link\"}
+otr.signuppage.skip.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_skip')]|//*[contains(@resourceid,'tv_skip')]\",\"desc\":\"Skip Button to skip meters page\"}
+otr.signuppage.importantMessage.txt = {\"locator\":\"xpath=//*[@resource-id=\\\"android:id/message\\\"]\",\"desc\":\"Important message popup when clcking signup\"}
+otr.signuppage.importantMessageOk.btn = {\"locator\":\"xpath=//*[@resource-id=\\\"android:id/button1\\\"]\",\"desc\":\"Ok Button on Important popup\"}
+otr.signuppage.continueButton.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'id/bn_continue')]\",\"desc\":\"Continue button on Create Account page\"}
+otr.signuppage.termsOfUse.txt = {\"locator\":\"xpath=//*[contains(@resource-id,'webview_toolbar_title')]\",\"desc\":\"Terms of Use header on TOS page\"}
+otr.signuppage.termsAndPrivecy.txt = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_create_account_confirm')]\",\"desc\":\"Terms of use and pivecy policy text\"}
+otr.signuppage.firstname.txt = {\"locator\":\"xpath=//*[contains(@resourceid,'et_first_name')]|//*[contains(@resource-id,'et_first_name')]\",\"desc\":\"First Name text field\"}
+otr.signuppage.lastname.txt = {\"locator\":\"xpath=//*[contains(@resourceid,'et_last_name')]|//*[contains(@resource-id,'et_last_name')]\",\"desc\":\"Last Name text field\"}
+otr.signuppage.dob.txt = {\"locator\":\"xpath=//*[contains(@resourceid,'et_date_of_birth')]|//*[contains(@resource-id,'et_date_of_birth')]\",\"desc\":\"Date Of Birth text field\"}
+otr.signuppage.confirmpassword.txt = {\"locator\":\"xpath=//*[contains(@resourceid,'et_confirm_password')]|//*[contains(@resource-id,'et_confirm_password')]\",\"desc\":\"Confirm Password field\"}
+otr.signuppage.officecode.txt = {\"locator\":\"xpath=//*[contains(@resourceid,'et_clinic_code')]|//*[contains(@resource-id,'et_clinic_code')]\",\"desc\":\"Office code text field\"}
+otr.signuppage.promotionalcode.chkbox = {\"locator\":\"xpath=//*[contains(@resourceid,'cb_promotional_offers')]|//*[contains(@resource-id,'cb_promotional_offers')]\",\"desc\":\"Promotional offer checkbox\"}
+otr.signuppage.keepmeloggedin.chkbox = {\"locator\":\"xpath=//*[contains(@resourceid,'cb_keep_me_logged_in')]|//*[contains(@resource-id,'sw_keep_me_logged_in')]\",\"desc\":\"Keep Me Logged In checkbox\"}
+otr.signuppage.dynamic.txt = {\"locator\":\"xpath=//*[@text='%s']\",\"desc\":\"Dynamic textss\"}
+otr.signuppage.calendar.year.btn = {\"locator\":\"xpath=//*[@resource-id='android:id/date_picker_header_year']\",\"desc\":\"Calendar year button selection\"}
+otr.signuppage.calendar.next.btn = {\"locator\":\"xpath=//*[@resource-id='android:id/next']\",\"desc\":\"Next button to select date and month\"}
+otr.signuppage.calendar.previous.btn = {\"locator\":\"xpath=//*[@resource-id='android:id/prev']\",\"desc\":\"Previous button to select date and month\"}
+otr.signuppage.iagree.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'bn_agree')]\",\"desc\":\"I Agree button to optin for required info\"}
+otr.signuppage.cancel.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'bn_cancel')]\",\"desc\":\"Cancel button to cancel I agree optin\"}
+otr.email.validation.error.msg = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_email_error')]\",\"desc\":\"Email error validation message\"}
+otr.confirm.email.validation.error.msg = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_confirm_email_error')]\",\"desc\":\"Error msg for email and confirm email validaion fields\"}
+otr.password.validation.error.msg = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_password_error')]\",\"desc\":\"Password validation error mesaage\"}
+otr.signuppage.clinic.code.txt = {\"locator\":\"xpath=//*[contains(@resource-id,'et_country_code')]\",\"desc\":\"Clinic code text field\"}
+otr.hcpsignuppage.resetpassword.lbl = {\"locator\":\"xpath=//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.ScrollView[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.TextView[1]\",\"desc\":\"Reset passsword label on reset password page.\"}
+otr.germansignuppage.uomselect.mgdl.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'bn_use_mgdl')]\",\"desc\":\"MG/DL selection button for German user\"}
+otr.germansignuppage.uomselect.mmol.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'bn_use_mmol')]\",\"desc\":\"MMOL/L selection button for German user\"}
+otr.signuppage.firstNameError.txt = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_first_name_erro')]\",\"desc\":\"First Name error message\"}
+otr.signuppage.lastNameError.txt = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_last_name_erro')]\",\"desc\":\"Last Name Error message\"}
+otr.signuppage.touchID.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'sw_touch_id')]\",\"desc\":\"Touch ID button\"}

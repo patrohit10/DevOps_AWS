@@ -1,0 +1,47 @@
+otrios.homepage.heading.lbl = {\"locator\":\"xpath=//*[@name=\\\"LogoNavigationBar\\\"]\",\"desc\":\"Heading\"}
+otrios.homepage.share.btn = {\"locator\":\"xpath=//*[@name=\\\"otr.topnav.share.btn\\\"]|//*[@label=\\\"ShareNavigationBar\\\"]\",\"desc\":\"Share button\"}
+otrios.homepage.more.btn = {\"locator\":\"xpath=//*[@name=\\\"otr.topnav.more.btn\\\"]\",\"desc\":\"More Icon\"}
+otrios.homepage.logbook.btn = {\"locator\":\"xpath=//*[contains(@name,'icon_logbook_')]\",\"desc\":\"Logbook icon\"}
+otrios.homepage.addedEvent.amountText.lbl = {\"locator\":\"xpath=//UIAStaticText[@label=\\\"%s\\\" and @name=\\\"otr.home.eventvalue.lbl\\\"]\",\"desc\":\"Dynamic text added event amount\"}
+otrios.homepage.home.btn = {\"locator\":\"xpath=//*[contains(@name,'icon_home_')]\",\"desc\":\"Home icon\"}
+otrios.homepage.patterns.btn = {\"locator\":\"xpath=//*[contains(@name,\\\"icon_patterns\\\")]\",\"desc\":\"Patternts button\"}
+otrios.homepage.lastreadings.btn = {\"locator\":\"xpath=//*[contains(@name,\\\"icon_averages_\\\")]\",\"desc\":\"Last Readings button\"}
+otrios.homepage.lastreadingdetail.btn = {\"locator\":\"xpath=//UIAApplication/UIAWindow[1]/UIAButton[3]\",\"desc\":\"Last Reading Detail\"}
+otrios.homepage.lastreadingdetialReadingsmiddle.txt = {\"locator\":\"xpath=//UIAApplication/UIAWindow[1]/UIAStaticText[14]|//UIAApplication/UIAWindow[1]/UIAStaticText[@label=\\\"Average\\\"]\",\"desc\":\"Readings middle cell\"}
+otrios.homepage.lastreadingdetialReadingsleft.txt = {\"locator\":\"xpath=//UIAApplication/UIAWindow[1]/UIAStaticText[11]\",\"desc\":\"Readings left cell\"}
+otrios.homepage.lastreadingdetialUnitofmeasure.txt = {\"locator\":\"xpath=//UIAApplication/UIAWindow[1]/UIAStaticText[13]|//UIAApplication/UIAWindow[1]/UIAStaticText[@label=\\\"Readings/Day\\\"]\",\"desc\":\"Unit of measure\"}
+otrios.homepage.lastreadingdetialNumberofeadingsmiddle.txt = {\"locator\":\"xpath=//UIAApplication/UIAWindow[1]/UIAStaticText[12]\",\"desc\":\"Number of readings middle cell\"}
+otrios.homepage.lastreadingdetialNumberofreadingsleft.txt = {\"locator\":\"xpath=//UIAApplication/UIAWindow[1]/UIAButton[9]\",\"desc\":\"Number of readings left cell\"}
+otrios.homepage.addedEvent.event.img = {\"locator\":\"xpath=//*[@name=\\\"otr.home.eventtype.img\\\"]\",\"desc\":\"Event icon\"}
+otrios.homepage.addedEvent.unit.lbl = {\"locator\":\"xpath=//*[@name=\\\"otr.home.eventunit.lbl\\\"]\",\"desc\":\"Event unit\"}
+otrios.homepage.addedEvent.date.lbl = {\"locator\":\"xpath=//*[@name=\\\"otr.home.date.lbl\\\"]\",\"desc\":\"Event date label\"}
+otrios.homepage.addedEvent.value.lbl = {\"locator\":\"xpath=//*[@name=\\\"otr.home.eventvalue.lbl\\\"]\",\"desc\":\"Value event\"}
+otrios.homepage.addedEvent.dynamic.lbl = {\"locator\":\"xpath=//*[@label=\\\"%s\\\"]|//*[contains(@label,\\\"%s\\\")]\",\"desc\":\"Dynamic label text\"}
+otrios.homepage.recentEventImg.btn = {\"locator\":\"xpath=//UIAWindow[1]/UIAButton[3]\",\"desc\":\"Recent event button\"}
+otrios.homepage.recentEventValue.lbl = {\"locator\":\"xpath=//*[contains(@name,\\\"icon_home\\\")]/following-sibling::UIAStaticText[2]\",\"desc\":\"Recent event value\"}
+otrios.homepage.recentEventTime.lbl = {\"locator\":\"xpath=//UIAWindow[1]/UIAStaticText[1]\",\"desc\":\"Added time of recent event\"}
+otrios.homepage.recentEventUnit.lbl = {\"locator\":\"xpath=//*[contains(@name,\\\"icon_home\\\")]/following-sibling::UIAStaticText[3]\",\"desc\":\"Recent event unit\"}
+otrios.homepage.lastreading.recentBGLevel.lbl = {\"locator\":\"xpath=//UIAWindow[1]/UIAStaticText[17]\",\"desc\":\"Level of recent added BG\"}
+otrios.homepage.lastreading.recentBG.popup = {\"locator\":\"xpath=//*[contains(@name,\\\"SpeechBubble\\\")]\",\"desc\":\"Last reading page BG pop up\"}
+otrios.homepage.lastreading.recentBGDate.lbl = {\"locator\":\"xpath=//*[@name=\\\"icon_averages_on\\\"]/following-sibling::UIAButton[3]/following-sibling::UIAStaticText[1]\",\"desc\":\"Date  range on last reading screen\"}
+otrios.homepage.lastreading.addedEventValue.lbl = {\"locator\":\"xpath=//*[@name='otr.edit.glucose.eventtype.img']/preceding-sibling::UIAStaticText[2]\",\"desc\":\"Added glucose in lastreading\"}
+otrios.homepage.lastreading.donat.overallRange.lbl = {\"locator\":\"xpath=//*[@name=\\\"SpeechBubbleSmall\\\"]/following-sibling::UIAStaticText[1]\",\"desc\":\"Over all range value for donat pop up\"}
+otrios.homepage.lastreading.donat.beforerange.lbl = {\"locator\":\"xpath=//*[@name=\\\"beforemeal_black\\\"]/following-sibling::UIAStaticText[1]\",\"desc\":\"Before meal range on donnat pop up\"}
+otrios.homepage.lastreading.donat.afterrange.lbl = {\"locator\":\"xpath=//*[@name=\\\"aftermeal_black\\\"]/following-sibling::UIAStaticText[1]\",\"desc\":\"After meal range ondonat pop up\"}
+otrios.homepage.lastreading.donat.beforemealcount.lbl = {\"locator\":\"xpath=//*[@name=\\\"beforemeal_black\\\"]/preceding-sibling::UIAStaticText[1]\",\"desc\":\"Count for before meal on donut\"}
+otrios.homepage.lastreading.donat.aftermealcount.lbl = {\"locator\":\"xpath=//*[@name=\\\"aftermeal_black\\\"]/preceding-sibling::UIAStaticText[1]\",\"desc\":\"Count for after meal on donut\"}
+otrios.homepage.lastreading.donat.notagmealcount.lbl = {\"locator\":\"xpath=//*[@name=\\\"aftermeal_black\\\"]/following-sibling::UIAStaticText[2]\",\"desc\":\"Count for no meal tag on donut\"}
+otrios.homepage.lastreading.readings.inrange.lbl = {\"locator\":\"xpath=//*[@name='In Range']\",\"desc\":\"Inrange label on readings screen\"}
+otrios.homepage.lastreading.readings.value.txt = {\"locator\":\"xpath=//*[@name=\\\"otr.edit.glucose.eventtype.img\\\"]/preceding-sibling::UIAStaticText[2]\",\"desc\":\"Glucose reading on last reading screen\"}
+otrios.homepage.lastreadingbeforemeal.popup.logo = {\"locator\":\"xpath=//*[@name='beforemeal_black']\",\"desc\":\"Popupmenu logo before lunch\"}
+otrios.homepage.lastreadingaftermeal.popup.logo = {\"locator\":\"xpath=//*[@name='aftermeal_black']\",\"desc\":\"Popupmenu logo after lunch\"}
+otrios.homepage.addevent.btn = {\"locator\":\"xpath=//*[@label='addEventHomeiOS']|//*[contains(@label,\\\"%s\\\")]\",\"desc\":\"Add event button\"}
+otrios.homepage.lastreadingdetail14day.btn = {\"locator\":\"xpath=//*[@label=\\\"14-Day\\\"]|//*[@name=\\\"icon_averages_on\\\"]/following-sibling::UIAButton[1]\",\"desc\":\"14 Day button\"}
+otrios.homepage.lastreadingdetail30day.btn = {\"locator\":\"xpath=//*[@label=\\\"30-Day\\\"]|//*[@name='icon_averages_on']/following-sibling::UIAButton[2]\",\"desc\":\"30 Day button\"}
+otrios.homepage.lastreadingdetail90day.btn = {\"locator\":\"xpath=//*[@label=\\\"90-Day\\\"]|//*[@name='icon_averages_on']/following-sibling::UIAButton[3]\",\"desc\":\"90 day button\"}
+otrios.homepage.lastsyncmetertitle.lbl = {\"locator\":\"xpath=//UIATableGroup[1]/UIAStaticText[1]|//*[contains(@name,\\\"%s\\\")]\",\"desc\":\"Last sync with meter title\"}
+otrios.homepage.patternon.btn = {\"locator\":\"xpath=//*[@name=\\\"icon_patterns_on\\\"]\",\"desc\":\"Pattern On button\"}
+otrios.homepage.recentAddedReading.txt = {\"locator\":\"xpath=//AppiumAUT/UIAApplication[1]/UIAWindow[1]/UIAStaticText[2]\",\"desc\":\"Latest added event value on home page\"}
+otrios.homepage.readingsPerDay.txt = {\"locator\":\"xpath=//*[@label=\\\"0.0\\\"]|//*[contains(@label,'.')]\",\"desc\":\"Average reading per day on home screen\"}
+otrios.homepage.atricleclose.btn = {\"locator\":\"xpath=//*[@name=\\\"delete article x\\\"]\",\"desc\":\"Article close button\"}
+otrios.homepage.atricle.ok.btn = {\"locator\":\"xpath=//UIAAlert//UIAButton[2]\",\"desc\":\"Article ok button\"}

@@ -1,0 +1,122 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Lemonade3.0" parallel="tests" thread-count="2">
+
+	<parameter name="platformName" value="ios"></parameter>
+	<parameter name="channel" value="iOS"></parameter>
+	<parameter name="language.name" value="en-us"></parameter>
+	<parameter name="Country.name" value="United States"></parameter>
+
+	<parameter name="env.resources" value="resources;resources/${channel}/common;resources/${channel}/${language.name};resources/testData"></parameter>
+
+	<parameter name="env.baseurl"
+		value="https://jnjdiabetes.perfectomobile.com/nexperience/perfectomobile/wd/hub/"></parameter>
+	<parameter name="selenium.server"
+		value="https://jnjdiabetes.perfectomobile.com/nexperience/perfectomobile/wd/hub/"></parameter>
+	<listeners>
+		<listener class-name="com.lemonade.version3.listener.TestNGListener"></listener>
+		<listener class-name="com.lemonade.version3.listener.ReportiumListener"></listener>
+	</listeners>
+<!-- 	<test name="iOS - iphone 6" enabled="true"> -->
+<!--   	<parameter name="scenario.file.loc" -->
+<!-- 			value="scenarios/version3/iOS/Lemonade_iOS_Sprint2.bdd"></parameter>  -->
+<!-- 		<parameter name="appium.additional.capabilities" -->
+<!-- 			value="{'deviceName':'63A96204C43AA2196ED8C5E063A4B976DA214D4A','user':'sgunthe1@its.jnj.com','password':'Perfecto123!','browser_name':'','bundleId':'com.lifescan.reveal.enterprise','javascriptEnabled':true,'newCommandTimeout':'120','driver.class':'io.appium.java_client.ios.IOSDriver','platformName':'ios','locationServicesEnabled':true,'locationServicesAuthorized':true,'automationName':'Appium','sendKeyStrategy':'setValue','autoLaunch':true,'fullReset':true,'app':'PUBLIC:Automation_Team_Lemonade_IOS/OTR-iOS-Maintenance.ipa','autoInstrument':true}"></parameter> -->
+<!-- 		<groups> -->
+<!--       	<run> -->
+<!--         	<include name="IOSSMOKESIGNUPSPRINT1"/> -->
+<!--         	<include name="IOSSMOKESIGNUPSPRINT2"/> -->
+<!--         	<include name="IOSSMOKESIGNUPSPRINT3"/> -->
+<!--         	<include name="IOSSMOKESIGNUPSPRINT4"/> -->
+<!--         	<include name="IOSSMOKESIGNUPSPRINT5"/> -->
+<!--         	<include name="IOSSMOKELOGINSPRINT1"/> -->
+<!--         	<include name="IOSSMOKELOGINSPRINT2"/> -->
+<!--         	<include name="IOSSMOKELOGINSPRINT3"/> -->
+<!--         	<include name="IOSSMOKELOGINSPRINT4"/> -->
+<!--         	<include name="IOSSMOKELOGINSPRINT5"/> -->
+<!--       	</run> -->
+<!--     	</groups> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory"></class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+	
+		<test name="iOS - iphone 7" enabled="true">
+<!--  	<parameter name="scenario.file.loc"
+			value="scenarios/version3/iOS/Lemonade_iOS_Sprint2.bdd"></parameter> -->	
+		<parameter name="appium.additional.capabilities"
+			value="{'deviceName':'9CEA9476FC2435F8FAD0E47CB9E63523341DB9F6','user':'sgunthe1@its.jnj.com','password':'Perfecto123!','browser_name':'','bundleId':'com.lifescan.reveal.enterprise','javascriptEnabled':true,'newCommandTimeout':'120','driver.class':'io.appium.java_client.ios.IOSDriver','platformName':'ios','locationServicesEnabled':true,'locationServicesAuthorized':true,'automationName':'Appium','sendKeyStrategy':'setValue','autoLaunch':true,'fullReset':true,'app':'PUBLIC:Automation_Team_Lemonade_IOS/OTR-iOS-Maintenance.ipa','autoInstrument':true}"></parameter>
+		<groups>
+      	<run>
+      		<include name="P1"/>
+<!--         	<include name="IOSSMOKESIGNUPSPRINT1"/> -->
+<!--         	<include name="IOSSMOKESIGNUPSPRINT2"/> -->
+<!--         	<include name="IOSSMOKESIGNUPSPRINT3"/> -->
+<!--         	<include name="IOSSMOKESIGNUPSPRINT4"/> -->
+<!--         	<include name="IOSSMOKESIGNUPSPRINT5"/> -->
+<!--         	<include name="IOSSMOKELOGINSPRINT1"/> -->
+<!--         	<include name="IOSSMOKELOGINSPRINT2"/> -->
+<!--         	<include name="IOSSMOKELOGINSPRINT3"/> -->
+<!--         	<include name="IOSSMOKELOGINSPRINT4"/> -->
+<!--         	<include name="IOSSMOKELOGINSPRINT5"/> -->
+      	</run>
+    	</groups>
+		<classes>
+			<class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory"></class>
+		</classes>
+	</test>
+ 	
+<!--  
+	<test name="iOS - iphone 6s" enabled="true">
+		<parameter name="scenario.file.loc"
+			value="scenarios/version3/iOS/Lemonade_iOS_Sprint2.bdd"></parameter>
+		<groups>
+      	<run>
+      		<include name="P1"/>
+        	<include name="IOSSMOKESIGNUPSPRINT1"/>
+        	<include name="IOSSMOKESIGNUPSPRINT2"/>
+        	<include name="IOSSMOKESIGNUPSPRINT3"/>
+        	<include name="IOSSMOKESIGNUPSPRINT4"/>
+        	<include name="IOSSMOKESIGNUPSPRINT5"/>
+        	<include name="IOSSMOKELOGINSPRINT1"/>
+        	<include name="IOSSMOKELOGINSPRINT2"/>
+        	<include name="IOSSMOKELOGINSPRINT3"/>
+        	<include name="IOSSMOKELOGINSPRINT4"/>
+        	<include name="IOSSMOKELOGINSPRINT5"/>
+      	</run>
+    	</groups>
+		<parameter name="appium.additional.capabilities"
+			value="{'deviceName':'4CB9F098EB8A16FC77CBEA9C4DA901034ADC2A62','user':'sgunthe1@its.jnj.com','password':'Perfecto123!','browser_name':'','bundleId':'com.lifescan.reveal.enterprise','javascriptEnabled':true,'newCommandTimeout':'120','driver.class':'io.appium.java_client.ios.IOSDriver','platformName':'ios','locationServicesEnabled':true,'locationServicesAuthorized':true,'automationName':'Appium','sendKeyStrategy':'setValue','autoLaunch':true,'fullReset':true,'app':'PUBLIC:Automation_Team_Lemonade_IOS/OTR-iOS-Maintenance.ipa','autoInstrument':true}"></parameter>
+		<classes>
+			<class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory"></class>
+		</classes>
+	</test>
+	-->
+	
+<!-- 	
+	<test name="iOS - iphone 5s" enabled="true">
+		<parameter name="scenario.file.loc"
+			value="scenarios/version3/iOS/Lemonade_iOS_Sprint2.bdd"></parameter>
+		<groups>
+      	<run>
+      		<include name="P1"/>
+        	<include name="IOSSMOKESIGNUPSPRINT1"/>
+        	<include name="IOSSMOKESIGNUPSPRINT2"/>
+        	<include name="IOSSMOKESIGNUPSPRINT3"/>
+        	<include name="IOSSMOKESIGNUPSPRINT4"/>
+        	<include name="IOSSMOKESIGNUPSPRINT5"/>
+        	<include name="IOSSMOKELOGINSPRINT1"/>
+        	<include name="IOSSMOKELOGINSPRINT2"/>
+        	<include name="IOSSMOKELOGINSPRINT3"/>
+        	<include name="IOSSMOKELOGINSPRINT4"/>
+        	<include name="IOSSMOKELOGINSPRINT5"/>
+      	</run>
+    	</groups>
+		<parameter name="appium.additional.capabilities"
+			value="{'deviceName':'5330A305A3219856C66BD6FCEA6186B12FBD4977','user':'sgunthe1@its.jnj.com','password':'Perfecto123!','browser_name':'','bundleId':'com.lifescan.reveal.enterprise','javascriptEnabled':true,'newCommandTimeout':'120','driver.class':'io.appium.java_client.ios.IOSDriver','platformName':'ios','locationServicesEnabled':true,'locationServicesAuthorized':true,'automationName':'Appium','sendKeyStrategy':'setValue','autoLaunch':true,'fullReset':true,'app':'PUBLIC:Automation_Team_Lemonade_IOS/OTR-iOS-Maintenance.ipa','autoInstrument':true}"></parameter>
+		<classes>
+			<class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory"></class>
+		</classes>
+	</test>
+-->	
+
+</suite>

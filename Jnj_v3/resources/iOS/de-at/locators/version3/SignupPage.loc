@@ -1,0 +1,12 @@
+otrios.signupPage.termOfService.lbl = {\"locator\":\"xpath=//*[contains(@label,'Durch Erstellen eines Kontos')]\",\"desc\":\"Terms of service and Privecy police text\"}
+otrios.signupPage.countryTerms.lbl = {\"locator\":\"xpath=//*[contains(@label,'\\\"For the purpose of this application')]\",\"desc\":\"Privecy police text for agreeing data accss outside country\"}
+otrios.signupPage.createAccount.lbl = {\"locator\":\"xpath=//*[@label=\\\"create-account.copyright\\\"]\",\"desc\":\"Copy Right create account text\"}
+otrios.signupPage.unitOfMeasure.lbl = {\"locator\":\"xpath=//*[@label=\\\"Unit of Measure\\\"]\",\"desc\":\"Unit of Measure title\"}
+otrios.signupPage.appMeterUnitOfMeasure.txt = {\"locator\":\"xpath=//*[@label=\\\"The app and your meter's unit of measure should be the same. \\\"]\",\"desc\":\"App and Unit of Measure same text\"}
+otrios.signupPage.useExample.txt = {\"locator\":\"xpath=//*[@label=\\\"Use the example below to determine your meter's unit of measure.\\\"]\",\"desc\":\"Example text\"}
+otrios.signupPage.useMgDL.lbl = {\"locator\":\"xpath=//*[@label=\\\"Use mg/dL\\\"]\",\"desc\":\"Use Mg/dL\"}
+otrios.signupPage.exampleMgDL.lbl = {\"locator\":\"xpath=//*[@label=\\\"120 mg/dL\\\"]\",\"desc\":\"120 mg/dl\"}
+otrios.signupPage.exampleMmol.lbl = {\"locator\":\"xpath=//*[@label=\\\"7.0 mmol/L\\\"]\",\"desc\":\"7 mmol/L\"}
+otrios.signupPage.useMmol.lbl = {\"locator\":\"xpath=//*[@label=\\\"Use mmol/L\\\"]\",\"desc\":\"Use mmol/L\"}
+otrios.signupPage.pairWithMeter.lbl = {\"locator\":\"xpath=//*[@label=\\\"Pair with my meter instead.\\\"]\",\"desc\":\"Pair with meter instead\"}
+otrios.signupPage.meterskip.btn = {\"locator\":\"xpath=//*[contains(@label,'berspringen')]\",\"desc\":\"Meter page skip button\"}

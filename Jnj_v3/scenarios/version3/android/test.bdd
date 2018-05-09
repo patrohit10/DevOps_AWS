@@ -1,0 +1,114 @@
+#SCENARIO: Verify email field disble once login
+#META-DATA: {"description":"Verify email field disble once login","author":"Milan","testCaseId":""}
+#	Given user opens app
+#	When user select country '${countryname}' from country list
+#	And user redirects to 'LOG-IN' Page
+#	And user enters login details using 'Login.UserDetail'
+#	And user clicks on login button	
+#	When user click on more menu
+#	And user clicks on logout button
+#	Then user verify email field is non editable login screen
+#	And user closes the app
+#END
+#
+#SCENARIO: Verify date of birth exact 18 year
+#META-DATA : {"description": "Verify date of birth exact 18 year", "author":"Gaurav Bhamare","testCaseId":""}
+#	Given user resets app
+#	Given user opens app
+#	When user select country '${countryname}' from country list
+#	Then user verify exact 18 date of birth is allowed
+#	And user closes the app
+#	And user resets app
+#END
+#
+#SCENARIO: Verify Touch ID option on sign up page
+#META-DATA : {"description": "Verify Touch ID option on sign up page", "author":"Gaurav Bhamare","testCaseId":""}
+#
+#	Given user opens app
+#	When user select country '${countryname}' from country list
+#	And user enters signup details using 'signup.user1'
+#	Then user select authentication type as "KEEP ME LOGIN" on sign up
+#	And user clicks back button
+#	And user click on create account button
+#	And user verifies touch id option present
+#	And user closes the app
+#END
+#
+#SCENARIO: Verify Next arrow invisible for current day
+#META-DATA: {"description":"Verify Next arrow invisible for current day","author":"Milan","testCaseId":""}
+#	Given user opens app
+#	When user select country '${countryname}' from country list
+#	And user redirects to 'LOG-IN' Page
+#	And user enters login details using 'Login.UserDetail'
+#	Then user clicks on login button	
+#	When user clicks on logbook tab
+#	And user click on day view on logbook
+#	Then user verify next arrow is invisible for current day
+#	And user closes the app
+#END
+#
+#SCENARIO: Verify default date for yesterday on day view add event
+#META-DATA: {"description":"Verify default date for yesterday on day view add event","author":"Milan","testCaseId":""}
+#	Given user opens app
+#	When user select country '${countryname}' from country list
+#	And user redirects to 'LOG-IN' Page
+#	And user enters login details using 'Login.UserDetail'
+#	And user clicks on login button	
+#	When user clicks on logbook tab
+#	And user click on day view on logbook
+#	Then user click on 'left' arrow in logbook
+#	And user click on event screen on day view
+#	When user select log event type as 'GLUCOSE'
+#	And user verify default date for yesterday from day view
+#	And user closes the app
+#END
+#
+#SCENARIO: Verify default date for yesterday on day view add event
+#META-DATA: {"description":"Verify default date for yesterday on day view add event","author":"Milan","testCaseId":""}
+#	Given user opens app
+#	When user select country '${countryname}' from country list
+#	And user redirects to 'LOG-IN' Page
+#	And user enters login details using 'Login.UserDetail'
+#	When user click on more menu
+#	And user clicks on My Account
+#	Then user enable keep me login button
+#	And user clicks back button
+#	And user clicks on logout button
+#	And user closes the app
+#END
+#
+#SCENARIO: Verify authentication type keep me login flow
+#META-DATA: {"description":"Verify authentication type keep me login flow","author":"Milan","testCaseId":"19272","groups": ["ANDROIDREGRESSIONLOGINSPRINT1"]}
+#	Given user opens app
+#	When user select country '${countryname}' from country list
+#	And user redirects to 'LOG-IN' Page
+#	And user enters login details using 'Login.UserDetail'
+#	Then user select authentication type as "KEEP ME LOGIN"
+#	And user clicks on login button
+#	When user closes the app
+#	And user opens app
+#	Then user redirects to Home page
+#	When user click on more menu
+#	And user clicks on logout button
+#	Then user verify keep me login switch disable
+#	And user closes the app
+#END
+#
+#SCENARIO: Verify user redirects to homescreen from editevent screen without editing the event
+#META-DATA : {"description": "Verify user redirects to homescreen from editevent screen without editing the event", "author":"Gaurav Bhamare","testCaseId":""}
+#
+#	Given user opens app
+#	When user select country '${countryname}' from country list
+#	And user redirects to 'LOG-IN' Page
+#	And user enters login details using 'Login.UserDetail'
+#	And user clicks on login button	
+#	And user clicks on Logbook tab
+#	Then user clicks on Add Event
+#	When user select log event type as 'CARBS'
+#	And user add carbs details using 'addCarb'
+#	Then user clicks on Home tab
+#	When user click on added event '${addCarb.amount}' on home screen
+#	And user clicks back button
+#	Then user redirects to Home page
+#	And user closes the app
+#END

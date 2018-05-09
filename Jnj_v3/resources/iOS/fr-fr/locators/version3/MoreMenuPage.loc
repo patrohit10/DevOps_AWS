@@ -1,0 +1,27 @@
+otrios.moremenuPage.back.btn = {\"locator\":\"xpath=//UIANavigationBar[@name=\\\"Plus\\\"]/UIAButton[1]\",\"desc\":\"Back button\"}
+otrios.moremenuPage.contactUsTitle.lbl = {\"locator\":\"xpath=//*[@label=\\\"Nous contacter\\\"]|//UIANavigationBar[1]/UIAStaticText[1]\",\"desc\":\"Contact us title contact us screen\"}
+otrios.moremenuPage.rateThisApp.lbl = {\"locator\":\"xpath=//*[@label=\\\"\u00C9valuer cette appli\\\"]|//UIATableView[1]/UIATableCell[7]/UIAStaticText[1]\",\"desc\":\"Rate this app label\"}
+otrios.moremenuPage.myMeter.autoUpdateTime.lbl = {\"locator\":\"xpath=//*[@label=\\\"Mettre \u00E0 jour l'heure automatiquement\\\"]\",\"desc\":\"Auto update time label\"}
+otrios.moremenuPage.myMeter.pairMeter.btn = {\"locator\":\"xpath=//*[@label=\\\"Associer un autre lecteur\\\"]\",\"desc\":\"Pair another meter button\"}
+otrios.moremenuPage.reminder.back.btn = {\"locator\":\"xpath=//UIANavigationBar[@name=\\\"Mes rappels\\\"]/UIAButton[1]\",\"desc\":\"Back button reminder screen\"}
+otrios.moremenuPage.reminder.addMsg.lbl = {\"locator\":\"xpath=//*[contains(@value,\\\"Appuyez sur le bouton + dans l'angle sup\u00E9rieur\\\")]\",\"desc\":\"Add button message\"}
+otrios.moremenuPage.reminder.chooseReminder.lbl = {\"locator\":\"xpath=//*[@label=\\\"Choisir un rappel\\\"]\",\"desc\":\"Choose reminder\"}
+otrios.moremenuPage.reminder.newReminder.lbl = {\"locator\":\"xpath=//*[@label=\\\"Nouveau rappel\\\"]\",\"desc\":\"New reminder\"}
+otrios.moremenuPage.reminder.reminder.lbl = {\"locator\":\"xpath=//*[@label=\\\"Mes rappels\\\"]\",\"desc\":\"Reminders label\"}
+otrios.moremenuPage.reminder.addReminder.lbl = {\"locator\":\"xpath=//*[@label=\\\"Ajouter un rappel\\\"]\",\"desc\":\"Add a new reminder\"}
+otrios.moremenuPage.reminder.save.btn = {\"locator\":\"xpath=//*[@label=\\\"Enregistrer\\\"]\",\"desc\":\"Save button on add reminder screen\"}
+otrios.moremenuPage.reminder.setReminder.lbl = {\"locator\":\"xpath=//*[@label=\\\"Configurer le rappel\\\"]\",\"desc\":\"Set Reminder lablel\"}
+otrios.Moremenupage.connection.btn = {\"locator\":\"xpath=//*[@label=\\\"Relations\\\"]|//UIATableView[1]/UIATableCell[5]/UIAStaticText[1]\",\"desc\":\"Connection button\"}
+otrios.Moremenupage.connection.addofficeCancel.btn = {\"locator\":\"xpath=//*[@label=\\\"Annuler\\\"]\",\"desc\":\"Cancel button\"}
+otrios.Moremenupage.connection.addofficeTitle.lbl = {\"locator\":\"xpath=//*[@label=\\\"Add an office\\\"]\",\"desc\":\"Add office page title\"}
+otrios.Moremenupage.connection.addofficeEnterCode.lbl = {\"locator\":\"xpath=//*[contains(@label,\\\"Entrer un code d\\\")]\",\"desc\":\"Enter office code label\"}
+otrios.Moremenupage.connection.walgreen.switch = {\"locator\":\"xpath=//*[@name=\\\"Walgreens\\\"]\",\"desc\":\"Walgreen switch\"}
+otrios.Moremenupage.connection.walgreen.lbl = {\"locator\":\"xpath=//*[@value=\\\"Walgreens\\\"]\",\"desc\":\"Walgreen button\"}
+otrios.Moremenupage.connection.importpopup.lbl = {\"locator\":\"xpath=//*[@value=\\\"Important\\\"]\",\"desc\":\"Imprt pop up title\"}
+otrios.Moremenupage.connection.importpopup.enablenow.btn = {\"locator\":\"xpath=//*[@label=\\\"Activer maintenant\\\"]\",\"desc\":\"Enable now button on import pop up\"}
+otrios.Moremenupage.connection.requestSubmited.lbl = {\"locator\":\"xpath=//*[@label=\\\"Demande soumise\\\"]\",\"desc\":\"Request submitted checkbox\"}
+otrios.Moremenupage.connection.withdrawrequest.btn = {\"locator\":\"xpath=//*[@label=\\\"Retirer la demande\\\"]\",\"desc\":\"Withdraw request button\"}
+otrios.moremenuPage.termsofService.back.btn = {\"locator\":\"xpath=//*[@label='Pr\u00E9c\u00E9dent']\",\"desc\":\"Back button on terms of service screen\"}
+otrios.moremenuPage.reminder.addreminderBack.btn = {\"locator\":\"xpath=//*[@label='Pr\u00E9c\u00E9dent']\",\"desc\":\"Reminder back button\"}
+otrios.moremenuPage.other.back.btn = {\"locator\":\"xpath=//*[@label='Retour']\",\"desc\":\"Back button 2\"}
+otrios.Moremenupage.connection.addoffice.btn = {\"locator\":\"xpath=//UIATableCell[3]/UIAStaticText[1]|//*[contains(@label,\\\"Ajouter un \\\")]\",\"desc\":\"Add office button\"}

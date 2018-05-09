@@ -1,0 +1,16 @@
+SCENARIO:user verify Contact Us screen from More menu
+META-DATA: {"description":"Verify Contact Us page from More menu","author":"Gaurav Bhamare","testCaseId":"19274","groups": ["iOSContactUs"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	And user click on more menu
+	And user select Contact Us
+	Then user verify Contact Us page
+	When user clicks and verify Email customer service
+	Then user visits application website
+	And user clicks Rate app link
+	And user closes the app
+	
+END

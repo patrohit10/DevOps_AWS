@@ -1,0 +1,84 @@
+SCENARIO: Setup new reminder for Eat a Snack
+META-DATA: {"description":"User can create a snack reminder","author":"Gaurav Bhamare","testCaseId":""}
+	Given user opens app
+	When user select country '${country.unitedState}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	When user click on more menu
+	Then user set up a new reminder using '${reminder.snack}'
+	And user closes the app
+END
+
+SCENARIO: Setup new reminder for Eat
+META-DATA: {"description":"User can create a eat reminder","author":"Gaurav Bhamare","testCaseId":""}
+	Given user opens app
+	When user select country '${country.unitedState}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	When user click on more menu
+	Then user set up a new reminder using '${reminder.eat}'
+	And user closes the app
+END
+
+SCENARIO: Setup new reminder for Bolus
+META-DATA: {"description":"User can create n bolus reminder","author":"Gaurav Bhamare","testCaseId":""}
+	Given user opens app
+	When user select country '${country.unitedState}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	When user click on more menu
+	Then user set up a new reminder using '${reminder.bolus}'
+	And user closes the app
+END
+
+
+SCENARIO: Setup new reminder for Activity
+META-DATA: {"description":"User can create n activity reminder","author":"Gaurav Bhamare","testCaseId":""}
+	Given user opens app
+	When user select country '${country.unitedState}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	When user click on more menu
+	Then user set up a new reminder using '${reminder.activity}'
+	And user closes the app
+END
+
+SCENARIO: Setup new reminder for Buy Strips
+META-DATA: {"description":"User can create a buy strips reminder","author":"Gaurav Bhamare","testCaseId":""}
+	Given user opens app
+	When user select country '${country.unitedState}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	When user click on more menu
+	Then user set up a new reminder using '${reminder.strips}'
+	And user closes the app
+END
+
+SCENARIO: Setup new reminder for Take Medication
+META-DATA: {"description":"User can create a take medication reminder","author":"Gaurav Bhamare","testCaseId":""}
+	Given user opens app
+	When user select country '${country.unitedState}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	When user click on more menu
+	Then user set up a new reminder using '${reminder.medication}'
+	And user closes the app
+END
+
+SCENARIO: Setup new reminder for GLucose
+META-DATA: {"description":"User can create n glucose reminder","author":"Gaurav Bhamare","testCaseId":""}
+	Given user opens app
+	When user select country '${country.unitedState}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	When user click on more menu
+	Then user set up a new reminder using '${reminder.glucose}'
+	And user closes the app
+END

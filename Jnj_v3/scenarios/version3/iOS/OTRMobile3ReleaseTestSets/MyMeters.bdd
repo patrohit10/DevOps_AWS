@@ -1,0 +1,27 @@
+SCENARIO: Verify My Meters Page
+META-DATA : {"description": "Verify the UI of the My Meters Page", "author":"Gaurav Bhamare","testCaseId":"19296","groups": ["iOSMyMeters"]}
+	
+	Given user opens app
+	When user select country '${countryname}' from country list
+	Then user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	And user click on more menu
+	And user clicks on My Meters
+	Then user verifies My Meters page UI
+	And user closes the app
+END
+
+SCENARIO: Verify My Meters Page Time Update Switch
+META-DATA : {"description": "Verify a user can toggle the time update switch on", "author":"Gaurav Bhamare","testCaseId":"19297","groups": ["iOSMyMeters"]}
+	
+	Given user opens app
+	When user select country '${countryname}' from country list
+	Then user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	And user click on more menu
+	And user clicks on My Meters
+	Then user taps time update switch
+	And user closes the app
+END

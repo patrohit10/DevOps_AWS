@@ -1,0 +1,132 @@
+SCENARIO: Update BG ranges for Before and After Meal on Settings page when Meal tagging is enabled
+META-DATA: {"description":"Update BG ranges for Before and After Meal on Settings page when Meal tagging is enabled","author":"Steve Gunther","testCaseId":"19343","groups": ["iOSSettings"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	When user click on more menu
+	And user clicks on My Settings
+	And user edit before after bg range
+	And user closes the app
+END
+
+SCENARIO:User can edit the Begin time in Time of Day ranges on Settings pages
+META-DATA: {"description":"User can edit the Begin time in Time of Day ranges on Settings page","author":"","testCaseId":"19358","groups": ["iOSSettings"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	Then user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	Then user click on more menu
+	And user clicks on My Settings
+	Then user redirect to setting Page
+	And user click on Begin time in Time of Day of Breakfast
+	And user change Begin time  
+	And user closes the app
+END
+
+
+SCENARIO:Verify default ranges for Time of Day ranges on Settings page
+META-DATA: {"description":"Verify default ranges for Time of Day ranges on Settings page","author":"","testCaseId":"19357","groups": ["iOSSettings"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	Then user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	Then user click on more menu
+	And user clicks on My Settings
+	Then user redirect to setting Page
+	And user verify default ranges for Time of Day
+	And user closes the app
+END	
+
+
+SCENARIO:User can update BG range when meal tagging is disabled
+META-DATA: {"description":"User can update BG range when meal tagging is disabled","author":"","testCaseId":"19356","groups": ["iOSSettings"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	Then user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	And user click on more menu
+	And user clicks on My Settings
+	Then user redirect to setting Page
+	And user make meal tagging switch 'off'
+	And user change Bg value
+	And user make meal tagging switch 'on'
+	And user closes the app
+END
+
+
+SCENARIO: User cannot set Low BG range value equal to High BG range value
+META-DATA: {"description":"User cannot set Low BG range value equal to High BG range value","author":"","testCaseId":"19347","groups": ["iOSSettings"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	And user click on more menu
+	When user clicks on My Settings
+	Then user redirect to setting Page
+	And user set the low BG range equal to high BG Range value	
+	And user verify BG value
+	And user closes the app
+END
+
+SCENARIO: User cannot set High BG range value equal to Low BG range value
+META-DATA: {"description":"User cannot set High BG range value equal to Low BG range value","author":"","testCaseId":"19348","groups": ["iOSSettings"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	And user click on more menu
+	When user clicks on My Settings
+	Then user redirect to setting Page
+	And user set the High BG range equal to Low BG Range value	
+	And user verify BG value
+	And user closes the app
+END
+
+
+SCENARIO: User can answer Diabetes Management questions on Settings page
+META-DATA: {"description":"User can answer Diabetes Management questions on Settings page","author":"Manjushri","testCaseId":"19346","groups": ["iOSSettings"]}
+
+Given user opens app
+	When user select country '${country.unitedState}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	And user click on more menu
+	And user clicks on My Settings
+	Then user redirect to setting Page
+	And user select the checkboxes for Diabetes Management questions
+	And user clicks back button
+	And user click on more menu
+	And user clicks on My Settings
+	Then user redirect to setting Page
+	Then user verify selected checkboxes
+	And user uncheck all the checkboxes
+	And user closes the app
+	And user resets app
+	
+END
+
+
+SCENARIO: User can select their gender on Settings page
+META-DATA : {"description": "User can select their gender as Male or Female on Settings page", "author":"Sangram Jadhav","testCaseId":"19344","groups": ["iOSSettings"]}
+ 	Given user opens app
+ 	When user select country '${country.unitedState}' from country list
+ 	And user redirects to 'LOG-IN' Page
+ 	And user enters login details using 'Login.UserDetail'
+ 	And user clicks on login button
+ 	And user click on more menu
+	And user clicks on My Settings
+	Then user redirect to setting Page
+ 	And user clicks on Male button
+	Then user verifies Male button selected
+ 	And user clicks on Female button
+ 	Then user verifies Female button seleced
+ 	And user closes the app
+END

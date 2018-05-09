@@ -1,0 +1,48 @@
+otr.logbook.addevent.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'id/iv_add_events')]|//*[contains(@resource-id,'id/textview_add_events')]\",\"desc\":\"Button to add event on logbook page\"}
+otr.logbook.addevent.addbgvalue.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'id/tv_blood_glucose_event_type')]|//*[contains(@resource-id,'id/tv_blood_glucose_event_type')]\",\"desc\":\"Button to add Blood Glucose value from Logbook page\"}
+otr.logbook.addevent.addcarbvalue.btn = {\"locator\":\"xpath=//*[contains(@resourceid,'id/tv_carbs_event_type')]|//*[contains(@resource-id,'id/tv_carbs_event_type')]\",\"desc\":\"Button to add Carbs value from logbook page\"}
+otr.logbook.addevent.addinsulinvalue.btn = {\"locator\":\"xpath=//*[contains(@resourceid,'id/tv_insulin_event_type')]|//*[contains(@resource-id,'id/tv_insulin_event_type')]\",\"desc\":\"Button to add insulin value from logbook page\"}
+otr.logbook.addevent.addactivityvalue.btn = {\"locator\":\"xpath=//*[contains(@resourceid,'id/tv_activity_event_type')]|//*[contains(@resource-id,'id/tv_activity_event_type')]\",\"desc\":\"Button to add activity value from logbook page\"}
+otr.logbook.addevent.save.btn = {\"locator\":\"xpath=//*[contains(@resourceid,'id/tv_right_button')]|//*[contains(@resource-id,'id/tv_right_button')]\",\"desc\":\"Button to save added event in logbook\"}
+otr.logbook.addbg.addvalue.txt = {\"locator\":\"xpath=//*[contains(@resourceid,'id/et_value')]|//*[contains(@resource-id,'id/et_value')]\",\"desc\":\"Text to enter Blood Glucose value from logbook page\"}
+otr.logbook.addbg.beforemeal.tab = {\"locator\":\"xpath=//*[contains(@resourceid,'id/ll_left_tab')]|//*[contains(@resource-id,'id/ll_left_tab')]\",\"desc\":\"Tab for Before Meal Bood Glucose value\"}
+otr.logbook.addbg.aftermeal.tab = {\"locator\":\"xpath=//*[contains(@resourceid,'id/ll_right_tab')]|//*[contains(@resource-id,'id/ll_right_tab')]\",\"desc\":\"Tab for After Meal Blood Glucose value\"}
+otr.logbook.addbg.time.btn = {\"locator\":\"xpath=//*[contains(@resourceid,'id/tv_date_time')]|//*[contains(@resource-id,'id/tv_date_time')]\",\"desc\":\"Button to add time for BG value\"}
+otr.logbook.addevent.timeselect.hour.txt = {\"locator\":\"xpath=//*[@resourceid=\\\"android:id/hours\\\"]|//*[@resource-id=\\\"android:id/hours\\\"]\",\"desc\":\"Text to pass number of hours\"}
+otr.logbook.addevent.timeselect.minute.txt = {\"locator\":\"xpath=//*[@resourceid=\\\"android:id/minutes\\\"]|//*[@resource-id=\\\"android:id/minutes\\\"]\",\"desc\":\"Text to pass number of minutes\"}
+otr.logbook.addevent.timeselect.am.txt = {\"locator\":\"xpath=//*[@resourceid=\\\"android:id/am_label\\\"]|//*[@resource-id=\\\"android:id/am_label\\\"]\",\"desc\":\"Label to select AM as time\"}
+otr.logbook.addevent.timeselect.pm.txt = {\"locator\":\"xpath=//*[@resourceid=\\\"android:id/pm_label\\\"]|//*[@resource-id=\\\"android:id/pm_label\\\"]\",\"desc\":\"Label to select PM as time\"}
+otr.logbook.unitofmeasurement.lbl = {\"locator\":\"xpath=//*[contains(@resourceid,'id/tv_unit_of_measure')]|//*[contains(@resource-id,'id/tv_unit_of_measure')]\",\"desc\":\"Label to verify Unit of Measurement for Blood Glucose reading\"}
+otr.logbook.addinsulin.selecttype.btn = {\"locator\":\"xpath=//*[contains(@resourceid,'id/tv_type_of_insulin')]|//*[contains(@resource-id,'id/tv_type_of_insulin')]\",\"desc\":\"Button to select Type of Insulin\"}
+otr.logbook.addactivity.selectintensity.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_intensity_value')]\",\"desc\":\"Button to select intensity\"}
+otr.logbook.addevent.timeselect.clock.pkr = {\"locator\":\"xpath=//*[@resource-id=\\\"android:id/radial_picker\\\"]//*[@content-desc=\\\"3\\\"]\",\"desc\":\"Picker to select hour and minute\"}
+otr.logbook.addevent.timeselect.clockmin.pkr = {\"locator\":\"xpath=//*[@resource-id=\\\"android:id/radial_picker\\\"]//*[@content-desc=\\\"25\\\"]\"}
+otr.logbook.editglucose.editeventtitle.txt = {\"locator\":\"xpath=//*[contains(@resource-id,'/tv_action_bar_title')]\",\"desc\":\"Edit event title text\"}
+otr.logbook.editglucose.datepopup.date.txt = {\"locator\":\"xpath=//*[@resource-id=\\\"android:id/date_picker_header_date\\\"]|//*[contains(@resource-id,'id/alertTitle')]\",\"desc\":\"Date title text on date pop up\"}
+otr.logbook.editglucose.datepopup.datesvalue.txt = {\"locator\":\"xpath=//android.view.View/android.view.View[contains(@content-desc,'')]\",\"desc\":\"Dates on date pop up\"}
+otr.logbook.editglucose.datepopup.dynamic.txt = {\"locator\":\"xpath=//*[@content-desc=\\\"%s\\\"]\",\"desc\":\"Parameterised text selection time text\"}
+otr.logbook.editglucose.dynamic.txt = {\"locator\":\"xpath=//*[@text='%s']\",\"desc\":\"Dynamic text\"}
+otr.logbook.editglucose.notefield.txt = {\"locator\":\"xpath=//*[contains(@resource-id,'et_notes')]\",\"desc\":\"Note text field\"}
+otr.logbook.editglucose.delete.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'bn_delete')]\",\"desc\":\"Delete button for edit event screen\"}
+otr.logbook.editglucose.deletepopup.delete.btn = {\"locator\":\"xpath=//*[@resource-id=\\\"android:id/button1\\\"]\",\"desc\":\"Delete pop up delete button\"}
+otr.logbook.editglucose.appleicon.img = {\"locator\":\"xpath=//*[contains(@resource-id,'iv_left_tab_icon')]\",\"desc\":\"Apple image\"}
+otr.logbook.editglucose.back.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_left_button')]\",\"desc\":\"Back button\"}
+otr.logbook.editglucose.timepopup.year.txt = {\"locator\":\"xpath=//*[@resource-id=\\\"android:id/date_picker_header_year\\\"]\",\"desc\":\"Year title on time pop up\"}
+otr.logbook.editglucose.lo.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_value_low')]\",\"desc\":\"LO button\"}
+otr.logbook.editglucose.hi.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_value_high')]\",\"desc\":\"HI button\"}
+otr.logbook.classsicview.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'btn_logbook_classic')]|//*[contains(@resourceid,'btn_logbook_classic')]\",\"desc\":\"Classic view button on logbook page\"}
+otr.logbook.weekview.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'btn_logbook_week')]|//*[contains(@resourceid,'btn_logbook_week')]\",\"desc\":\"Week View button on logbook page\"}
+otr.logbook.dayview.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'btn_logbook_day')]|//*[contains(@resourceid,'btn_logbook_day')]\",\"desc\":\"Day view button on logbook page\"}
+otr.logbook.classicview.dateheader.lbl = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_logbook_header_date')]\",\"desc\":\"Date Header on Logbbok classic page view\"}
+otr.logbook.classicview.datetoright.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'iv_logbook_right_arrow')]|//*[@resource-id=\\\"android:id/next\\\"]\",\"desc\":\"Right button to select future date\"}
+otr.logbook.classview.datevalue.lbl = {\"locator\":\"xpath=//*[contains(@resource-id,'logbook_item_date_value')]\",\"desc\":\"Label where dates are displayed\"}
+otr.logbook.classicview.recentaddedBGvalue.btn = {\"locator\":\"xpath=//android.widget.RelativeLayout[*[@text=\\\"%s\\\"]]/following-sibling::*//*[@text=\\\"%s\\\"]\",\"desc\":\"Button to select added BG value\"}
+otr.logbook.addevent.eventicon.img = {\"locator\":\"xpath=//*[contains(@resource-id,'iv_event_icon')]\",\"desc\":\"Add event event icon\"}
+otr.logbook.eventview.leftarrow.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'iv_logbook_left_arrow')]|//*[@resource-id=\\\"android:id/prev\\\"]\",\"desc\":\"Logbook event view left arrow\"}
+otr.logbook.eventview.rightarrow.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'iv_logbook_right_arrow')]\",\"desc\":\"Logbook event view right arrow\"}
+otr.logbook.dayview.info.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'iv_logbook_legend')]\",\"desc\":\"Logbook day view information button\"}
+otr.logbook.weekview.insulin.tab = {\"locator\":\"xpath=//*[contains(@resource-id,'id/lbod_insulin')]\",\"desc\":\"Logbook weekview insulin availability\"}
+otr.logbook.weekview.today.img = {\"locator\":\"xpath=//*[contains(@resource-id,'id/ll_horizontal_lines_container')]/android.view.View[7]\",\"desc\":\"Today box on day view\"}
+otr.logbook.celender.leftarrow.btn = {\"locator\":\"xpath=//*[@resource-id=\\\"android:id/prev\\\"]\",\"desc\":\"left arrow for month in calender\"}
+otr.logbook.celender.rightarrow.btn = {\"locator\":\"xpath=//*[@resource-id=\\\"android:id/next\\\"]\",\"desc\":\"Right arrow for month in calender\"}
+otr.logbook.dayview.view.fld = {\"locator\":\"xpath=//*[contains(@resource-id,\\\":id/lgv_graph_view\\\")]\",\"desc\":\"Day view event display screen\"}

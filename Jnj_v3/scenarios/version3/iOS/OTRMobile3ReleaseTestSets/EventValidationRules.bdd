@@ -1,0 +1,146 @@
+
+SCENARIO: To verify carb value range note field length and future date
+META-DATA : {"description": "User cannot add a carb event that exceed allowed range 0-999, and add a note with more than 42 characters, and a future date", "author":"Gaurav Bhamare","testCaseId":"19329","groups": ["iOSEventValidationRules"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	And user clicks on Logbook tab
+	Then user clicks on Add Event
+	When user select log event type as 'CARBS'
+	And user verify carb max allowed range time and note field
+	And user closes the app
+END
+
+SCENARIO: To verify glucose note field length duration and future date
+META-DATA : {"description": "User cannot add a note with more than 42 characters, and a future date","author":"Gaurav Bhamare","testCaseId":"19330","groups": ["iOSEventValidationRules"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	And user clicks on Logbook tab
+	Then user clicks on Add Event
+	When user select log event type as 'GLUCOSE'
+	And user verify Glucose note field and future timing
+	And user closes the app
+END
+
+SCENARIO: To verify activity value range note field length duration and future date
+META-DATA : {"description": "User cannot add activity that exceeds allowed range 0-1440, without a duration set, and add a note with more than 42 characters, and a future date", "author":"Gaurav Bhamare","testCaseId":"19331","groups": ["iOSEventValidationRules"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	And user clicks on Logbook tab
+	Then user clicks on Add Event
+	When user select log event type as 'ACTIVITY'
+	And user verify time activity range time  note field and duration
+	And user closes the app
+END
+
+SCENARIO: To verify Insulin value range note field length type and future date
+META-DATA : {"description": "User cannot add  insulin that excees allowed range 0-250, without selecting insulin type, and add a note with more than 42 characters, and a future date ", "author":"Gaurav Bhamare","testCaseId":"19332","groups": ["iOSEventValidationRules"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	And user clicks on Logbook tab
+	Then user clicks on Add Event
+	When user select log event type as 'INSULIN'
+	And user verify time insulin range time  note field and type
+	And user closes the app
+END
+
+SCENARIO: Verify edit carb value range note field length and future date
+META-DATA : {"description": "User cannot edit a carb event that exceed allowed range 0-999, a note with more than 42 characters, and a date in the future", "author":"Gaurav Bhamare","testCaseId":"19333","groups": ["iOSEventValidationRules"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	And user clicks on Logbook tab
+	Then user clicks on Add Event
+	When user select log event type as 'CARBS'
+	And user add carbs details using 'addCarb'
+	And user clicks on Home tab
+	And user verrify added event 'addCarb' on home screen
+	Then user click on added event '${addCarb.amount}' on home screen
+	And user verify carb max allowed range time and note field
+	And user verify the delete event flow
+	And user verrify event 'addCarb' is deleted on home screen
+	And user closes the app
+END
+
+SCENARIO: Verify edit activity value range note field length duration and future date
+META-DATA : {"description": "User cannot edit activity that exceeds allowed range 0-1440, without a duration set, add a note with more than 42 characters, anbd a date in the future", "author":"Gaurav Bhamare","testCaseId":"19334","groups": ["iOSEventValidationRules"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	And user clicks on Logbook tab
+	Then user clicks on Add Event
+	When user select log event type as 'ACTIVITY'
+	And user add activity details using 'addActivity'
+	And user clicks on Home tab
+	And user verrify added event 'addActivity' on home screen
+	Then user click on added event '${addActivity.amount}' on home screen
+	And user verify time activity range time  note field and duration
+	And user verify the delete event flow
+	And user verrify event 'editActivity' is deleted on home screen
+	And user closes the app
+END
+
+
+SCENARIO: Verify edit Insulin value range note field length type and future date
+META-DATA : {"description": "User cannot edit insulin that excees allowed range 0-250, add a note with more than 42 characters, and a date in the future", "author":"Gaurav Bhamare","testCaseId":"19335","groups": ["iOSEventValidationRules"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	Then user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	When user clicks on logbook tab
+	And user redirects to logbook page
+	Then user clicks on Add Event
+	When user select log event type as 'INSULIN'
+	Then user add insulin details using 'addInsulin'
+	And user clicks on Home tab
+	Then user verrify added event 'addInsulin' on home screen
+	When user click on added event '${addInsulin.amount}' on home screen
+	And user verify time insulin range time  note field and type
+	And user verify the delete event flow
+	Then user verrify event 'addInsulin' is deleted on home screen
+	And user closes the app
+END
+
+
+SCENARIO: Verify edit glucose note field length duration and future date
+META-DATA : {"description": "User cannot edit a note with more than 42 characters, and a future date", "author":"Gaurav Bhamare","testCaseId":"19336","groups": ["iOSEventValidationRules"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	And user clicks on Logbook tab
+	Then user clicks on Add Event
+	When user select log event type as 'GLUCOSE'
+	And user add blood glucose details using 'addGlucose'
+	And user clicks on Home tab
+	And user verrify added event 'addGlucose' on home screen
+	Then user click on added event '${addGlucose.amount}' on home screen
+	And user verify Glucose note field and future timing
+	And user verify the delete event flow
+	And user verrify event 'editGlucose' is deleted on home screen
+	And user closes the app
+END

@@ -1,0 +1,1 @@
+otr.homepage.menu.icon = {\"locator\":\"xpath=//*[@resource-id=\\\"android:id/up\\\"]\",\"desc\":\"menu icon on hamburger menu\"}

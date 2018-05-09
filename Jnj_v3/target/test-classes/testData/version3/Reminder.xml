@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+   <reminder>
+     <hour>10</hour>
+     <minute>25</minute>
+     <repeat>Daily</repeat>
+     <glucose>Perform a glucose test</glucose>
+     <snack>Eat a snack</snack>
+     <eat>Eat</eat>
+     <activity>Activity</activity>
+     <strips>Buy strips</strips>
+     <bolus>Bolus</bolus>
+     <medication>Take medication</medication>
+   </reminder>
+</root>

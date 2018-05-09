@@ -1,0 +1,3 @@
+otrios.homepage.lastreading.recentBGValue.lbl = {\"locator\":\"xpath=//*[@label=\\\"Moyenne\\\"]/preceding-sibling::UIAStaticText[2]\",\"desc\":\"Value of recent added BG\"}
+otrios.homepage.lastreading.recentBGUnit.lbl = {\"locator\":\"xpath=//*[@label=\\\"Moyenne\\\"]/preceding-sibling::UIAStaticText[1]\",\"desc\":\"Unit of recent added BG\"}
+otrios.homepage.readarticle.lnk = {\"locator\":\"xpath=//*[@label=\\\"READ ARTICLE >\\\"]\",\"desc\":\"Read article link\"}

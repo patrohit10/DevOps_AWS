@@ -1,0 +1,51 @@
+otrios.logbookPage.carb.btn = {\"locator\":\"xpath=//*[@label=\\\"icon add carbs\\\"]|//*[@name=\\\"otr.logbook.addevent.addfood.btn\\\"]|//*[@name=\\\"icon_add_carbs\\\"]\",\"desc\":\"Carb button\"}
+otrios.logbookPage.glucose.btn = {\"locator\":\"xpath=//*[@name=\\\"otr.logbook.addevent.addglucose.btn\\\"]|//*[@label=\\\"icon add bg\\\"]\",\"desc\":\"Glucose button\"}
+otrios.logbookPage.insulin.btn = {\"locator\":\"xpath=//*[@label=\\\"icon add Insulin\\\"]|//*[@name=\\\"otr.logbook.addevent.addmedication.btn\\\"]\",\"desc\":\"Insulin button\"}
+otrios.logbookPage.activity.btn = {\"locator\":\"xpath=//*[@name=\\\"otr.logbook.addevent.addactivity.btn\\\"]|//*[@label=\\\"icon add activity\\\"]\",\"desc\":\"Activity button\"}
+otrios.logbookPage.glucose.unit.lbl = {\"locator\":\"xpath=//UIAScrollView[1]/UIAStaticText[1]\",\"desc\":\"UOM label for glucose\"}
+otrios.logbookPage.glucose.amount.txt = {\"locator\":\"xpath=//*[@name=\\\"otr.edit.glucose.eventvalue.lbl\\\"]\",\"desc\":\"Glucose amount\"}
+otrios.logbookPage.glucose.timingValue.txt = {\"locator\":\"xpath=//*[*[@name=\\\"otr.edit.glucose.date.lbl\\\"]]/*[contains(@label,':')]\",\"desc\":\"Activity time\"}
+otrios.logbookPage.glucose.addnote.txt = {\"locator\":\"xpath=//*[@name=\\\"otr.edit.glucose.addnote.txt\\\"]|//*[contains(@name,'addnote.txt')]\",\"desc\":\"Add note text bx\"}
+otrios.logbookPage.glucose.appleTag.img = {\"locator\":\"xpath=//*[@name=\\\"otr.edit.glucose.mealtype.img\\\"]\",\"desc\":\"Apple image\"}
+otrios.logbookPage.glucose.hi.btn = {\"locator\":\"xpath=//*[@label=\\\"HI\\\"]\",\"desc\":\"HI button\"}
+otrios.logbookPage.glucose.lo.btn = {\"locator\":\"xpath=//*[@label=\\\"LO\\\"]\",\"desc\":\"LO button\"}
+otrios.logbookPage.glucose.drop.img = {\"locator\":\"xpath=//*[@name=\\\"otr.edit.glucose.eventtype.img\\\"]\",\"desc\":\"Glucose drop icon\"}
+otrios.logbookPage.glucose.note.img = {\"locator\":\"xpath=//*[@name=\\\"otr.edit.glucose.note.img\\\"]\",\"desc\":\"Note icon\"}
+otrios.logbookPage.addevent.btn = {\"locator\":\"xpath=//*[@label=\\\"addEvent\\\"]\",\"desc\":\"Add event icon button\"}
+otrios.logbookPage.classic.btn = {\"locator\":\"xpath=//*[@name=\\\"%s\\\"]|//UIAWindow[1]/UIAScrollView[1]/UIAButton[3]\",\"desc\":\"Classic tab on logbook page\"}
+otrios.logbookPage.week.btn = {\"locator\":\"xpath=//*[@name=\\\"%s\\\"]|//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIAButton[2]\",\"desc\":\"Week tab on logbook page\"}
+otrios.logbookPage.day.btn = {\"locator\":\"xpath=//*[@name=\\\"%s\\\"]|//UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIAButton[1]\",\"desc\":\"Day tab on logbook page\"}
+otrios.logbookPage.timingPicker.date.pkr = {\"locator\":\"xpath=//UIAPickerWheel[1]\",\"desc\":\"Date picker wheel\"}
+otrios.logbookPage.timingPicker.hour.pkr = {\"locator\":\"xpath=//UIAPickerWheel[2]\",\"desc\":\"Hour picker on picker wheel\"}
+otrios.logbookPage.timingPicker.minute.pkr = {\"locator\":\"xpath=//UIAPickerWheel[3]\",\"desc\":\"Minute picker wheel\"}
+otrios.logbookPage.glucose.timingValue.btn = {\"locator\":\"xpath=//*[@name=\\\"otr.edit.glucose.date.lbl\\\"]\",\"desc\":\"Timing button\"}
+otrios.logbookPage.carb.spoon.img = {\"locator\":\"xpath=//*[@name=\\\"otr.edit.carbs.eventtype.img\\\"]\",\"desc\":\"Add carb spoon image\"}
+otrios.logbookPage.carb.amountField.txt = {\"locator\":\"xpath=//*[@name=\\\"otr.edit.carbs.eventvalue.lbl\\\"]\",\"desc\":\"Carb amount text field\"}
+otrios.logbookPage.carb.unit.lbl = {\"locator\":\"xpath=//*[@name=\\\"otr.edit.carbs.eventunit.lbl\\\"]\",\"desc\":\"UOM of carb\"}
+otrios.logbookPage.carb.timing.lbl = {\"locator\":\"xpath=//*[*[@name=\\\"otr.edit.carbs.date.lbl\\\"]]/*[contains(@label,':')]\",\"desc\":\"Timing label for carb\"}
+otrios.logbookPage.carb.noteField.txt = {\"locator\":\"xpath=//*[@name=\\\"otr.edit.carbs.addnote.txt\\\"]\",\"desc\":\"Add note text field\"}
+otrios.logbookPage.insulin.medicine.img = {\"locator\":\"xpath=//*[@name=\\\"otr.edit.insulin.eventtype.img\\\"]\",\"desc\":\"Medicine icon for add insulin\"}
+otrios.logbookPage.insulin.amountField.txt = {\"locator\":\"xpath=//*[@name=\\\"otr.edit.insulin.eventvalue.lbl\\\"]\",\"desc\":\"Insulin amount text field\"}
+otrios.logbookPage.insulin.type.btn = {\"locator\":\"xpath=//*[@name=\\\"otr.edit.insulin.type.list\\\"]\",\"desc\":\"Insulin type button\"}
+otrios.logbookPage.insulin.timing.lbl = {\"locator\":\"xpath=//*[*[@name=\\\"otr.edit.insulin.date.lbl\\\"]]/*[contains(@label,':')]\",\"desc\":\"Insulin timing label\"}
+otrios.logbookPage.insulin.noteField.txt = {\"locator\":\"xpath=//*[@name=\\\"otr.edit.insulin.addnote.txt\\\"]\",\"desc\":\"Add note text field insulin\"}
+otrios.logbookPage.activity.heart.img = {\"locator\":\"xpath=//*[@name=\\\"otr.edit.activity.eventtype.img\\\"]\",\"desc\":\"Activity heart icon\"}
+otrios.logbookPage.activity.intensity.btn = {\"locator\":\"xpath=//*[@name=\\\"otr.edit.activity.intensity.list\\\"]\",\"desc\":\"Intensity button\"}
+otrios.logbookPage.activity.amountField.txt = {\"locator\":\"xpath=//*[@name=\\\"otr.edit.activity.eventvalue.lbl\\\"]\",\"desc\":\"Activity amount text field\"}
+otrios.logbookPage.activity.unit.lbl = {\"locator\":\"xpath=//*[@name=\\\"otr.edit.activity.eventunit.lbl\\\"]\",\"desc\":\"UOM for activity\"}
+otrios.logbookPage.activity.noteField.txt = {\"locator\":\"xpath=//*[@name=\\\"otr.edit.activity.addnote.txt\\\"]\",\"desc\":\"Add note text field for activity\"}
+otrios.keyBoard.delete.btn = {\"locator\":\"xpath=//*[@label=\\\"Delete\\\"]|//UIAKey[14]\",\"desc\":\"delete btn in keyboard\"}
+otrios.logbookPage.carb.timing.btn = {\"locator\":\"xpath=//*[@name=\\\"otr.edit.carbs.date.lbl\\\"]\",\"desc\":\"Carb timing btn\"}
+otrios.logbookPage.insulin.timing.btn = {\"locator\":\"xpath=//*[@name=\\\"otr.edit.insulin.date.lbl\\\"]\",\"desc\":\"Insulin timing btn\"}
+otrios.logbookPage.activity.timing.btn = {\"locator\":\"xpath=//*[@name=\\\"otr.edit.activity.date.lbl\\\"]\",\"desc\":\"Activity timing btn\"}
+otrios.logbookPage.static.lbl = {\"locator\":\"xpath=//*[contains(@label,\\\"%s\\\")]\",\"desc\":\"Static label logbook page\"}
+otrios.logbookPage.addEvent.lbl = {\"locator\":\"xpath=//*[@label=\\\"Add an Event\\\"]\",\"desc\":\"Add an event title\"}
+otrios.logbookPage.editEvent.delete.btn = {\"locator\":\"xpath=//*[@label=\\\"Delete This Event\\\"]| //*[@name=\\\"bn_delete\\\"]\",\"desc\":\"Delete this event button\"}
+otrios.logbookPage.activity.intensityvalue.txt = {\"locator\":\"xpath=//*[@name=\\\"otr.edit.activity.intensity.list\\\"]/following-sibling::UIAStaticText[1]\",\"desc\":\"Intensity value text\"}
+otrios.logbookPage.classic.bgValue.txt = {\"locator\":\"xpath=//*[@label=\\\"%s\\\"]/following-sibling::*[contains(@label,\\\"%s\\\")]\",\"desc\":\"Added blood glucose on classic view screen\"}
+otrios.logbookPage.weekview.info.btn = {\"locator\":\"xpath=//*[@label=\\\"legend\\\"]\",\"desc\":\"Logbook week view info button\"}
+otrios.logbookPage.leftarrow.btn = {\"locator\":\"xpath=//*[@label=\\\"left arrow\\\"]\",\"desc\":\"Logbook page left arrow\"}
+otrios.logbookPage.rightarrow.btn = {\"locator\":\"xpath=//*[@label=\\\"right arrow\\\"]\",\"desc\":\"Right arrow\"}
+otrios.logbookPage.selectedDate.text = {\"locator\":\"xpath=//AppiumAUT/UIAApplication[1]/UIAWindow[1]/UIAScrollView[1]/UIAStaticText[2]\",\"desc\":\"Added event Selected date\"}
+otrios.logbookPage.aftermeal.btn = {\"locator\":\"xpath=//*[@name=\\\"otr.edit.glucose.date.lbl\\\"]/preceding-sibling::UIAButton[1]\",\"desc\":\"After meal button\"}
+otrios.logbookPage.insulin.type.lbl = {\"locator\":\"xpath=//*[@name=\\\"otr.edit.insulin.type.list\\\"]/following-sibling::UIAStaticText[1]\",\"desc\":\"Insulin type label\"}

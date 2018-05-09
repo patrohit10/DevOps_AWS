@@ -1,0 +1,13 @@
+otrios.sharePage.heading.lbl = {\"locator\":\"xpath=//*[@label=\\\"Partilhar\\\"]\",\"desc\":\"Share page title\"}
+otrios.sharePage.lastReading.lbl = {\"locator\":\"xpath=//*[@label=\\\"Partilhar o \u00FAltimo resultado\\\"]\",\"desc\":\"Share last readind label\"}
+otrios.sharePage.shareReport.lbl = {\"locator\":\"xpath=//*[@label=\\\"Partilhar um relat\u00F3rio\\\"]\",\"desc\":\"Share report label\"}
+otrios.sharePage.exportData.lbl = {\"locator\":\"xpath=//*[@label=\\\"Exportar dados\\\"]\",\"desc\":\"Export data label\"}
+otrios.sharePage.csv.timeFrame.btn = {\"locator\":\"xpath=//*[@label=\\\"Per\u00EDodo de tempo\\\"]/preceding-sibling::UIAButton|//UIAApplication/UIAWindow[1]/UIAButton[1]\",\"desc\":\"Time frame button\"}
+otrios.sharePage.csv.openIn.btn = {\"locator\":\"xpath=//*[@label=\\\"Abrir em...\\\"]\",\"desc\":\"Open in button\"}
+otrios.sharePage.csv.cancel.btn = {\"locator\":\"xpath=//*[@label=\\\"Cancelar\\\"]\",\"desc\":\"Cancel button\"}
+otrios.sharePage.csv.chooseTime.lbl = {\"locator\":\"xpath=//*[@label=\\\"Escolher um per\u00EDodo de tempo\\\"]\",\"desc\":\"Choose a time lable\"}
+otrios.sharePage.csv.fourteenDay.btn = {\"locator\":\"xpath=//UIAButton[@label=\\\"14 Dias\\\"]\",\"desc\":\"Fourteen day button\"}
+otrios.sharePage.csv.thirtyDay.btn = {\"locator\":\"xpath=//UIAButton[@label=\\\"30 Dias\\\"]\",\"desc\":\"thirty day button\"}
+otrios.sharePage.csv.ninetyDay.btn = {\"locator\":\"xpath=//UIAButton[@label=\\\"90 Dias\\\"]\",\"desc\":\"Ninety day button\"}
+otrios.sharePage.csv.chooseTimeCancel.btn = {\"locator\":\"xpath=//UIAActionSheet//*[@label=\\\"Cancelar\\\"]\",\"desc\":\"Cancel button for choose time pop up\"}
+otrios.sharePage.pdf.print.btn = {\"locator\":\"xpath=//*[@label=\\\"Imprimir\\\"]\",\"desc\":\"Print button on pdf page\"}

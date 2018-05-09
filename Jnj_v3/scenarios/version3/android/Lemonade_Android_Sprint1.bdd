@@ -1,0 +1,294 @@
+
+
+SCENARIO: Create Account without First Name
+META-DATA : {"description": "Verify a user cannot create an account without a valid first name", "author":"steve gunther","testCaseId":"19256","groups": ["ANDROIDREGRESSIONSIGNUPSPRINT1"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user enters signup details without firstname using 'signup.user1'
+	Then user closes the app
+END
+	
+
+SCENARIO: Create Account without Last Name
+META-DATA : {"description": "Verify a user cannot create an account without a valid last name", "author":"steve gunther","testCaseId":"19257","groups": ["ANDROIDREGRESSIONSIGNUPSPRINT1"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user enters signup details without lastname using 'signup.user1'
+	Then user closes the app
+END
+
+SCENARIO: Create Account without Date of Birth includes dob under 18
+META-DATA : {"description": "Verify a user cannot create an account without a valid date of birth", "author":"steve gunther","testCaseId":"19258","groups": ["ANDROIDSMOKESIGNUPSPRINT1","ANDROIDREGRESSIONSIGNUPSPRINT1"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user enters signup details with birthdate under age using 'signup.user1'
+	Then user closes the app
+END
+
+
+
+SCENARIO: Create Account without Date of Birth includes no dob
+META-DATA : {"description": "Verify a user cannot create an account without a valid date of birth", "author":"steve gunther","testCaseId":"19259","groups": ["ANDROIDREGRESSIONSIGNUPSPRINT1"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user enters signup details without birthdate using 'signup.user1'
+	Then user closes the app
+END
+
+SCENARIO: Create Account without selecting Terms of Use and Privacy Policy
+META-DATA : {"description": "Verify a user cannot create an account without accepting the terms of use/privacy policy", "author":"steve gunther","testCaseId":"19260","groups": ["ANDROIDREGRESSIONSIGNUPSPRINT1"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user enters signup details without TOU using 'signup.user1'
+	Then user closes the app
+END
+
+SCENARIO: Create Account Email validation includes no email
+META-DATA : {"description": "Verify a user cannot create an account without email address ", "author":"Gaurav Bhamare","testCaseId":"19261","groups": ["ANDROIDREGRESSIONSIGNUPSPRINT1"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user enters signup details without emailId using 'signup.user1'
+	Then user closes the app
+END
+	
+SCENARIO: Create Account Email includes more than 76 chars
+META-DATA : {"description": "Verify a user cannot create an account with an invalid email address ", "author":"Gaurav Bhamare","testCaseId":"19262","groups": ["ANDROIDREGRESSIONSIGNUPSPRINT1"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And Signup details with invalid user id and email length more than 75 chars using 'signup.user1'
+	Then user closes the app
+END
+
+SCENARIO: Create Account Email and Confirm Email validation
+META-DATA : {"description": "Verify a user cannot create an account without correct confirmation email address ", "author":"Gaurav Bhamare","testCaseId":"19263","groups": ["ANDROIDSMOKESIGNUPSPRINT1","ANDROIDREGRESSIONSIGNUPSPRINT1"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And Signup details with email and confirm email validation using 'signup.user1'
+	Then user closes the app
+END
+
+SCENARIO: Create Account Password validation includes no password
+META-DATA : {"description": "Verify a user cannot create an account with no password ", "author":"Gaurav Bhamare","testCaseId":"19264","groups": ["ANDROIDSMOKESIGNUPSPRINT1","ANDROIDREGRESSIONSIGNUPSPRINT1"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And Signup details without password using 'signup.user1'
+	Then user closes the app
+END
+
+SCENARIO: Create Account Password with invalid password and max 16 chars
+META-DATA : {"description": "Verify a user cannot create an account with an invalid password ", "author":"Gaurav Bhamare","testCaseId":"19265","groups": ["ANDROIDSMOKESIGNUPSPRINT1","ANDROIDREGRESSIONSIGNUPSPRINT1"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And Signup details with invalid password and less than 16 chars using 'signup.user1'
+	Then user closes the app
+END
+
+SCENARIO: Verify Country selection page
+META-DATA: {"description":"Verify Country selection page", "author":"Gaurav Bhamare","testCaseId":"19246","groups": ["ANDROIDSMOKESIGNUPSPRINT1","ANDROIDREGRESSIONSIGNUPSPRINT1"]}
+	Given user resets app
+	And user opens app
+	When user verify country selection Page
+	Then user closes the app
+END
+
+SCENARIO:user click on Terms of Use on sign-up page
+META-DATA: {"description":"Verify Terms of Use link on sign up page","author":"Gaurav Bhamare","testCaseId":"19407","groups": ["ANDROIDREGRESSIONSIGNUPSPRINT1"]}
+	Given user resets app
+	And user opens app
+	When user select country '${countryname}' from country list
+	And user clicks on 'terms of use' link on Create Account page to verify
+	Then user closes the app
+END
+ 
+SCENARIO:user click on Privacy Policy on sign-up page
+META-DATA: {"description":"Verify Privacy Policy link on sign up page","author":"Gaurav Bhamare","testCaseId":"19408","groups": ["ANDROIDREGRESSIONSIGNUPSPRINT1"]}
+	Given user resets app
+	And user opens app
+	When user select country '${countryname}' from country list
+	And user clicks on 'privacy policy' link on Create Account page to verify
+	Then user closes the app
+END
+
+SCENARIO: Create Account existing user
+META-DATA : {"description": "Verify a user cannot create an account with an email address already in use", "author":"Gaurav Bhamare","testCaseId":"19266","groups": ["ANDROIDSMOKESIGNUPSPRINT1","ANDROIDREGRESSIONSIGNUPSPRINT1"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And Signup details with already registered email id using 'signup.user1'
+	Then user closes the app
+END
+
+SCENARIO: Create Account
+META-DATA : {"description": "Verify a user can create an account", "author":"steve gunther","testCaseId":"19298","groups": ["ANDROIDSMOKESIGNUPSPRINT1","ANDROIDREGRESSIONSIGNUPSPRINT1"]}
+	Given user resets app
+	And user opens app
+	When user select country '${countryname}' from country list
+	And user enters signup details using 'signup.user1'
+	And user clicks on login button
+	Then user clicks on signup button
+	And user click on skip button
+	And user closes the app
+	And user resets app
+END
+
+SCENARIO: Create Account Germany Unit of Measure mgdL
+META-DATA : {"description": "Verify a German account created with mg/dl as unit of measure displays correct unit of measure on events", "author":"Gaurav Bhamare","testCaseId":"19369","groups": ["ANDROIDREGRESSIONSIGNUPSPRINT1"]}
+	Given user resets app
+	And user opens app
+	When user select country '${countryname}' from country list
+	And user enters signup details using 'signup.user1'
+	Then user clicks on signup button
+	And user click on skip button
+	And user select UOM as 'MG/DL'
+	When user clicks on Logbook tab
+	And user redirects to logbook page
+	Then user clicks on Add Event
+	When user select log event type as 'GLUCOSE'
+	Then user verify unit of measurement as 'MG/DL'
+	And user closes the app
+	And user resets app
+END
+
+SCENARIO: Create Account Germany Unit of Measure mmmolL
+META-DATA : {"description": "Verify a German account created with mg/dl as unit of measure displays correct unit of measure on events", "author":"Gaurav Bhamare","testCaseId":"19370","groups": ["ANDROIDREGRESSIONSIGNUPSPRINT1"]}
+	Given user resets app
+	And user opens app
+	When user select country '${countryname}' from country list
+	And user enters signup details using 'signup.user1'
+	Then user clicks on signup button
+	And user click on skip button
+	And user select UOM as 'MMOL/L'
+	When user clicks on Logbook tab
+	And user redirects to logbook page
+	Then user clicks on Add Event
+	When user select log event type as 'GLUCOSE'
+	And user verify unit of measurement as 'MMOL/L'
+	Then user closes the app
+	And user resets app
+END
+
+
+#############################LOGINFLOW####################################
+
+SCENARIO: To verify available options on more screen
+META-DATA: {"description":"Verification of available options on more screen","author":"Gaurav Bhamare","testCaseId":"19267","groups": ["ANDROIDREGRESSIONLOGINSPRINT1"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	Then user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	When user click on more menu
+	Then user verify available options in More menu
+	And user closes the app
+END
+
+SCENARIO:To click on Privacy Policy from More Menu.
+META-DATA: {"description":"Verify Privacy Policy link from More menu","author":"Gaurav Bhamare","testCaseId":"19268","groups": ["ANDROIDREGRESSIONLOGINSPRINT1"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	Then user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	When user click on more menu
+	Then user clicks Privacy Policy link and verify
+	And user closes the app
+END
+
+SCENARIO: To click on Terms of Use from More Menu.
+META-DATA: {"description":"Verify Terms of Use link from More menu","author":"Gaurav Bhamare","testCaseId":"19269","groups": ["ANDROIDREGRESSIONLOGINSPRINT1"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	Then user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	When user click on more menu
+	Then user clicks on Terms Of Use link and verify
+	And user closes the app
+END
+
+SCENARIO: To verify Contact Us screen from More menu
+META-DATA: {"description":"Verify Contact Us page from More menu","author":"Gaurav Bhamare","testCaseId":"19274","groups": ["ANDROIDSMOKELOGINSPRINT1","ANDROIDREGRESSIONLOGINSPRINT1"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	Then user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	And user click on more menu
+	And user select Contact Us
+	Then user verify Contact Us page
+	When user clicks and verify Email customer service
+	And user calls customer service centre
+	Then user visits application website
+	And user clicks Rate app link
+	And user closes the app
+END
+
+SCENARIO: To verify tab bars on homescreen
+META-DATA: {"description":"Verification of tab bar menus on homescreen","author":"Gaurav Bhamare","testCaseId":"","groups": ["ANDROIDREGRESSIONLOGINSPRINT1"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	Then user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	And user verify tab bar when redirects to homepage
+	And user closes the app
+END
+
+SCENARIO: To verify navigation of tab bars on homescreen
+META-DATA: {"description":"Verification of navigation of tab bar menus on homescreen","author":"Gaurav Bhamare","testCaseId":"19275","groups": ["ANDROIDSMOKELOGINSPRINT1","ANDROIDREGRESSIONLOGINSPRINT1"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	Then user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	And user verify navigation bar on homescreen
+	When user clicks on Logbook tab
+	Then user redirects to logbook page
+	When user clicks on Home tab
+	Then user redirects to Home page
+	And user closes the app
+END
+
+Scenario: To verify navigation bar on home screen
+META-DATA : {"description": "Navigation bar verification on Home screen", "author":"Gaurav Bhamare","testCaseId":"19276","groups": ["ANDROIDREGRESSIONLOGINSPRINT1"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	Then user verify navigation bar on homescreen
+	And user closes the app
+END
+
+
+
+SCENARIO: Verify authentication type keep me login flow
+META-DATA: {"description":"Verify authentication type keep me login flow","author":"Milan","testCaseId":"19272","groups": ["ANDROIDREGRESSIONLOGINSPRINT1"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	Then user select authentication type as "KEEP ME LOGIN"
+	And user clicks on login button
+	When user closes the app
+	And user opens app
+	Then user redirects to Home page
+	When user click on more menu
+	And user clicks on logout button
+	Then user verify keep me login switch disable
+	And user closes the app
+END
+
+SCENARIO: Verify authentication type require login flow
+META-DATA: {"description":"Verify authentication type require login flow","author":"Milan","testCaseId":"19273","groups": ["ANDROIDREGRESSIONLOGINSPRINT1"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	Then user select authentication type as "REQUIRE LOGIN"
+	And user clicks on login button
+	When user closes the app
+	And user opens app
+	Then user verify login page
+	And user closes the app
+END

@@ -1,0 +1,53 @@
+SCENARIO:Verify share screen
+META-DATA: {"description":"Verify share screen","author":"Gaurav Bhamare","testCaseId":"19270","groups": ["iOSShareScreen"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	When user click on share button
+	Then user verify share page
+	And user closes the app
+END
+
+SCENARIO:Verify share text screen
+META-DATA: {"description":"Verify share text screen","author":"Gaurav Bhamare","testCaseId":"19271","groups": ["IOSREGRESSIONLOGINSPRINT1"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	When user clicks on logbook tab
+	Then user clicks on Add Event
+	And user select log event type as 'GLUCOSE'
+	Then user enter blood glucose amount as '${glucose.amount}'
+	And user clicks save button on logbook
+	When user click on share button
+	And user select share type as 'Text'
+	Then user verify share text screen
+	And user closes the app
+END
+
+
+SCENARIO: To Share reports
+META-DATA : {"description": "Sharing reports from Homescreen", "author":"Gaurav Bhamare","testCaseId":"19277","groups": ["iOSShareScreen"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	Then user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	When user clicks on Logbook tab
+	And user redirects to logbook page
+	Then user clicks on Add Event
+	When user select log event type as 'GLUCOSE'
+	And user add blood glucose details using 'addGlucose'
+	And user clicks on Home tab
+	Then user click on share button
+	When user verify share page
+	And user click on share pdf
+	And user click on export data csv
+	Then user click on share last reading using text
+	And user click on share last reading using email
+	And user closes the app
+END

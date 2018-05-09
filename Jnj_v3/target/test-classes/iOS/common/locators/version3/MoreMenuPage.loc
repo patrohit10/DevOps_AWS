@@ -1,0 +1,56 @@
+otrios.moremenuPage.mySetting.btn = {\"locator\":\"xpath=//*[@label=\\\"My Settings\\\"]|//UIAStaticText[@name=\\\"otr.more.settings.btn\\\"]\",\"desc\":\"My setting label\"}
+otrios.moremenuPage.myMeter.btn = {\"locator\":\"xpath=//*[@label=\\\"My Meters\\\"]|//UIAStaticText[@name=\\\"otr.more.mymeters.btn\\\"]\",\"desc\":\"My meter label\"}
+otrios.moremenuPage.myReminder.btn = {\"locator\":\"xpath=//*[@label=\\\"My Reminders\\\"]|//UIAStaticText[@name=\\\"otr.more.myreminders.btn\\\"]\",\"desc\":\"My reminder label\"}
+otrios.moremenuPage.myAccount.btn = {\"locator\":\"xpath=//*[@label=\\\"My Account\\\"]|//UIAStaticText[@name=\\\"otr.more.myaccount.btn\\\"]\",\"desc\":\"My account label\"}
+otrios.moremenuPage.help.btn = {\"locator\":\"xpath=//UIAStaticText[@name=\\\"otr.more.help.btn\\\"]\",\"desc\":\"Help lable\"}
+otrios.moremenuPage.contactus.btn = {\"locator\":\"xpath=//*[@label=\\\"Contact Us\\\"]|//UIAStaticText[@name=\\\"otr.more.contactus.btn\\\"]\",\"desc\":\"Contact us lable\"}
+otrios.moremenuPage.logout.btn = {\"locator\":\"xpath=//*[@label=\\\"Log Out\\\"]|//UIATableView[1]/UIATableCell[9]/UIAStaticText[1]\",\"desc\":\"Logout label\"}
+otrios.moremenuPage.termsOfUse.btn = {\"locator\":\"xpath=//*[@name=\\\"otr.more.termsofuses.btn\\\"]\",\"desc\":\"Terms of use label\"}
+otrios.moremenuPage.privecyPolicy.btn = {\"locator\":\"xpath=//*[@name=\\\"otr.more.privacypolicy.btn\\\"]\",\"desc\":\"Privecy policy label\"}
+otrios.moremenuPage.contactEmail.lbl = {\"locator\":\"xpath=//*[@label=\\\"customerservice@lifescan.com\\\"]|//UIATableView[1]/UIATableCell[1]/UIAStaticText[1]\",\"desc\":\"Contact email text\"}
+otrios.moremenuPage.contactNumber.lbl = {\"locator\":\"xpath=//UIATableView[1]/UIATableCell[2]/UIAStaticText[1]\",\"desc\":\"Contact number\"}
+otrios.moremenuPage.contactSite.lbl = {\"locator\":\"xpath=//*[@label=\\\"www.onetouch.com/OneTouchReveal\\\"]|//UIATableView[1]/UIATableCell[3]/UIAStaticText[1]\",\"desc\":\"Contact web site\"}
+otrios.moremenuPage.myMeter.autoUpdateTime.btn = {\"locator\":\"xpath=//*[@name=\\\"otr.mymeterspage.TimeChange.switch\\\"]\",\"desc\":\"Auto update time button\"}
+otrios.moremenuPage.reminder.add.btn = {\"locator\":\"xpath=//*[@label=\\\"Add\\\"]|//*[@name='otr.reminderspage.addIcon.btn']\",\"desc\":\"Add button for reminder\"}
+otrios.moremenuPage.reminder.reminderDescription.txt = {\"locator\":\"xpath=//*[@name=\\\"identiferARDescription\\\"]\",\"desc\":\"Reminder description\"}
+otrios.moremenuPage.reminder.datetime.btn = {\"locator\":\"xpath=//*[@name=\\\"otr.reminderspage.setReminder.datetime.btn\\\"]\",\"desc\":\"Date and time btn\"}
+otrios.moremenuPage.reminder.reminderType.lbl = {\"locator\":\"xpath=//UIAStaticText[2]\",\"desc\":\"Type of reminder lable\"}
+otrios.moremenuPage.reminder.repeat.btn = {\"locator\":\"xpath=//*[@name=\\\"otr.reminderspage.setReminder.repeat.btn\\\"]\",\"desc\":\"Repeat label\"}
+otrios.moremenuPage.reminder.date.pkr = {\"locator\":\"xpath=//UIAPickerWheel[1]\",\"desc\":\"Date picker\"}
+otrios.moremenuPage.reminder.hour.pkr = {\"locator\":\"xpath=//UIAPickerWheel[2]\",\"desc\":\"Hour picker\"}
+otrios.moremenuPage.reminder.minute.pkr = {\"locator\":\"xpath=//UIAPickerWheel[3]\",\"desc\":\"Minute picker\"}
+otrios.moremenuPage.reminder.saveTiming.lbl = {\"locator\":\"xpath=//*[contains(@label,\\\"/\\\" ) and contains(@label,\\\":\\\" )]\",\"desc\":\"Saved timing detail after save\"}
+otrios.moremenuPage.reminder.repeat.pkr = {\"locator\":\"xpath=//UIAPickerWheel\",\"desc\":\"Repeat picker\"}
+otrios.moremenuPage.reminder.deteletPopUpDelete.btn = {\"locator\":\"xpath=//UIAAlert//UIACollectionCell[2]/UIAButton[1]|//UIAAlert//UIAScrollView[2]/UIAButton[1]\",\"desc\":\"Delete popup delete button\"}
+otrios.moremenuPage.reminder.addreminderField.txt = {\"locator\":\"xpath=//UIAWindow[1]/UIATextField[1]\",\"desc\":\"Add new reminder name text field\"}
+otrios.Moremenupage.connection.applehealth.lbl = {\"locator\":\"xpath=//*[@value=\\\"Apple\u00AE Health\\\"]|//UIATableView[1]/UIATableCell[1]/UIAStaticText[1]\",\"desc\":\"Apple health label\"}
+otrios.Moremenupage.connection.applehealth.swch = {\"locator\":\"xpath=//UIATableView[1]/UIATableCell[1]/UIASwitch[1]\",\"desc\":\"Apple health switch\"}
+otrios.Moremenupage.connection.addofficeSearch.btn = {\"locator\":\"xpath=//*[@name=\\\"identifierAddOfficeSearch\\\"]\",\"desc\":\"Search button\"}
+otrios.Moremenupage.connection.addofficeEnterCode.box = {\"locator\":\"xpath=//*[@name=\\\"identifierAddOfficeCharacter%s\\\"]\",\"desc\":\"Office code text boxes\"}
+otrios.Moremenupage.staticText.lbl = {\"locator\":\"xpath=//*[contains(@label,\\\"%s\\\")]|//*[contains(@value,\\\"%s\\\")]\",\"desc\":\"Static text\"}
+otrios.Moremenupage.connection.officereenter.btn = {\"locator\":\"xpath=//*[@name='identifierAddOfficeReEnter']\",\"desc\":\"Office code reenter button\"}
+otrios.Moremenupage.connection.officeyes.btn = {\"locator\":\"xpath=//*[@name='identifierAddOfficeConfirm']\",\"desc\":\"Yes button for office code\"}
+otrios.Moremenupage.connection.officeqst.lbl = {\"locator\":\"xpath=//*[@name='identifierAddOfficeInstruction1']\",\"desc\":\"Question correct office code\"}
+otrios.Moremenupage.connection.officename.lbl = {\"locator\":\"xpath=//*[@name='identifierAddOfficeInstruction2']\",\"desc\":\"Office name\"}
+otrios.Moremenupage.connection.officecontact.lbl = {\"locator\":\"xpath=//*[@name='identifierAddOfficelblPhone']\",\"desc\":\"Office phone number\"}
+otrios.Moremenupage.connection.checkbox.lbl = {\"locator\":\"xpath=//UIAScrollView/UIAButton[1]|//*[@label=\\\"checkbox\\\"]\",\"desc\":\"CheckBox for accepting office code\"}
+otrios.Moremenupage.connection.done.btn = {\"locator\":\"xpath=//*[@label=\\\"Done\\\"]\",\"desc\":\"Done button\"}
+otrios.Moremenupage.connection.addofficeDeleteDraft.btn = {\"locator\":\"xpath=//*[@label=\\\"Delete Draft\\\"]|//UIACollectionCell[1]/UIAButton[1]|//UIAScrollView[1]/UIAButton[1]\",\"desc\":\"Delete Draft button\"}
+otrios.Moremenupage.contatcus.returnto.btn = {\"locator\":\"xpath=//*[@label=\\\"Return to OneTouch\\\"]|//UIAStatusBar[1]/UIAButton[1]\",\"desc\":\"Return to one touch btn\"}
+otrios.Moremenupage.contactusdeletedraft.btn = {\"locator\":\"xpath=//*[@label=\\\"Delete Draft\\\"]|//UIACollectionCell[1]/UIAButton[1]\",\"desc\":\"Delete button\"}
+otrios.Moremenupage.reminder.alertpopupok.btn = {\"locator\":\"xpath=//UIAAlert[1]//UIAButton[2]|//UIAAlert[1]//UIACollectionCell[2]/UIAButton[1]\",\"desc\":\"Alert pop up ok button\"}
+otrios.Moremenupage.reteappback.btn = {\"locator\":\"xpath=//*[contains(@label,\\\": \\\")]|//UIAButton[1]\",\"desc\":\"Rate app back button\"}
+otrios.Moremenupage.reminder.synToggle.btn = {\"locator\":\"xpath=//AppiumAUT/UIAApplication[1]/UIAWindow[1]/UIATableView[1]/UIASwitch[1]\",\"desc\":\"Toggle button on reminder page\"}
+otrios.Moremenupage.reminder.Done.btn = {\"locator\":\"xpath=//UIAWindow[1]/UIAToolbar[1]/UIAButton[2]\",\"desc\":\"Done button on date set pop up\"}
+otrios.moremenuPage.myMeter.veriometer.img = {\"locator\":\"xpath=//*[@name='meter_verio_flex_bton_mg']\",\"desc\":\"Vario meter image on select meter screen\"}
+otrios.moremenuPage.connection.chk = {\"locator\":\"xpath=//UIASwitch[contains(@label,\\\"I accept the terms and\\\")]|//*[@id=\\\"agree\\\"]\",\"desc\":\"term checkBox\"}
+otrios.moremenuPage.connection.walgreen.email.txt = {\"locator\":\"xpath=//*[@id=\\\"signin-username\\\"]\",\"desc\":\"Walgreen user email text box\"}
+otrios.moremenuPage.connection.walgreen.password.txt = {\"locator\":\"xpath=//*[@id=\\\"signin-password\\\"]\",\"desc\":\"Walgreen user password text box\"}
+otrios.moremenuPage.connection.walgreen.signin.btn = {\"locator\":\"xpath=//*[@id=\\\"signin-signinbtn\\\"]\",\"desc\":\"Walgreen user sign in button\"}
+otrios.moremenuPage.connection.walgreen.yes.btn = {\"locator\":\"xpath=//*[@id=\\\"autologin_yes\\\"]\",\"desc\":\"Wlagreen sign in automatically yes button\"}
+otrios.moremenuPage.connection.walgreen.no.btn = {\"locator\":\"xpath=//*[@id=\\\"autologin_no\\\"]\",\"desc\":\"Wlagreen sign in automatically no button\"}
+otrios.moremenuPage.connection.walgreen.finish.btn = {\"locator\":\"xpath=//*[@id=\\\"wag-regoptions-signupforrx\\\"]\",\"desc\":\"Walgreen user sign   in finish button\"}
+otrios.moremenuPage.connection.walgreen.term.lnk = {\"locator\":\"xpath=//a[1]\",\"desc\":\"Term of service link on walgreen connect pop up\"}
+otrios.moremenuPage.connection.walgreen.privecy.lnk = {\"locator\":\"xpath=//a[2]\",\"desc\":\"Privecy link on walgreen enable pop up\"}
+otrios.moremenuPage.connection.walgreen.cancel.btn = {\"locator\":\"xpath=//UIAAlert[1]//UIAButton[1]\",\"desc\":\"Cancel button on walgreen enable pop up\"}
+otrios.moremenuPage.connection.walgreen.enable.btn = {\"locator\":\"xpath=//UIAAlert[1]//UIAButton[2]\",\"desc\":\"Enable button on walgreen enable pop up\"}

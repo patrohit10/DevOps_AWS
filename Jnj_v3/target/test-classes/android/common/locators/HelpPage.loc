@@ -1,0 +1,4 @@
+otr.moremenu.helppage.search.txt = {\"locator\":\"xpath=//*[contains(@text,'Search')]|//*[contains(@resource-id,'edit_text_search')]\",\"desc\":\"Search text box on Help Page\"}
+otr.moremenu.helppage.search.btn = {\"locator\":\"xpath=//*[@class=\\\"android.widget.ImageView\\\"]\",\"desc\":\"Search button on help page\"}
+otr.moremenu.helppage.help.btn = {\"locator\":\"xpath=//*[@resource-id=\\\"android:id/text1\\\" and @text=\\\"Help\\\"]\",\"desc\":\"Help tab on help page\"}
+otr.moremenu.helppage.statictext.txt = {\"locator\":\"xpath = //*[contains(@text,'%s')]\",\"desc\":\"Static text field for Help page\"}

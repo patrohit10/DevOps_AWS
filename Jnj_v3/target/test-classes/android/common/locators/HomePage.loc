@@ -1,0 +1,50 @@
+otr.homepage.share.btn = {\"locator\":\"xpath=//*[contains(@resourceid,'/i_share')]|//*[contains(@resource-id,'/i_share')]\",\"desc\":\"Share icon on home page\"}
+otr.homepage.logbook.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'tb_logbook')]|//*[contains(@resourceid,'tb_logbook')]\",\"desc\":\"Logbook icon on home page\"}
+otr.homepage.connection.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'i_connections')]|//*[contains(@resourceid,'i_connections')]\",\"desc\":\"connection icon on home page\"}
+otr.homepage.onetouch.img = {\"locator\":\"xpath=//*[contains(@resourceid,'id/tb_toolbar')]//*[contains(@class,'widget.AppCompatImageView')]|//*[contains(@resource-id,'tb_toolbar')]/android.widget.ImageView[1]\",\"desc\":\"Onetouch image on home page\"}
+otr.homepage.home.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'/tb_home')]|//*[contains(@resourceid,'/tb_home')]\",\"desc\":\"Overview icon on home page\"}
+otr.homepage.eventUOM.txt = {\"locator\":\"xpath=//*[contains(@resource-id,'/tv_unit_of_measure')]\",\"desc\":\"Unit of measure text\"}
+otr.homepage.event.icon = {\"locator\":\"xpath=//*[contains(@resource-id,'/iv_event_icon')]\",\"desc\":\"Event icon\"}
+otr.homepage.eventdatetime.txt = {\"locator\":\"xpath=//*[contains(@resource-id,'/tv_date_time')]\",\"desc\":\"Data and time text\"}
+otr.homepage.eventnote.icon = {\"locator\":\"xpath=//*[contains(@resource-id,'/iv_note')]\",\"desc\":\"Note icon\"}
+otr.homepage.eventvalue.txt = {\"locator\":\"xpath=//*[contains(@resource-id,'/iv_value')]|//*[contains(@resource-id,'/tv_value')]\",\"desc\":\"Added event value text\"}
+otr.homepage.noevent.txt = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_message')]\",\"desc\":\"Text to pair meter or add event when none exist\"}
+otr.homepage.pairmeter.txt = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_pair_meter')]\",\"desc\":\"Text Pair My Meter when not events exist\"}
+otr.homepage.addevent.txt = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_add_event')]|//*[contains(@resource-id,'fab_button')]\",\"desc\":\"Text Add Event when none exist\"}
+otr.homepage.lastreading.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'/tb_averages')]|//*[contains(@resourceid,'/tb_averages')]\"}
+otr.homepage.patterns.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'tb_patterns')]|//*[contains(@resourceid,'tb_patterns')]\",\"desc\":\"Patterns button on homepage\"}
+otr.homepage.lastreading14days.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'btn_14_day')]\",\"desc\":\"14days button on last reading page\"}
+otr.homepage.lastreading30days.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'btn_30_day')]\",\"desc\":\"30days button on last reading page\"}
+otr.homepage.lastreading90days.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'btn_90_day')]\",\"desc\":\"90days button on last reading page\"}
+otr.homepage.lastreading.reading.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'rl_readings_section')]\",\"desc\":\"Readings button on last reading page\"}
+otr.homepage.lastreading.average.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'rl_average_section')]\",\"desc\":\"Average button on last reading page\"}
+otr.homepage.events.list = {\"locator\":\"xpath=//*[@resource-id=\\\"com.lifescan.reveal.lemonade.adhoctest:id/rv_event_list\\\"]/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.ImageView\",\"desc\":\"List of events on homepage\"}
+otr.homepage.lastreadingdate.lbl = {\"locator\":\"xpath=//*[contains(@resource-id,'last_reading_date')]\",\"desc\":\"Last reading date label\"}
+otr.homepage.lastreadingvalue.lbl = {\"locator\":\"xpath=//*[contains(@resource-id,'last_reading_value')]\",\"desc\":\"Last reading value label\"}
+otr.homepage.lastreadingallevent.lnk = {\"locator\":\"xpath=//*[contains(@resource-id,'view_all_logbook_events')]\",\"desc\":\"View all events list on last reading page\"}
+otr.homepage.lastreadingunit.lbl = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_blood_glucose_last_reading_unit_of_measure')]\",\"desc\":\"Unit of Measurement for last reading\"}
+otr.homepage.lastreadingpage.totalreadingsync.lbl = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_last_sync_number_of_readings')]\",\"desc\":\"Total number of synced readings\"}
+otr.homepage.lastreadingpage.viewallreadings.lnk = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_view_all_logbook_events')]\",\"desc\":\"Link to view all readings on last sync page\"}
+otr.homepage.lastreadingpage.averagechart.img = {\"locator\":\"xpath=//*[contains(@resource-id,'pc_averages_chart')]\",\"desc\":\"Chart on averge page last reading page\"}
+otr.homepage.lastreadingpage.bgreading.popup = {\"locator\":\"xpath=//*[contains(@resource-id,'id/rl_meal_tagging_view')]|//*[contains(@resource-id,'id/rl_no_meal_tagging_view')]\",\"desc\":\"Popup for average bg reading\"}
+otr.homepage.reading.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_num_readings')]\",\"desc\":\"Button to view last reading value\"}
+otr.homepage.addedEvent.dynamic.lbl = {\"locator\":\"xpath=//*[@text='%s']\",\"desc\":\"Dynamic label text\"}
+otr.homepage.readings.list = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_value')]\",\"desc\":\"Reading List\"}
+otr.homepage.newarticle.lnk = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_article_description')]\",\"desc\":\"New article link on homepage for new user\"}
+otr.homepage.lastreading.firstpage.list.item = {\"locator\":\"xpath=//*[contains(@resource-id,'rv_readings_list')]/android.widget.FrameLayout[1]\",\"desc\":\"first list item in last reading list\"}
+otr.homepage.lastreading.bgreading.popup.lowvalue.lbl = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_mt_before_meal_low_range')]|//device/view/group[1]/group[1]/group[1]/group[1]/group[1]/group[1]/group[1]/group[1]/group[3]/group[1]/group[3]/group[1]/group[1]/group[2]/group[1]/group[1]/group[1]/group[2]/group[1]/text[3]\",\"desc\":\"Low value label on popup\"}
+otr.homepage.lastreading.bgreading.popup.highvalue.lbl = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_mt_before_meal_high_range')]|//device/view/group[1]/group[1]/group[1]/group[1]/group[1]/group[1]/group[1]/group[1]/group[3]/group[1]/group[3]/group[1]/group[1]/group[2]/group[1]/group[1]/group[1]/group[2]/group[1]/text[3]\",\"desc\":\"High value label on popup\"}
+otr.homepage.lastreading.overalllow.lbl = {\"locator\":\"xpath=//*[contains(@resource-id,'id/tv_nomt_low_range')]\",\"desc\":\"Overall low range value last reading donut pop up\"}
+otr.homepage.lastreading.overallhigh.lbl = {\"locator\":\"xpath=//*[contains(@resource-id,'id/tv_nomt_high_range')]\",\"desc\":\"Overall high range value last reading donut pop up\"}
+otr.homepage.lastreading.bgreading.popup.beforemeal.reading.lbl = {\"locator\":\"xpath=//*[contains(@resource-id,'mt_before_meal_readings')]\",\"desc\":\"Before meal value on range popup\"}
+otr.homepage.lastreading.bgreading.popup.aftermeal.reading.lbl = {\"locator\":\"xpath=//*[contains(@resource-id,'mt_after_meal_readings')]\",\"desc\":\"After meal value on range popup\"}
+otr.homepage.lastreading.bgreading.popup.nomeal.reading.lbl = {\"locator\":\"xpath=//*[contains(@resource-id,'mt_no_meal_readings')]\",\"desc\":\"No meal value on range popup\"}
+otr.homepage.lastreading.addedreading.value.lbl = {\"locator\":\"xpath=//*[contains(@resource-id,\\\"id/tv_value\\\")]\",\"desc\":\"added reading value on last reading page\"}
+otr.homepage.lastreading.inrangevalue.lbl = {\"locator\":\"xpath=//*[contains(@resource-id,\\\"id/tv_in_range_readings\\\")]\",\"desc\":\"Inrange count on last reading\"}
+otr.homepage.total.readings.popup.lbl = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_mt_total_readings')]\",\"desc\":\"Total reading label on pop up\"}
+otr.homepage.lastreading.bgreading.popup.aftermeal.lowvalue.lbl = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_mt_after_meal_low_range')]\",\"desc\":\"After meal low value\"}
+otr.homepage.lastreading.bgreading.popup.aftermeal.highvalue.lbl = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_mt_after_meal_high_range')]\",\"desc\":\"After meal high value\"}
+otr.homepage.lastreadin.averagereading.unit.txt = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_readings_per_day')]\",\"desc\":\"Last reading unit\"}
+otr.homepage.welcomearticle.dismiss.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'bt_article_close')]\",\"desc\":\"Dismiss button to delete welcome article feed from homepage\"}
+otr.homepage.welcomearticle.img = {\"locator\":\"xpath=//*[contains(@resource-id,'iv_article_image')]\",\"desc\":\"Welcome article image on Homepage\"}
+otr.homepage.dayvalue.lbl = {\"locator\":\"xpath=//*[@text=\\\"%s\\\"]\",\"desc\":\"Label displaying Today/Yesterday value on homepage\"}

@@ -1,0 +1,10 @@
+otr.mymeterspage.TimeChange.lbl = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_time_change_title')]\",\"desc\":\"Auto Update Time\"}
+otr.mymeterspage.timechangemessage.txt = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_time_change_message')]\",\"desc\":\"Auto Update Time description\"}
+otr.mymeterspage.TimeChange.switch = {\"locator\":\"xpath=//*[contains(@resource-id,'sw_time_change_prompt')]\",\"desc\":\"Auto Update Time Switch\"}
+otr.mymeterspage.pairanotherdeviceadd.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_plus')]\",\"desc\":\"+ sign\"}
+otr.mymeterspage.pairmeterback.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'iv_back')]\",\"desc\":\"Back arrow on Pair meter page\"}
+otr.mymeterspage.pairmeter.cancel.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_cancel')]\",\"desc\":\"cancel button on pair meter page\"}
+otr.mymeterspage.pairmeter.verioflex.img = {\"locator\":\"xpath=//*[contains(@resource-id,'iv_verio_flex')]\",\"desc\":\"verio flex image\"}
+otr.mymeterpage.pairmeter.next.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'bn_next')]\",\"desc\":\"Next button on add meter page\"}
+otr.mymeterpage.pairmeter.continue.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'bn_continue')]\",\"desc\":\"Continue button on add meter page\"}
+otr.mymeterpage.pairmeter.popup.cancel.btn = {\"locator\":\"xpath=//*[@resource-id=\\\"android:id/button2\\\"]\",\"desc\":\"popup cancel button on my meter page\"}

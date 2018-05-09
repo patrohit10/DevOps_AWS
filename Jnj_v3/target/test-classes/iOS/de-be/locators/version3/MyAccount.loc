@@ -1,0 +1,10 @@
+otrios.moremenu.myaccountpage.heading.lbl = {\"locator\":\"xpath=//*[@label=\\\"Mein Konto\\\"]\",\"desc\":\"My Account Heading page label\"}
+otrios.moremenu.myaccountpage.accntdtls.lbl = {\"locator\":\"xpath=//*[@label=\\\"Kontodaten\\\"]\",\"desc\":\"Account details label on My Account page\"}
+otrios.moremenu.myaccountpage.lastsync.lbl = {\"locator\":\"xpath=//*[@label=\\\"Letzte Synchr.\\\"]\",\"desc\":\"Last sync label\"}
+otrios.moremenu.myaccountpage.withmeter.lbl = {\"locator\":\"xpath=//*[@label=\\\"Mit Messsystem\\\"]\",\"desc\":\"With meter label\"}
+otrios.moremenu.myaccountpage.withaccount.lbl = {\"locator\":\"xpath=//*[@label=\\\"Mit Konto\\\"]\",\"desc\":\"with account label\"}
+otrios.moremenu.myaccountpage.loginpreference.lbl = {\"locator\":\"xpath=//*[@label=\\\"Anmeldevorlieben\\\"]\",\"desc\":\"Login preference\"}
+otrios.moremenu.myaccountpage.keepmelogin.lbl = {\"locator\":\"xpath=//*[@label=\\\"Ich m\u00F6chte angemeldet bleiben.\\\"]\",\"desc\":\"Keep me login label\"}
+otrios.moremenu.myaccountpage.syncwithaccount.btn = {\"locator\":\"xpath=//*[@label=\\\"Synchr. mit Konto\\\"]\",\"desc\":\"Sync with account button\"}
+otrios.moremenu.myaccountpage.cancel.btn = {\"locator\":\"xpath=//*[@label=\\\"Abbrechen\\\"]\",\"desc\":\"Cancel button\"}
+otrios.moremenu.myaccountpage.iagree.btn = {\"locator\":\"xpath=//*[@label=\\\"Ich stimme zu\\\"]\",\"desc\":\"I agree button\"}

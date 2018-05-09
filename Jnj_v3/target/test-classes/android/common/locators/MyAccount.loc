@@ -1,0 +1,6 @@
+otr.moremenu.myaccountpage.useremail.lbl = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_account_user_email')]\",\"desc\":\"Logged in user mail id label\"}
+otr.moremenu.myaccountpage.logout.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_account_sign_out')]\",\"desc\":\"Logout button on My Account page\"}
+otr.moremenu.myaccountpage.diabetes.optin.chkbx = {\"locator\":\"xpath=//*[contains(@resource-id,'cb_account_marketing_info')]\",\"desc\":\"Checkbox to agree diabetes information\"}
+otr.moremenu.myaccountpage.accountsync.datetime.lbl = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_last_sync_account')]\",\"desc\":\"Date and time of recent account sync\"}
+otr.moremenu.myaccountpage.statictext.lbl = {\"locator\":\"xpath=//*[contains(@text,'%s')]\",\"desc\":\"Static text label on my account page\"}
+otr.moremenu.myaccountpage.keepmeloggedin.swtch = {\"locator\":\"//*[contains(@resource-id,'sw_account_keep_me_logged_in')]\",\"desc\":\"keep me logged in switch\"}

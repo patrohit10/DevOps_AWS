@@ -1,0 +1,1022 @@
+SCENARIO: Create Account Email validation includes no email
+META-DATA : {"description": "Verify a user cannot create an account without email address ", "author":"Gaurav Bhamare","testCaseId":"19261","groups": ["IOSREGRESSIONSIGNUPSPRINT1","P2"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And user enters signup details without emailId using 'signup.user1'
+	Then user closes the app
+END
+
+SCENARIO: Create Account existing user
+META-DATA : {"description": "Verify a user cannot create an account with an email address already in use", "author":"Gaurav Bhamare","testCaseId":"19266","groups": ["IOSSMOKESIGNUPSPRINT1","IOSREGRESSIONSIGNUPSPRINT1","P2"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And Signup details with already registered email id using 'signup.user1'
+	Then user closes the app
+END 
+
+SCENARIO:Verify share screen
+META-DATA: {"description":"Verify share screen","author":"Gaurav Bhamare","testCaseId":"19270","groups": ["IOSREGRESSIONLOGINSPRINT1","P2"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	When user click on share button
+	Then user verify share page
+	And user closes the app
+END
+
+SCENARIO: Verify authentication type keep me login flow
+META-DATA: {"description":"Verify authentication type keep me login flow","author":"Milan","testCaseId":"19272","groups": ["IOSREGRESSIONLOGINSPRINT1","P2"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	Then user select authentication type as "KEEP ME LOGIN"
+	And user clicks on login button
+	Then user redirects to Home page
+	When user closes the app
+	And user opens app
+	Then user redirects to Home page
+	When user click on more menu
+	Then user clicks on logout button
+	And user closes the app
+END
+
+
+SCENARIO: Create Account without Date of Birth,includes dob under 18
+META-DATA : {"description": "Verify a user cannot create an account without a valid date of birth", "author":"Gaurav Bhamare","testCaseId":"19258","groups": ["IOSSMOKESIGNUPSPRINT1","P2"]}
+	Given user resets app
+	And user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And user enters signup details with birthdate under age using 'signup.user2'
+	Then user closes the app
+END
+
+
+SCENARIO: To verify navigation of tab bars on homescreen
+META-DATA: {"description":"Verification of navigation of tab bar menus on homescreen","author":"Gaurav Bhamare","testCaseId":"19275","groups": ["IOSSMOKELOGINSPRINT1","IOSREGRESSIONLOGINSPRINT1","P2"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	And user verify navigation bar on homescreen
+	When user clicks on Logbook tab
+	Then user redirects to logbook page
+	When user clicks on Last Readings Summary tab
+	When user clicks on Patterns tab
+	When user clicks on Last Readings Summary tab
+	Then user redirects to Last Readings Summary page
+	When user clicks on Home tab
+	Then user redirects to Home page
+	And user closes the app
+END
+
+SCENARIO: To verify allowed blood blucose range
+META-DATA : {"description": "Verify not allowed a BG reading that exceeds allowed range 20 -600 mg/dL for US", "author":"Gaurav Bhamare","testCaseId":"19289","groups": ["IOSSMOKESIGNUPSPRINT2","IOSREGRESSIONSIGNUPSPRINT2","P2"]}
+
+	Given user resets app
+	When user opens app
+	And user select country '${country.unitedState}' from country list
+	When user redirects to 'SIGN-UP' Page
+	And user enters signup details using 'signup.user1'
+	And user clicks on signup button
+	And user click on skip button	
+	And user clicks on Logbook tab
+	Then user clicks on Add Event
+	When user select log event type as 'GLUCOSE'
+	Then user verify blood glucose range for 'BG.unitMGDL'
+	And user closes the app
+	And user resets app
+END
+
+
+SCENARIO: Verify reminder screen flow
+META-DATA: {"description":"Verify reminder screen flow","author":"Milan","testCaseId":"19279","groups": ["IOSREGRESSIONLOGINSPRINT2","P2"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	When user click on more menu
+	Then user verify reminder screens
+	And user closes the app
+END
+
+SCENARIO: To add edit and delete Blood glucose from home screen
+META-DATA : {"description": "To add edit and delete Blood glucose from home screen", "author":"Gaurav Bhamare","testCaseId":"19280","groups": ["IOSSMOKELOGINSPRINT2","IOSREGRESSIONLOGINSPRINT2","P2"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	And user clears homepage events	
+	And user clicks on Logbook tab
+	Then user clicks on Add Event
+	When user select log event type as 'GLUCOSE'
+	And user add blood glucose details using 'addGlucose'
+	And user clicks on Home tab
+	And user verrify added event 'addGlucose' on home screen
+	Then user click on added event '${addGlucose.amount}' on home screen
+	And user edit blood glucose details using 'editGlucose'
+	And user verrify added event 'editGlucose' on home screen
+	Then user click on added event '${editGlucose.amount}' on home screen
+	And user verify the delete event flow
+	And user verrify event 'editGlucose' is deleted on home screen
+	And user closes the app
+END
+
+SCENARIO: To add edit and delete carbs from home screen
+META-DATA : {"description": "To add edit and delete carbs from home screen", "author":"Gaurav Bhamare","testCaseId":"19281","groups": ["IOSSMOKELOGINSPRINT2","IOSREGRESSIONLOGINSPRINT2","P2"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	And user clicks on Logbook tab
+	Then user clicks on Add Event
+	When user select log event type as 'CARBS'
+	And user add carbs details using 'addCarb'
+	And user clicks on Home tab
+	And user verrify added event 'addCarb' on home screen
+	Then user click on added event '${addCarb.amount}' on home screen
+	And user edit carbs details using 'editCarb'
+	And user verrify added event 'editCarb' on home screen
+	Then user click on added event '${editCarb.amount}' on home screen
+	And user verify the delete event flow
+	And user verrify event 'editCarb' is deleted on home screen
+	And user closes the app
+END
+
+SCENARIO: To add edit and delete activity from home screen
+META-DATA : {"description": "To add edit and delete activity from home screen", "author":"Gaurav Bhamare","testCaseId":"19283","groups": ["IOSSMOKELOGINSPRINT2","IOSREGRESSIONLOGINSPRINT2","P2"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	And user clicks on Logbook tab
+	Then user clicks on Add Event
+	When user select log event type as 'ACTIVITY'
+	And user add activity details using 'addActivity'
+	And user clicks on Home tab
+	And user verrify added event 'addActivity' on home screen
+	Then user click on added event '${addActivity.amount}' on home screen
+	And user add activity details using 'editActivity'
+	And user verrify added event 'editActivity' on home screen
+	Then user click on added event '${editActivity.amount}' on home screen
+	And user verify the delete event flow
+	And user verrify event 'editActivity' is deleted on home screen
+	And user closes the app
+END
+
+SCENARIO: To verify manual add blood glucose flow
+META-DATA : {"description": "To verify manual add blood glucose flow", "author":"Gaurav Bhamare","testCaseId":"19284","groups": ["IOSREGRESSIONLOGINSPRINT2","P2"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	And user clicks on Logbook tab
+	And user redirects to logbook page
+	Then user clicks on Add Event
+	When user select log event type as 'GLUCOSE'
+	Then user verify blood glucose event flow
+	And user closes the app
+END
+
+SCENARIO: To verify add carbs flow
+META-DATA : {"description": "To verify add carbs flow", "author":"Gaurav Bhamare","testCaseId":"19285","groups": ["IOSREGRESSIONLOGINSPRINT2","P2"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	And user clicks on Logbook tab
+	And user redirects to logbook page
+	Then user clicks on Add Event
+	When user select log event type as 'CARBS'
+	Then user verify carbs event flow
+	And user closes the app
+#END
+
+SCENARIO: To verify add insulin flow
+META-DATA : {"description": "To verify add insulin flow", "author":"Gaurav Bhamare","testCaseId":"19286","groups": ["IOSREGRESSIONLOGINSPRINT2","P2"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	And user clicks on Logbook tab
+	Then user clicks on Add Event
+	When user select log event type as 'INSULIN'
+	Then user verify insulin event flow
+	And user closes the app
+END
+
+SCENARIO: To verify add activity flow
+META-DATA : {"description": "To verify add activity flow", "author":"Gaurav Bhamare","testCaseId":"19287","groups": ["IOSREGRESSIONLOGINSPRINT2","P2"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	And user clicks on Logbook tab
+	Then user clicks on Add Event
+	When user select log event type as 'ACTIVITY'
+	Then user verify activity event flow
+	And user closes the app
+END
+
+SCENARIO: To add multiple event and verify on home screen
+META-DATA : {"description": "To add multiple event and verify on home screen", "author":"Gaurav Bhamare","testCaseId":"19288","groups": ["IOSREGRESSIONLOGINSPRINT2","P2"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	And user clicks on Logbook tab
+	Then user clicks on Add Event
+	When user select log event type as 'GLUCOSE'
+	Then user add multiple event and verify
+	And user closes the app
+END
+
+SCENARIO: To add Blood Glucose entries manually
+META-DATA : {"description": "Adding Blood Glucose entries manually", "author":"Gaurav Bhamare","testCaseId":"19290","groups": ["IOSREGRESSIONLOGINSPRINT2","P2"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	When user clicks on logbook tab
+	And user redirects to logbook page
+	Then user clicks on Add Event
+	When user select log event type as 'GLUCOSE'
+	And user add blood glucose details using 'addGlucose'
+	And user clicks on Home tab
+	Then user verrify added event 'addGlucose' on home screen
+	And user closes the app
+END
+
+
+SCENARIO: To add Carb entries manually
+META-DATA : {"description": "Adding Carb entries manually", "author":"Gaurav Bhamare","testCaseId":"19291","groups": ["IOSREGRESSIONLOGINSPRINT2","P2"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	When user clicks on logbook tab	
+	And user redirects to logbook page
+	Then user clicks on Add Event
+	When user select log event type as 'CARBS'
+	Then user add carbs details using 'addCarb'
+	And user clicks on Home tab
+	Then user verrify added event 'addCarb' on home screen
+	And user closes the app
+END
+
+
+SCENARIO: To add Insulin entries manually
+META-DATA : {"description": "Adding Insulin entries manually", "author":"Gaurav Bhamare","testCaseId":"19292","groups": ["IOSREGRESSIONLOGINSPRINT2","P2"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	When user clicks on logbook tab
+	And user redirects to logbook page
+	Then user clicks on Add Event
+	When user select log event type as 'INSULIN'
+	Then user add insulin details using 'addInsulin'
+	And user clicks on Home tab
+	Then user verrify added event 'addInsulin' on home screen
+	And user closes the app
+END
+
+SCENARIO: To add Activity entries manually
+META-DATA : {"description": "Adding Activity entries manually", "author":"Gaurav Bhamare","testCaseId":"19293","groups": ["IOSREGRESSIONLOGINSPRINT2","P2"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	When user clicks on logbook tab
+	And user redirects to logbook page
+	Then user clicks on Add Event
+	When user select log event type as 'ACTIVITY'
+	Then user add activity details using 'addActivity'
+	And user clicks on Home tab
+	Then user verrify added event 'addActivity' on home screen
+	And user closes the app
+END
+
+SCENARIO: Verify user can add an event from the homepage
+META-DATA : {"description": "Verify Home Page Add Event option", "author":"Gaurav Bhamare","testCaseId":"19295","groups": ["IOSREGRESSIONLOGINSPRINT3","P2"]}
+	
+	Given user opens app
+	When user select country '${countryname}' from country list
+	Then user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	When user clicks Add an Event
+	And user select log event type as 'GLUCOSE'
+	And user add blood glucose details using 'addGlucose'
+	Then user verrify added event 'addGlucose' on home screen
+	And user closes the app
+END
+
+SCENARIO: Verify My Meters Page
+META-DATA : {"description": "Verify the UI of the My Meters Page", "author":"Gaurav Bhamare","testCaseId":"19296","groups": ["IOSSMOKELOGINSPRINT3","IOSREGRESSIONLOGINSPRINT3","P2"]}
+	
+	Given user opens app
+	When user select country '${countryname}' from country list
+	Then user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	And user click on more menu
+	And user clicks on My Meters
+	Then user verifies My Meters page UI
+	And user closes the app
+END
+
+SCENARIO: Verify My Meters Page Time Update Switch
+META-DATA : {"description": "Verify a user can toggle the time update switch on", "author":"Gaurav Bhamare","testCaseId":"19297","groups": ["IOSREGRESSIONLOGINSPRINT3","P2"]}
+	
+	Given user opens app
+	When user select country '${countryname}' from country list
+	Then user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	And user click on more menu
+	And user clicks on My Meters
+	Then user taps time update switch
+	And user closes the app
+END
+
+SCENARIO: Logbook Classic View Manual Entry BG from Classic Log View
+META-DATA : {"description": "Verify a Manual BG Entry is displayed on the Logbook Classic View screen", "author":"Gaurav Bhamare","testCaseId":"19299","groups": ["IOSREGRESSIONLOGINSPRINT3","P2"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	Then user clicks on login button
+	And user clicks on Logbook tab
+	When user clicks on Add Event
+	And user select log event type as 'GLUCOSE'
+	Then user add blood glucose details using 'addGlucose1'
+	And user verify added BG on classic view using 'addGlucose1'
+	Then user closes the app
+END
+
+
+
+SCENARIO: To add and delete Glucose week view screen and verify deleted event
+META-DATA : {"description": "To add and delete Glucose week view screen and verify deleted event", "author":"Sangram Jadhav","testCaseId":"19601","groups": ["P2"]}
+
+	Given user resets app
+	And user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And user enters signup details using 'signup.user1'
+	And user select opt-in as 'I Agree' in sign up page
+	Then user clicks on signup button
+	And user click on skip button
+	And user clicks on Logbook tab
+	Then user clicks on Add Event
+	When user add random glucose
+	And user clicks on week view
+	And user click on today from week view
+	And user delete random glucose week view
+	And user verify deleted glucose on home screen
+	And user closes the app
+END
+
+SCENARIO: User can Delete Event from period results page
+META-DATA : {"description": "User can open Edit Event from period results page", "author":"Sangram Jadhav","testCaseId":"19612","groups": ["IOSREGRESSIONLOGINSPRINT4","P2"]}
+	
+	Given user resets app
+	And user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And user enters signup details using 'signup.user1'
+	Then user clicks on signup button
+	And user click on skip button
+	And user clicks on Logbook tab
+	Then user clicks on Add Event
+	When user select log event type as 'GLUCOSE'
+	Then user add blood glucose details using 'addGlucose'
+	When user clicks on Last Readings Summary tab
+	And user click on '90 DAYS' over view tab
+	And user click on reading button on lastreading screen
+	And user click on added glucose last reading screen using 'addGlucose'
+	And user verify the delete event flow
+	Then user verify added BG get deleted using 'addGlucose'
+	And user closes the app
+	And user resets app
+END
+
+SCENARIO: User verify if meter sync fail app redirects to homepage
+META-DATA: {"description" : "To verify if meter sync fail app redirects to homepage","author":"Sangram Jadhav","testCaseId":"19609","groups": ["P2"]}
+
+	Given user resets app
+	And user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	When user click on more menu
+	And user clicks on My Meters
+	Then user click to pair meter
+	And user navigates to homepage
+	And user closes the app
+END
+
+
+SCENARIO: To verify average reading units are displayed in numeric form
+META-DATA : {"description": "To verify average reading units are displayed in numeric form", "author":"Sangram Jadhav","testCaseId":"19610","groups": ["P2"]}
+ 
+	Given user resets app
+	And user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And user enters signup details using 'signup.user1'
+	Then user clicks on signup button
+	And user click on skip button
+	And user clicks on Logbook tab
+	When user clicks on Add Event
+	And user select log event type as 'GLUCOSE'
+	Then user add blood glucose details using 'addGlucose'
+	When user clicks on Add Event
+	And user select log event type as 'GLUCOSE'
+	Then user add blood glucose details using 'addGlucose1'
+	When user clicks on Last Readings Summary tab
+	And user click on '90 DAYS' over view tab
+	Then user verify average reading units
+	And user closes the app
+	And user resets app
+END
+
+SCENARIO: To verify HCP user over 18  first use Account
+META-DATA : {"description": "To verify HCP user over 18  first use Account", "author":"Gaurav Bhamare","testCaseId":"19351","groups":["P2"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'hcpUser.user3'
+	And user clicks on login button
+	And HCP usre set reset password using 'hcpUser.user3'
+	Then user closes the app
+END
+
+
+
+
+SCENARIO: To Verify Last Sync with Meter screen does not display BG reading
+META-DATA : {"description": "Verify Last Sync with Meter screen does not display manually entered BG reading", "author":"Sangram Jadhav","testCaseId":"19608","groups": ["P2"]}
+
+	Given user resets app
+	And user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And user enters signup details using 'signup.user1'
+	Then user clicks on signup button
+	And user click on skip button
+	And user clicks on Logbook tab
+	When user clicks on Add Event
+	And user select log event type as 'GLUCOSE'
+	Then user add blood glucose details using 'addGlucose2'
+	And user clicks on Home tab
+	And user verify added event 'addGlucose2' on last sync with meter page
+	Then user click on new added event '${addGlucose2.amount}' on home screen
+	And user verify the delete event flow
+	And user verify deleted event 'addGlucose2' on last sync with meter page
+	And user verrify event 'addGlucose2' is deleted on home screen
+	And user closes the app
+END
+
+SCENARIO:user click on Terms of Use on sign-up page
+META-DATA: {"description":"Verify Terms of Use link on sign up page","author":"Gaurav Bhamare","testCaseId":"19407","groups": ["IOSREGRESSIONSIGNUPSPRINT1","P2"]}
+	Given user resets app
+	And user opens app
+	When user select country '${countryname}' from country list
+	And user clicks on 'terms of use' link on Create Account page to verify
+	Then user closes the app
+END
+
+
+
+SCENARIO:user click on Privacy Policy on sign-up page
+META-DATA: {"description":"Verify Privacy Policy link on sign up page","author":"Gaurav Bhamare","testCaseId":"19408","groups": ["IOSREGRESSIONSIGNUPSPRINT1","P2"]}
+	Given user resets app
+	And user opens app
+	When user select country '${countryname}' from country list
+	And user clicks on 'privacy policy' link on Create Account page to verify
+	Then user closes the app
+END
+
+
+
+SCENARIO: User can add an office from Connections page
+META-DATA: {"description":"User can add an office from Connections page","author":"Gaurav Bhamare","testCaseId":"19303","groups": ["IOSREGRESSIONSIGNUPSPRINT4","P2"]}
+	
+	Given user resets app
+	And user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And user enters signup details using 'signup.user1'
+	Then user clicks on signup button
+	And user click on skip button
+	When user click on more menu
+	And user clicks Connections
+	Then user add office using 'clinic.tridentClinic'
+	And user closes the app
+	And user resets app
+	
+END
+
+SCENARIO: To verify Navigating to 14, 30, and 90 Day views
+META-DATA: {"description":"Verification of navigating 14, 30, and 90 Day views on Last Readings Summary Page","author":"Steve Gunther","testCaseId":"19301","groups": ["IOSREGRESSIONLOGINSPRINT4","P2"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	When user clicks on Last Readings Summary tab
+	Then user redirects to Last Readings Summary page
+	Then user clicks and verify 14, 30, and 90 Day views
+	And user closes the app
+END
+
+SCENARIO: To verify Connections page
+META-DATA: {"description":"User can open and verify Connection page UI","author":"Steve Gunther","testCaseId":"19302","groups": ["IOSREGRESSIONLOGINSPRINT4","P2"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	When user click on more menu
+	And user clicks Connections
+	Then user verifies Connections page
+	And user closes the app
+END
+
+SCENARIO: User cannot add office with invalid clinic code
+META-DATA: {"description":"User cannot add office with invalid clinic code","author":"Steve Gunther","testCaseId":"19304","groups": ["IOSREGRESSIONLOGINSPRINT4","P2"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	When user click on more menu
+	And user clicks Connections
+	Then user enter and verify invalid clinic code
+	And user closes the app
+END
+
+SCENARIO: To navigate through All Events from Last Sync
+META-DATA : {"description": "To navigate through All Events from Last Sync", "author":"Gaurav Bhamare","testCaseId":"19371","groups": ["IOSREGRESSIONLOGINSPRINT4","P2"]}
+
+ Given user opens app
+ When user select country '${countryname}' from country list
+ And user redirects to 'LOG-IN' Page
+ And user enters login details using 'Login.UserDetail'
+ Then user clicks on login button
+ When user clicks on last sync reading tab
+ And user clicks on All events link
+ Then user verify all events
+ And user closes the app
+END
+
+SCENARIO: To Verify Last Sync with Meter screen does not display manually entered BG reading
+META-DATA : {"description": "Verify Last Sync with Meter screen does not display manually entered BG reading", "author":"Gaurav Bhamare","testCaseId":"19355","groups": ["IOSREGRESSIONLOGINSPRINT4","P2"]}
+
+	Given user opens app
+ 	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+ 	And user enters login details using 'Login.UserDetail'
+ 	Then user clicks on login button
+ 	When user clicks on last sync reading tab
+ 	Then user check total BG count on last sync screen
+	And user clicks on All events link
+	When user clicks on Add Event
+	And user select log event type as 'GLUCOSE'
+	Then user add blood glucose details using 'addGlucose'
+ 	When user clicks on last sync reading tab
+ 	Then user verifies no of count after adding manual BG
+ 	And user closes the app
+END
+
+SCENARIO: User can navigate back to recent events from period results page
+META-DATA : {"description": "Verify User can navigate back to recent events from period results page", "author":"Gaurav Bhamare","testCaseId":"19307","groups": ["IOSREGRESSIONLOGINSPRINT4","P2"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	Then user clicks on login button
+	When user clicks on Last Readings Summary tab
+	And user redirects to Last Readings Summary page
+	And user clicks on last sync reading tab
+ 	Then user verifies last meter sync screen
+	And user closes the app
+END
+
+
+SCENARIO:User can see the readings range popup on period overview page
+META-DATA : {"description": "User can see the readings range popup on period overview page", "author":"","testCaseId":"19309","groups": ["IOSSMOKELOGINSPRINT4","IOSREGRESSIONLOGINSPRINT4","P2"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	Then user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	When user clicks on Last Readings Summary tab
+	Then user redirects to Last Readings Summary page
+	And user verify period result popup value
+	And user closes the app
+END
+
+
+
+
+
+SCENARIO: To verify Walgreens user login
+META-DATA: {"description":"Walgreens user has Walgreens connection enabled on Connections page by default","author":"","testCaseId":"19313","groups":["P2"]}
+
+	Given user resets app
+	And user opens app
+	When user select country '${countryname}' from country list
+	Then user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.WallgreensDetial1'
+	And user clicks on login button
+	When user click on more menu
+	And user clicks Connections
+	Then walgreen user verify default status of walgreen switch is on
+	And user closes the app
+	And user resets app
+
+END	
+
+SCENARIO: To verify Reset Password with blank email, invalid email and non-registered email
+META-DATA: {"description":"User cannot completed reset password flow with non-registered email","author":"","testCaseId":"19312","groups": ["IOSREGRESSIONLOGINSPRINT4","P2"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user click on forgot password link
+	Then user verify reset password with invalid mail ID
+	And user closes the app
+	
+END
+
+SCENARIO: Create Account Clinic Code validation with non-existent and different country clinic code
+META-DATA : {"description": "Create Account Clinic Code validation with non-existent and different country clinic code", "author":"Gaurav Bhamare","testCaseId":"19352","groups": ["IOSREGRESSIONSIGNUPSPRINT5","P2"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And user verify invalid and other country clinic code using 'signup.user1'
+	And user closes the app
+	And user resets app
+END
+
+
+SCENARIO: Setup new reminder for Eat a Snack
+META-DATA: {"description":"User can create a snack reminder","author":"Gaurav Bhamare","testCaseId":"19314","groups": ["IOSREGRESSIONLOGINSPRINT4","P2"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	When user click on more menu
+	Then user set up a new reminder using '${reminder.preset.eat.snack}'
+	And user closes the app
+END
+
+SCENARIO: Setup new reminder for Eat
+META-DATA: {"description":"User can create a eat reminder","author":"Milan Dey","testCaseId":"19315","groups": ["IOSREGRESSIONLOGINSPRINT4","P2"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	When user click on more menu
+	Then user set up a new reminder using '${reminder.preset.eat}'
+	And user closes the app
+END
+
+
+SCENARIO: Setup new reminder for Activity
+META-DATA: {"description":"User can create n activity reminder","author":"Milan Dey","testCaseId":"19316","groups": ["IOSREGRESSIONLOGINSPRINT4","P2"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	When user click on more menu
+	Then user set up a new reminder using '${reminder.preset.bolus}'
+	And user closes the app
+END
+
+SCENARIO: Setup new reminder for Bolus
+META-DATA: {"description":"User can create n bolus reminder","author":"Gaurav Bhamare","testCaseId":"19360","groups": ["IOSREGRESSIONLOGINSPRINT4","P2"]}
+	Given user opens app
+	When user select country '${country.unitedState}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	When user click on more menu
+	Then user set up a new reminder using '${reminder.preset.activity}'
+	And user closes the app
+END
+
+SCENARIO: Setup new reminder for Buy Strips
+META-DATA: {"description":"User can create a buy strips reminder","author":"Milan Dey","testCaseId":"19317","groups": ["IOSREGRESSIONLOGINSPRINT4","P2"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	When user click on more menu
+	Then user set up a new reminder using '${reminder.preset.buy.strips}'
+	And user closes the app
+END
+
+SCENARIO: Setup new reminder for Take Medication
+META-DATA: {"description":"User can create a take medication reminder","author":"Milan Dey","testCaseId":"19318","groups": ["IOSREGRESSIONLOGINSPRINT4","P2"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	When user click on more menu
+	Then user set up a new reminder using '${reminder.preset.take.medication}'
+	And user closes the app
+END
+
+SCENARIO: Setup new reminder for Sync reading
+META-DATA: {"description":"User can create a Sync reading","author":"Gaurav Bhamare","testCaseId":"","groups": ["IOSREGRESSIONLOGINSPRINT4","P2"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	When user click on more menu
+	Then user set up a new reminder using '${reminder.preset.sync.reading}'
+	And user closes the app
+END
+
+SCENARIO: User can open Edit Event from period results page
+META-DATA : {"description": "User can open Edit Event from period results page", "author":"Gaurav Bhamare","testCaseId":"19323","groups": ["ANDROIDREGRESSIONLOGINSPRINT5","P2"]}
+	
+	Given user opens app
+	When user select country '${country.unitedState}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	And user clicks on Logbook tab
+	Then user clicks on Add Event
+	When user select log event type as 'GLUCOSE'
+	Then user add blood glucose details using 'addGlucose'
+	When user clicks on Last Readings Summary tab
+	And user click on '90 DAYS' over view tab
+	And user click on reading button on lastreading screen
+	And user click on added glucose last reading screen using 'addGlucose'
+	And user edit blood glucose details using 'editGlucose'
+	And user closes the app
+	And user resets app
+END
+
+SCENARIO: Cannot login with unregistered user
+META-DATA: {"description":"Cannot login with unregistered user","author":"Gaurav Bhamare","testCaseId":"19338","groups": ["P2"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details with unregistered user
+	And user clicks on login button
+	And user closes the app
+END
+
+SCENARIO: Cannot login with invalid user name
+META-DATA: {"description":"Cannot login with invalid user name","author":"Gaurav Bhamare","testCaseId":"19339","groups": ["P2"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details with invalid username
+	And user clicks on login button
+	And user closes the app
+END
+
+SCENARIO: To add edit and delete Glucose Insulin from classic view screen
+META-DATA : {"description": "To add edit and delete Glucose Insulin from classic view", "author":"Gaurav Bhamare","testCaseId":"19400","groups": ["IOSREGRESSIONLOGINSPRINT5","P2"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	And user clicks on Logbook tab
+	Then user clicks on Add Event
+	When user add glucose insulin
+	And user click on logbook classic view added glucose
+	Then user edit glucose insulin from classic view
+	And user click on logbook classic view added glucose
+	And user delete glucose insulin from classic view
+	And user closes the app
+END
+
+SCENARIO: Update BG ranges for Before and After Meal on Settings page when Meal tagging is enabled
+META-DATA: {"description":"Update BG ranges for Before and After Meal on Settings page when Meal tagging is enabled","author":"Steve Gunther","testCaseId":"19343","groups": ["IOSREGRESSIONLOGINSPRINT5","P2"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	When user click on more menu
+	And user clicks on My Settings
+	And user edit before after bg range
+	And user closes the app
+END
+
+SCENARIO: Period results readings do not display meal tagging on range popup when disabled in My Settings
+META-DATA : {"description": "Verify meal tagging & last reading summary popup", "author":"Manjushri","testCaseId":"19345","groups": ["IOSREGRESSIONLOGINSPRINT5","P2"]}
+ 	Given user opens app
+ 	When user select country '${country.unitedState}' from country list
+ 	And user redirects to 'LOG-IN' Page
+ 	And user enters login details using 'Login.UserDetail'
+ 	And user clicks on login button
+ 	And user click on more menu
+	And user clicks on My Settings
+	Then user redirect to setting Page
+	And user make meal tagging switch 'off'
+	And user navigates to page settings menu opened from
+	When user clicks on Last Readings Summary tab
+	Then user redirects to Last Readings Summary page
+	And user verify period result popup value
+	And user click on more menu
+	When user clicks on My Settings
+	Then user redirect to setting Page
+	And user make meal tagging switch 'on'
+	And user navigates to page settings menu opened from
+	When user clicks on Last Readings Summary tab
+	Then user redirects to Last Readings Summary page
+	And user verify period result popup value 
+	And user closes the app
+	
+END
+
+
+
+
+SCENARIO: To add edit and delete Carb week view screen
+META-DATA : {"description": "To add edit and delete Carb week view screen", "author":"Gaurav Bhamare","testCaseId":"19402","groups": ["IOSREGRESSIONLOGINSPRINT5","P2"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	And user clicks on Logbook tab
+	Then user clicks on Add Event
+	When user add random carb
+	And user clicks on week view
+	And user click on today from week view
+	Then user edit random carb week view
+	And user click on today from week view
+	And user delete random carb week view
+	And user closes the app
+END
+
+SCENARIO: To add edit and delete Insulin week view screen
+META-DATA : {"description": "To add edit and delete Insulin week view screen", "author":"Gaurav Bhamare","testCaseId":"19403","groups": ["IOSREGRESSIONLOGINSPRINT5","P2"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	And user clicks on Logbook tab
+	Then user clicks on Add Event
+	When user add random insulin
+	And user clicks on week view
+	And user click on today from week view
+	Then user edit random insulin week view
+	And user click on today from week view
+	And user delete random insulin week view
+	And user closes the app
+END
+
+SCENARIO: To add edit and delete Activity week view screen
+META-DATA : {"description": "To add edit and delete Activity week view screen", "author":"Gaurav Bhamare","testCaseId":"19404","groups": ["IOSREGRESSIONLOGINSPRINT5","P2"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	And user clicks on Logbook tab
+	Then user clicks on Add Event
+	When user add random activity
+	And user clicks on week view
+	And user click on today from week view
+	Then user edit random activity week view
+	And user click on today from week view
+	And user delete random activity week view
+	And user closes the app
+END
+
+SCENARIO: BG range on settings page matches ranges on period overview popup
+META-DATA : {"description": "BG range on settings page matches ranges on period overview popup", "author":"Gaurav Bhamare","testCaseId":"19418","groups": ["IOSREGRESSIONLOGINSPRINT5","P2"]}
+
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	And user click on more menu
+	And user clicks on My Settings
+	And user set bg low and high overall value
+	And user clicks back button
+	When user clicks on Last Readings Summary tab
+	Then user verify over all range on donut pop up
+	And user closes the app
+END
+
+SCENARIO: Before and After Meal BG ranges on settings matches ranges on period overview
+META-DATA: {"description":"Before and After Meal BG ranges on settings page matches ranges on period overview page","author":"Steve Gunther","testCaseId":"19419","groups": ["IOSREGRESSIONLOGINSPRINT5","P2"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	When user click on more menu
+	And user clicks on My Settings
+	And user edit before after bg range
+	And user clicks back button
+	When user clicks on Last Readings Summary tab
+	Then user verify before and after meal range on donut pop up
+	And user closes the app
+END
+
+SCENARIO:Logbook Week view events added in previous week are displayed
+META-DATA: {"description":"Logbook Week view events added in previous week are displayed","author":"Gaurav Bhamare","testCaseId":"19398","groups": ["IOSREGRESSIONLOGINSPRINT5","P2"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	Then user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	When user clicks on logbook tab
+	And user clicks on week view
+	And user click on 'left' arrow in logbook
+	And user take screen shot view screen
+	And user closes the app
+END
+
+SCENARIO: Create HCP Account Email validation includes no email
+META-DATA : {"description": "Verify a user cannot create an account without email address ", "author":"Gaurav Bhamare","testCaseId":"19350","groups": ["IOSREGRESSIONLOGINSPRINT5","P2"]}
+	
+	Given user resets app
+	And user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'hcpUser.user3'
+	And user clicks on login button
+	And user verify blank email field using 'hcpUser.user3'
+	Then user closes the app
+	And user resets app
+END
+
+
+SCENARIO: Unit of measure for Canada user is mmol/L on settings page
+META-DATA: {"description":"Unit of measure for Canada user is mmol/L on settings page","author":"Steve Gunther","testCaseId":"","groups": ["P2"]}
+	And user opens app
+	When user select country '${country.canada}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And user enters signup details using 'signup.user1'
+	Then user clicks on signup button
+	When user click on skip button
+	When user click on more menu
+	And user clicks on My Settings
+	And user verify canada unit as mmol/L setting screen
+	And user closes the app
+	And user resets app
+END
+
+
+

@@ -1,0 +1,49 @@
+SCENARIO: Verify user can add an event from the homepage
+META-DATA : {"description": "Verify Home Page Add Event option", "author":"Gaurav Bhamare","testCaseId":"19295","groups": ["iOSHomeScreen"]}
+	
+	Given user resets app
+	And user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And user enters signup details using 'signup.user1'
+	Then user clicks on signup button
+	And user click on skip button
+	When user clicks Add an Event
+	And user select log event type as 'GLUCOSE'
+	And user add blood glucose details using 'addGlucose'
+	Then user verrify added event 'addGlucose' on home screen
+	And user closes the app
+END
+
+SCENARIO: Verify Home Page with no Events
+META-DATA : {"description": "Verify Home Page with no Events", "author":"Gaurav Bhamare","testCaseId":"19294","groups": ["iOSHomeScreen"]}
+
+	Given user resets app
+	And user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And user enters signup details using 'signup.user1'
+	Then user clicks on signup button
+	And user click on skip button
+	And user verify navigation bar on homescreen
+	Then user verifies the homepage with no events
+	And user closes the app
+END
+
+SCENARIO: Verify navigating back to Home Page after clicking Add Event
+META-DATA : {"description": "User redirected to Home Page when tapping back arrow", "author":"Gaurav Bhamare","testCaseId":"19396","groups": ["iOSHomeScreen"]}
+	
+	Given user resets app
+	And user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And user enters signup details using 'signup.user1'
+	Then user clicks on signup button
+	And user click on skip button
+	And user verify navigation bar on homescreen
+	And user clicks Add an Event
+	And user taps back arrow
+	Then user verifies the homepage with no events
+	And user closes the app
+END
+

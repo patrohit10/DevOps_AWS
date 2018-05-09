@@ -1,0 +1,44 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Lemonade3.0" parallel="false" thread-count="2">
+
+	<parameter name="platformName" value="ios"></parameter>
+	<parameter name="channel" value="iOS"></parameter>
+	<parameter name="language.name" value="en-us"></parameter>
+	<parameter name="Country.name" value="United States"></parameter>
+	
+	
+
+	<parameter name="env.resources" value="resources;resources/${channel}/common;resources/${channel}/${language.name};resources/testData"></parameter>
+	
+
+	<parameter name="env.baseurl"
+		value="https://ios11.perfectomobile.com/nexperience/perfectomobile/wd/hub/"></parameter>
+	<parameter name="selenium.server"
+		value="https://ios11.perfectomobile.com/nexperience/perfectomobile/wd/hub/"></parameter>
+
+	<listeners>
+		<listener class-name="com.lemonade.version3.listener.TestNGListener"></listener>
+		<listener class-name="com.lemonade.version3.listener.ReportiumListener"></listener>
+	</listeners>
+
+	<test name="iOS - iphone 6s" enabled="true">
+		<parameter name="scenario.file.loc"
+			value="scenarios/version3/iOS/test.bdd"></parameter>
+			
+	
+				
+		<parameter name="appium.additional.capabilities"
+			value="{'deviceName':'F55FA0B8197D721ADF6085F17A1EC00AC30AF5BA','user':'stephen.gunther@infostretch.com','password':'Perfecto123','browser_name':'','javascriptEnabled':true,'newCommandTimeout':'120','driver.class':'io.appium.java_client.ios.IOSDriver','platformName':'ios','locationServicesEnabled':true,'locationServicesAuthorized':true,'sendKeyStrategy':'setValue','automationName':'XCUITest'}"></parameter>
+		<!-- 
+			<groups>
+				<run>
+					<include name="P1iOS"/>
+				</run>
+			</groups> -->
+			
+		<classes>
+			<class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory"></class>
+		</classes>
+	</test>
+
+</suite>

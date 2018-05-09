@@ -1,0 +1,29 @@
+otrios.moremenuPage.back.btn = {\"locator\":\"xpath=//UIANavigationBar[@name=\\\"Mehr\\\"]/UIAButton[1]\",\"desc\":\"Back button\"}
+otrios.moremenuPage.contactUsTitle.lbl = {\"locator\":\"xpath=//*[@label=\\\"Kontakt\\\"]|//UIANavigationBar[1]/UIAStaticText[1]\",\"desc\":\"Contact us title contact us screen\"}
+otrios.moremenuPage.rateThisApp.lbl = {\"locator\":\"xpath=//*[@label=\\\"Diese App bewerten\\\"]|//UIATableView[1]/UIATableCell[7]/UIAStaticText[1]\",\"desc\":\"Rate this app label\"}
+otrios.moremenuPage.myMeter.autoUpdateTime.lbl = {\"locator\":\"xpath=//*[@label=\\\"Uhrzeit automatisch aktualisieren\\\"]\",\"desc\":\"Auto update time label\"}
+otrios.moremenuPage.myMeter.pairMeter.btn = {\"locator\":\"xpath=//*[@label=\\\"Weiteres Ger\u00E4t koppeln\\\"]\",\"desc\":\"Pair another meter button\"}
+otrios.moremenuPage.reminder.back.btn = {\"locator\":\"xpath=//UIANavigationBar[@name=\\\"Erinnerungen\\\"]/UIAButton[1]\",\"desc\":\"Back button reminder screen\"}
+otrios.moremenuPage.reminder.addMsg.lbl = {\"locator\":\"xpath=//*[contains(@value,\\\"Tap the + button in the upper right \\\")]\",\"desc\":\"Add button message\"}
+otrios.moremenuPage.reminder.chooseReminder.lbl = {\"locator\":\"xpath=//*[@label=\\\"Erinnerung ausw\u00E4hlen\\\"]\",\"desc\":\"Choose reminder\"}
+otrios.moremenuPage.reminder.newReminder.lbl = {\"locator\":\"xpath=//*[@label=\\\"Neue Erinnerung\\\"]\",\"desc\":\"New reminder\"}
+otrios.moremenuPage.reminder.reminder.lbl = {\"locator\":\"xpath=//*[@label=\\\"Erinnerungen\\\"]\",\"desc\":\"Reminders label\"}
+otrios.moremenuPage.reminder.addReminder.lbl = {\"locator\":\"xpath=//*[@label=\\\"Erinnerung hinzuf\u00FCgen\\\"]\",\"desc\":\"Add a new reminder\"}
+otrios.moremenuPage.reminder.save.btn = {\"locator\":\"xpath=//*[@label=\\\"Speichern\\\"]\",\"desc\":\"Save button on add reminder screen\"}
+otrios.moremenuPage.reminder.setReminder.lbl = {\"locator\":\"xpath=//*[@label=\\\"Erinnerung einrichten\\\"]\",\"desc\":\"Set Reminder lablel\"}
+otrios.Moremenupage.connection.btn = {\"locator\":\"xpath=//*[@label=\\\"Verbindungen\\\"]|//UIATableView[1]/UIATableCell[5]/UIAStaticText[1]\",\"desc\":\"Connection button\"}
+otrios.Moremenupage.connection.addofficeCancel.btn = {\"locator\":\"xpath=//*[@label=\\\"Abbrechen\\\"]\",\"desc\":\"Cancel button\"}
+otrios.Moremenupage.connection.addofficeTitle.lbl = {\"locator\":\"xpath=//*[@label=\\\"Add an office\\\"]\",\"desc\":\"Add office page title\"}
+otrios.Moremenupage.connection.addofficeEnterCode.lbl = {\"locator\":\"xpath=//*[@label=\\\"Enter office code\\\"]\",\"desc\":\"Enter office code label\"}
+otrios.Moremenupage.connection.walgreen.switch = {\"locator\":\"xpath=//*[@name=\\\"Walgreens\\\"]\",\"desc\":\"Walgreen switch\"}
+otrios.Moremenupage.connection.walgreen.lbl = {\"locator\":\"xpath=//*[@value=\\\"Walgreens\\\"]\",\"desc\":\"Walgreen button\"}
+otrios.Moremenupage.connection.importpopup.lbl = {\"locator\":\"xpath=//*[@value=\\\"Wichtig\\\"]\",\"desc\":\"Imprt pop up title\"}
+otrios.Moremenupage.connection.importpopup.enablenow.btn = {\"locator\":\"xpath=//*[@label=\\\"Jetzt aktivieren\\\"]\",\"desc\":\"Enable now button on import pop up\"}
+otrios.Moremenupage.connection.requestSubmited.lbl = {\"locator\":\"xpath=//*[@label=\\\"Anfrage \u00FCbermittelt\\\"]\",\"desc\":\"Request submitted checkbox\"}
+otrios.Moremenupage.connection.withdrawrequest.btn = {\"locator\":\"xpath=//*[@label=\\\"Anfrage zur\u00FCckziehen\\\"]\",\"desc\":\"Withdraw request button\"}
+otrios.moremenuPage.termsofService.back.btn = {\"locator\":\"xpath=//*[@label='Zur\u00FCck']\",\"desc\":\"Back button on terms of service screen\"}
+otrios.moremenuPage.reminder.addreminderBack.btn = {\"locator\":\"xpath=//*[@label='Zur\u00FCck']\",\"desc\":\"Add reminder back button\"}
+otrios.moremenuPage.other.back.btn = {\"locator\":\"xpath=//*[@label='Zur\u00FCck']\",\"desc\":\"Back button 2\"}
+otrios.Moremenupage.connection.addoffice.btn = {\"locator\":\"xpath=//UIATableCell[3]/UIAStaticText[1]|//*[@label='Praxis hinzuf\u00FCgen']\",\"desc\":\"Add office button\"}
+otrios.moremenuPage.termsOfUse.btn = {\"locator\":\"xpath=//*[@name=otr.more.termsofuses.btn]|//*[@label=\\\"Nutzungsbedingungen\\\"]\",\"desc\":\"Terms of use label\"}
+otrios.moremenuPage.privecyPolicy.btn = {\"locator\":\"xpath=//*[@name=otr.more.privacypolicy.btn]|//*[@label=\\\"Datenschutzrichtlinien\\\"]\",\"desc\":\"Privecy policy label\"}

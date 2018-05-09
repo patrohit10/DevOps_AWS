@@ -1,0 +1,15 @@
+otr.loginpage.username.txt = {\"locator\":\"xpath=//*[contains(@resourceid,'id/et_username')]|//*[contains(@resource-id,'id/et_username')]\",\"desc\":\"Username textfield\"}
+otr.loginpage.password.txt = {\"locator\":\"xpath=//*[contains(@resourceid,'id/et_password')]|//*[contains(@resource-id,'id/et_password')]\",\"desc\":\"Password Textfield\"}
+otr.loginpage.login.btn = {\"locator\":\"xpath=//*[contains(@resourceid,'id/bt_login')]|//*[contains(@resource-id,'id/bt_login')]\",\"desc\":\"Login Button\"}
+otr.loginpage.enabletouchid.switch.btn = {\"locator\":\"xpath=//*[contains(@resourceid,'id/sw_touch_id')]|//*[contains(@resource-id,'id/sw_touch_id')]\",\"desc\":\"Touch Id toggle switch\"}
+otr.loginpage.keepmelogin.switch.btn = {\"locator\":\"xpath=//*[contains(@resourceid,'id/sw_keep_me_logged_in')]|//*[contains(@resource-id,'id/sw_keep_me_logged_in')]\",\"desc\":\"Keep me login switch\"}
+otr.loginpage.touchid.fingerprint.img = {\"locator\":\"xpath=//*[contains(@resource-id,'id/iv_fingerprint')]|//*[contains(@resourceid,'id/iv_fingerprint')]\",\"desc\":\"Touch Id fingerprint image\"}
+otr.loginpage.forgotpassword.lnk = {\"locator\":\"xpath=//*[contains(@resource-id,'id/tv_forgot_password')]|//*[contains(@resourceid,'id/tv_forgot_password')]\",\"desc\":\"Forgot Password link\"}
+otr.loginpage.signup.lnk = {\"locator\":\"xpath=//*[contains(@resource-id,'id/tv_sign_up')]|//*[contains(@resourceid,'id/tv_sign_up')]|//*[@resourceid=\\\"com.lifescan.reveal.lemonade.adhoctest:id/tv_sign_up\\\"]\",\"desc\":\"SignUp Link\"}
+otr.forgotpassword.email.txt = {\"locator\":\"xpath=//*[contains(@resource-id,'id/et_email_address')]|//*[contains(@resourceid,'et_email_address')]\",\"desc\":\"Email textfield on forgot password page\"}
+otr.forgotpassword.sendemail.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'id/bn_sign_up')]|//*[contains(@resourceid,'bn_sign_up')]\",\"desc\":\"Send button to send email address to reset password\"}
+otr.forgotpassword.emailreset.lbl = {\"locator\":\"xpath=//*[contains(@resource-id,'id/customTextView3')]|//*[contains(@resourceid,'customTextView3')]\",\"desc\":\"Label to redirect to reset password\"}
+otr.forgotpassword.statictext.btn = {\"locator\":\"xpath=//*[contains(@text,'%s')]\",\"desc\":\"Static text label for any label value\"}
+otr.loginpage.locationaccess.allow.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'permission_allow_button')]\",\"desc\":\"Allow button to access location settings\"}
+otr.loginpage.updatepage.agree.chkbx = {\"locator\":\"xpath=//*[contains(@resource-id,'id/cb_consent')]\",\"desc\":\"New update page checkbox to accept changes\"}
+otr.forgotpassword.emailerror.txt = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_email_error')]\",\"desc\":\"Error message validating invalid mail id is entered\"}

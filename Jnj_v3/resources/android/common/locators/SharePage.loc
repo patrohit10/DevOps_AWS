@@ -1,0 +1,16 @@
+otr.sharepage.sharelogo.lbl = {\"locator\":\"xpath=//*[contains(@resourceid,'/webview_toolbar_title')]|//*[contains(@resource-id,'/webview_toolbar_title')]\",\"desc\":\"Share Logo on share page\"}
+otr.sharepage.sharewithtext.btn = {\"locator\":\"xpath=//*[contains(@resourceid,'tv_share_reading_text')]|//*[contains(@resource-id,'tv_share_reading_text')]\",\"desc\":\"Sharing via text button on share page\"}
+otr.sharepage.sharereport.lbl = {\"locator\":\"xpath=//*[contains(@resourceid,'tv_share_report')]|//*[contains(@resource-id,'tv_share_report')]\",\"desc\":\"Sharing Report label on Share page\"}
+otr.sharepage.sharereport.pdfformat.btn = {\"locator\":\"xpath=//*[contains(@resourceid,'/ll_share_pdf')]|//*[contains(@resource-id,'/ll_share_pdf')]\",\"desc\":\"Sharing report via PDF format\"}
+otr.sharepage.sharereportpage.pdf.lbl = {\"locator\":\"xpath=//*[contains(@resourceid,'webview_toolbar_title')]|//*[contains(@resource-id,'webview_toolbar_title')]\",\"desc\":\"Share via PDF formate page label\"}
+otr.sharepage.sharereportpage.timeframeselct.btn = {\"locator\":\"xpath=//*[contains(@resourceid,'linear_layout_select_time_frame')]|//*[contains(@resource-id,'linear_layout_select_time_frame')]\",\"desc\":\"Button to select time frame on share pdf report page\"}
+otr.sharepage.sharereportpage.emailreport.btn = {\"locator\":\"xpath=//*[contains(@resourceid,'share_report_email')]|//*[contains(@resource-id,'share_report_email')]\",\"desc\":\"Button to share report via email\"}
+otr.sharepage.sharereportpage.printreport.btn = {\"locator\":\"xpath=//*[contains(@resourceid,'share_report_print')]|//*[contains(@resource-id,'share_report_print')]\",\"desc\":\"Button to print report on share report page\"}
+otr.sharepage.sharereportpage.openwithreport.btn = {\"locator\":\"xpath=//*[contains(@resourceid,'share_report_open_in')]|//*[contains(@resource-id,'share_report_open_in')]\",\"desc\":\"Button to select option\"}
+otr.sharepage.sharereportpage.timeframeselect.14days.lbl = {\"locator\":\"xpath=//*[contains(@resourceid,'select_dialog_listview')]|//*[contains(@resource-id,'select_dialog_listview')]\"}
+otr.sharepage.sharereportpage.text.newmsg.lbl = {\"locator\":\"xpath=//*[@resource-id=\\\"com.android.mms:id/actionbar_compose_message_list_title\\\"]\",\"desc\":\"New Message label on Text report page\"}
+otr.sharepage.sharereportpage.text.send.btn = {\"locator\":\"xpath=//*[@resource-id=\\\"com.android.mms:id/send_button\\\"]\",\"desc\":\"Send Button on share text message page\"}
+otr.sharepage.sharereportpage.text.recipient.txt = {\"locator\":\"xpath=//*[@resource-id=\\\"com.android.mms:id/recipients_editor_to\\\"]\",\"desc\":\"Recipient text field to add recipient\"}
+otr.sharepage.sharereportpage.text.discard.txt = {\"locator\":\"xpath=//*[contains(@resource-id,'id/button1')]|//*[contains(@resource-id,'positive_button')]\",\"desc\":\"Discard on cancel text popup\"}
+otr.sharepage.sharereportpage.timeframeselect.list = {\"locator\":\"xpath=//*[contains(@resource-id,'select_dialog_listview')]/android.widget.TextView\",\"desc\":\"Complete list of time frame to select time from\"}
+otr.sharepage.sharereportpage.OK.btn = {\"locator\":\"xpath=//*[@resource-id=\\\"android:id/button1\\\"]\",\"desc\":\"OK button on time frame\"}

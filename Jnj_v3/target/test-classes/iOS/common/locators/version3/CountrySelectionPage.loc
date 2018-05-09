@@ -1,0 +1,6 @@
+otrios.countryselectionPage.next.btn = {\"locator\":\"xpath=//*[@name=\\\"otr.homepage.next.btn\\\"]\",\"desc\":\"Next button on country selection page\"}
+otrios.countryselectionPage.selectCountry.lbl = {\"locator\":\"xpath=//*[@name=\\\"otr.countryselect.select.txt\\\"]\",\"desc\":\"Select a country label\"}
+otrios.countryselectionPage.onetouch.img = {\"locator\":\"xpath=//*[@name=\\\"otr.homepage.heading.lbl\\\"]\",\"desc\":\"One tuch reveal image\"}
+otrios.countryselectionPage.whereLive.lbl = {\"locator\":\"xpath=//*[@name=\\\"otr.countryselect.wheredoyoulive.txt\\\"]\",\"desc\":\"Where do you live question\"}
+otrios.countryselectionPage.staticText.lbl = {\"locator\":\"xpath=//*[@name=\\\"%s\\\"]|//*[@label='%s']\",\"desc\":\"Static text on country selection page\"}
+otrios.countryselectionPage.iagree.btn = {\"locator\":\"xpath=//*[contains(@label,'%s')]|//UIANavigationBar[1]/UIAButton[3]\",\"desc\":\"I agree button for country specific term page\"}

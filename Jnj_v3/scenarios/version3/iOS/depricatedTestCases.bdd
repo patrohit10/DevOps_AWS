@@ -1,0 +1,82 @@
+SCENARIO: To verify tab bars on homescreen
+META-DATA: {"description":"Verification of tab bar menus on homescreen","author":"Gaurav Bhamare","testCaseId":"","groups":""}
+	Given user opens app
+	When user select country '${country.unitedState}' from country list
+	#Then user redirects to 'SIGN-UP' Page
+	#When user clicks on signup button
+	#And user click on skip button
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	And user verify tab bar when redirects to homepage
+	And user closes the app
+END
+
+SCENARIO: To verify navigation of tab bars on homescreen
+META-DATA: {"description":"Verification of navigation of tab bar menus on homescreen","author":"Gaurav Bhamare","testCaseId":"","groups":""}
+	Given user opens app
+	When user select country '${country.unitedState}' from country list
+	#Then user redirects to 'SIGN-UP' Page
+	#And user clicks on signup button
+	#And user click on skip button
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	And user verify navigation bar on homescreen
+	When user clicks on Logbook tab
+	Then user redirects to logbook page
+	When user clicks on connections tab
+	Then user redirects to connections page
+	When user clicks on Home tab
+	Then user redirects to Home page
+	And user closes the app
+END
+
+SCENARIO: Verify in my account selecting Opt-in at registration
+META-DATA : {"description": "Verify Opt-in option on My Account page matches that selected at registration when user opts is", "author":"Gaurav Bhamare","testCaseId":"19319","groups": ["ANDROIDREGRESSIONSIGNUPSPRINT5"]}
+	
+	Given user resets app
+	And user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And user enters signup details using 'signup.user1'
+	And user select opt-in as 'I Agree' in sign up page
+	Then user clicks on signup button
+	And user click on skip button
+	When user click on more menu
+	And user clicks on My Account
+	Then user verify Opt-in selection my account page
+	And user closes the app
+	And user resets app
+END
+
+SCENARIO: Verify in my account without selecting Opt-in at registration
+META-DATA : {"description": "Verify Opt-in option on My Account page matches that selected at registration when user does not opt in", "author":"Gaurav Bhamare","testCaseId":"19324","groups": ["ANDROIDREGRESSIONSIGNUPSPRINT5"]}
+	Given user resets app
+	And user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'SIGN-UP' Page
+	And user enters signup details using 'signup.user1'
+	Then user clicks on signup button
+	And user click on skip button
+	When user click on more menu
+	And user clicks on My Account
+	Then user verify Opt-in selection my account page
+	And user closes the app
+	And user resets app
+END
+
+
+SCENARIO: Select opt-in option on My Account page
+META-DATA : {"description": "User can select opt-in option on My Account page", "author":"Gaurav Bhamare","testCaseId":"19326","groups": ["ANDROIDREGRESSIONLOGINSPRINT4"]}
+	
+	Given user opens app
+	When user select country '${countryname}' from country list
+	Then user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button
+	And user click on more menu
+	And user clicks on My Account
+	Then user select opt-in in my account screen
+	And user closes the app
+END

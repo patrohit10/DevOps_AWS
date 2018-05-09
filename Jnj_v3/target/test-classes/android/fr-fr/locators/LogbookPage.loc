@@ -1,0 +1,14 @@
+otr.logbook.addevent.lbl = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_action_bar_title')]\",\"desc\":\"Add event label on Add event page of Logbook\"}
+otr.logbook.addbg.time.lbl = {\"locator\":\"xpath=//*[@text=\\\"Temps\\\"]|//*[text()=\\\"Temps\\\"]\",\"desc\":\"Time label for BG value\"}
+otr.logbook.addevent.timeselect.cancel.btn = {\"locator\":\"xpath=//*[contains(@text,'Annuler')]|//*[@resourceid=\\\"android:id/button2\\\"]\",\"desc\":\"Cancel button to cancel time adding event\"}
+otr.logbook.addevent.timeselect.ok.btn = {\"locator\":\"xpath=//*[contains(@text,'OK')]|//*[@resource-id=\\\"android:id/button1\\\"]\",\"desc\":\"Ok button to save Time selected\"}
+otr.logbook.addinsulin.typeselect.lbl = {\"locator\":\"xpath=//*[@text=\\\"Type\\\"]|//*[text()=\\\"Type\\\"]\",\"desc\":\"Label to verify type of insulin\"}
+otr.logbook.addactivity.intensity.lbl = {\"locator\":\"xpath=//*[@text=\\\"Intensit\u00C3\u00A9 de l'activit\u00C3\u00A9\\\"]|//*[contains(@text,'Intensit\u00C3\u00A9 de l'activit\u00C3\u00A9')]|//*[@text=\\\"Intensity\\\"]\",\"desc\":\"Intensity label\"}
+otr.logbook.addinsulin.selecttype.long.btn = {\"locator\":\"xpath=//*[@text=\\\"Lente\\\"]\",\"desc\":\"Selecting Long as Insulin type\"}
+otr.logbook.addactivity.selecttype.moderate.btn = {\"locator\":\"xpath=//*[@text=\\\"Mod\u00C3\u00A9r\u00C3\u00A9e\\\"]\",\"desc\":\"Selecting Moderate as Activity type\"}
+otr.logbook.editglucose.datepopup.datesvalue.txt = {\"locator\":\"xpath=//android.view.View/android.view.View[contains(@content-desc,'')]\",\"desc\":\"Dates on date pop up\"}
+otr.logbook.editglucose.datepopup.dynamic.txt = {\"locator\":\"xpath=//*[@content-desc=\\\"%s\\\"]\",\"desc\":\"Parameterised text selection time text\"}
+otr.logbook.editglucose.dynamic.txt = {\"locator\":\"xpath=//*[@text='%s']\",\"desc\":\"Dynamic text\"}
+otr.logbook.editglucose.deleteconfirm.txt = {\"locator\":\"xpath=//*[contains(@text,'Confirmation de la suppression')]\",\"desc\":\"Delete confirm pop up tex\"}
+otr.logbook.classicview.recentaddedBGvalue.btn = {\"locator\":\"xpath=//android.widget.RelativeLayout[*[@text=\\\"%s\\\"]]/following-sibling::*//*[@text=\\\"%s\\\"]\",\"desc\":\"Button to select added BG value\"}
+otr.logbook.save.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_right_button')]\",\"desc\":\"Save Button on add event menu\"}

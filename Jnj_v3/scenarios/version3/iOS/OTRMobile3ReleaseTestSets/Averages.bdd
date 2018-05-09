@@ -1,0 +1,12 @@
+SCENARIO: To verify Navigating to 14, 30, and 90 Day views
+META-DATA: {"description":"Verification of navigating 14, 30, and 90 Day views on Last Readings Summary Page","author":"Steve Gunther","testCaseId":"19301","groups": ["iOSMyAverages"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'Login.UserDetail'
+	And user clicks on login button	
+	When user clicks on Last Readings Summary tab
+	Then user redirects to Last Readings Summary page
+	Then user clicks and verify 14, 30, and 90 Day views
+	And user closes the app
+END

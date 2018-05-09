@@ -1,0 +1,21 @@
+otrios.sharePage.back.btn = {\"locator\":\"xpath=//UIANavigationBar[2]/UIAButton[1]\",\"desc\":\"Back button\"}
+otrios.sharePage.text.btn = {\"locator\":\"xpath=//*[@name=\\\"otr.sharepage.sharelastreadingtext.lnk\\\"]\",\"desc\":\"Share text button\"}
+otrios.sharePage.email.btn = {\"locator\":\"xpath=//*[@label=\\\"Email\\\"]|//*[@name=\\\"otr.sharepage.sharelastreadingtext.lbl\\\"]/following-sibling::UIATableCell[1]/UIAStaticText\",\"desc\":\"Share email button\"}
+otrios.sharePage.pdf.btn = {\"locator\":\"xpath=//*[@label=\\\"PDF\\\"]|//*[@name=\\\"otr.sharepage.sharereportpdf.lnk\\\"]\",\"desc\":\"Report PDF\"}
+otrios.sharePage.csv.btn = {\"locator\":\"xpath=//*[@label=\\\"CSV\\\"]|//*[@name=\\\"otr.sharepage.exportdatacsv.lnk\\\"]\",\"desc\":\"Export csv button\"}
+otrios.sharePage.csv.email.btn = {\"locator\":\"xpath=//*[@label=\\\"Email\\\"]\",\"desc\":\"Email button\"}
+otrios.sharePage.text.to.txt = {\"locator\":\"xpath=//UIATextField[contains(@label,\\\"To:\\\")]|//UIATextField[1]\",\"desc\":\"To text field\"}
+otrios.sharePage.dynamic.txt = {\"locator\":\"xpath=//*[@value=\\\"%s\\\"]|//*[@name=\\\"%s\\\"]\",\"desc\":\"Dyanamic text values\"}
+otrios.sharePage.text.newMsg.lbl = {\"locator\":\"xpath=//*[@label='Message']|//UIAScrollView[1]/UIATextField[1]\",\"desc\":\"Lastreading bg label\"}
+otrios.sharePage.text.addContact.btn = {\"locator\":\"xpath=//*[@label='Add Contact']|//UIAButton[1]\",\"desc\":\"Add contact button\"}
+otrios.sharePage.text.contact.lbl = {\"locator\":\"xpath=//*[contains(@label,'Contacts')]|UIAStaticText[1]\",\"desc\":\"Contact title\"}
+otrios.sharePage.text.message.lbl = {\"locator\":\"xpath=//*[@label='Message']|//*[@name='messageBodyField']\",\"desc\":\"Message text value\"}
+otrios.sharePage.email.send.btn = {\"locator\":\"xpath=//*[@label='Send']|//UIAButton\",\"desc\":\"Send button for share type email\"}
+otrios.sharePage.email.subject.txt = {\"locator\":\"xpath=//*[@label='Subject: ']|//UIATextField[1]\",\"desc\":\"Subject text field\"}
+otrios.sharePage.email.bcc.txt = {\"locator\":\"xpath=//*[@label='Bcc: ']|//UIAStaticText[7]\",\"desc\":\"Bcc text field\"}
+otrios.sharePage.email.messagebody.txt = {\"locator\":\"xpath=//*[@label='Message body']|//UIATextView[2]\",\"desc\":\"Message body text field\"}
+otrios.sharePage.email.deletedraft.btn = {\"locator\":\"xpath=//*[@label='Delete Draft']|//UIACollectionCell[1]/UIAButton[1]|//UIAScrollView[1]/UIAButton[1]\",\"desc\":\"Delete draft button\"}
+otrios.sharePage.email.savedraft.btn = {\"locator\":\"xpath=//*[@label='Save Draft']|UIACollectionCell[2]/UIAButton[1]\",\"desc\":\"Save draft button\"}
+otrios.sharePage.csv.timeWindow.popup = {\"locator\":\"//UIAActionSheet/UIAScrollView[2]/UIAButton|//UIACollectionCell/UIAButton[1]\",\"desc\":\"Time window pop up\"}
+otrios.sharePage.csv.openin.btn = {\"locator\":\"xpath=//*[contains(@label,'...')]\",\"desc\":\"Open in btn\"}
+otrios.sharePage.csv.secondback.btn = {\"locator\":\"xpath=//UIANavigationBar[1]/UIAButton[1]\",\"desc\":\"Back button for different device\"}

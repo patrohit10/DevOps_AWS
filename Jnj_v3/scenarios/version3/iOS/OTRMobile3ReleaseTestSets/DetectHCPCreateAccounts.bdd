@@ -1,0 +1,43 @@
+SCENARIO: HCP Create Account without Date of Birth includes dob under 18 
+META-DATA: {"description":"HCP Create Account without Date of Birth includes dob under 18","author":"Gaurav Bhamare","testCaseId":"19349","groups": ["iOSHCPAccounts"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	Then user redirects to 'LOG-IN' Page
+	When user enters login details using 'hcpUser.user1'
+	And user clicks on login button
+	Then HCP user verify age restriction message
+	And user closes the app
+END
+
+SCENARIO: Create HCP Account with all validations
+META-DATA : {"description": "Verify all validations for HCP login ", "author":"Gaurav Bhamare","testCaseId":"19359","groups": ["iOSHCPAccounts"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'hcpUser.user3'
+	And user clicks on login button
+	And user enters hcp details for validations using 'hcpUser.user3'
+	Then user closes the app
+END
+
+SCENARIO: Create HCP Account Email validation includes no email
+META-DATA : {"description": "Verify a user cannot create an account without email address ", "author":"Gaurav Bhamare","testCaseId":"19350","groups": ["iOSHCPAccounts"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'hcpUser.user3'
+	And user clicks on login button
+	And user verify blank email field using 'hcpUser.user3'
+	Then user closes the app
+END
+
+SCENARIO: To verify HCP user over 18  first use Account
+META-DATA : {"description": "To verify HCP user over 18  first use Account", "author":"Gaurav Bhamare","testCaseId":"19351","groups": ["iOSHCPAccounts"]}
+	Given user opens app
+	When user select country '${countryname}' from country list
+	And user redirects to 'LOG-IN' Page
+	And user enters login details using 'hcpUser.user3'
+	And user clicks on login button
+	And HCP usre set reset password using ''
+	Then user closes the app
+END

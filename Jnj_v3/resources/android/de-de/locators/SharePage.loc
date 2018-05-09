@@ -1,0 +1,4 @@
+otr.sharepage.lastreadingshare.lbl = {\"locator\":\"xpath=//*[text()=\\\"Letzten Blutzuckermesswert teilen\\\"]|//*[@text=\\\"Letzten Blutzuckermesswert teilen\\\"]\",\"desc\":\"Last reading share label on share page\"}
+otr.sharepage.sharewithemail.btn = {\"locator\":\"xpath=//*[contains(@text,'E-Mail')]|//*[contains(@text(),'E-Mail')]\",\"desc\":\"Sharing via email on share page\"}
+otr.sharepage.exportdata.lbl = {\"locator\":\"xpath=//*[contains(@text,'Daten exportieren')]|//*[contains(@text(),'Daten exportieren')]\",\"desc\":\"Export data sharing on share page\"}
+otr.sharepage.exportdata.csvformat.btn = {\"locator\":\"xpath=//*[contains(@text,'CSV')]|//*[contains(@text(),'CSV')]\",\"desc\":\"Export data in CSV format on share page\"}

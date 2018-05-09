@@ -1,0 +1,201 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Lemonade3.0" verbose="0" parallel="tests" thread-count="3">
+	<parameter name="platformName" value="android"></parameter>
+	<parameter name="env.baseurl"
+		value="https://jnjdiabetes.perfectomobile.com/nexperience/perfectomobile/wd/hub"></parameter>
+	<parameter name="remote.server"
+		value="https://jnjdiabetes.perfectomobile.com/nexperience/perfectomobile/wd/hub"></parameter>
+	<listeners>
+		<listener class-name="com.lemonade.version3.listener.TestNGListener"></listener>
+		<listener class-name="com.lemonade.version3.listener.ReportiumListener"></listener>
+	</listeners>
+	<parameter name="language.name" value="en-us"></parameter>
+	<parameter name="Country.name" value="United States"></parameter>
+	<parameter name="channel" value="android"></parameter>
+	<parameter name="env.resources" value="resources/${channel}/common;resources/${channel}/${language.name};resources/testData"></parameter>
+
+<test name="Android - Samsung Galaxy S5" enabled="true">
+
+<!--  	<parameter name="scenario.file.loc" value="scenarios/version3/android/Lemonade_Android_Sprint3.bdd"></parameter>  -->	
+		<parameter name="appium.additional.capabilities"
+			value="{'deviceName':'80B9D2A5','browser_name':'','user':'sgunthe1@its.jnj.com','password':'Perfecto123!','automationName':'Appium','appPackage':'com.lifescan.reveal.adhoctest','javascriptEnabled':true,'newCommandTimeout':'120','driver.class':'io.appium.java_client.android.AndroidDriver','platformName':'Android','locationServicesEnabled':true,'locationServicesAuthorized':true,'autoLaunch':true,'fullReset':true,'app':'PUBLIC:Automation_Team_Lemonade_Android/app-adhoctest-debug.apk','autoInstrument':true}"></parameter>
+		<groups>
+      	<run>
+      		<include name="P3"/>
+<!--         	<include name="ANDROIDREGRESSIONSIGNUPSPRINT1"/> -->
+<!--         	<include name="ANDROIDREGRESSIONSIGNUPSPRINT2"/> -->
+<!--         	<include name="ANDROIDREGRESSIONSIGNUPSPRINT3"/> -->
+<!--         	<include name="ANDROIDREGRESSIONSIGNUPSPRINT4"/> -->
+<!--         	<include name="ANDROIDREGRESSIONSIGNUPSPRINT5"/> -->
+        	
+<!--        	<include name="ANDROIDREGRESSIONLOGINSPRINT1"/> -->  
+<!--        	<include name="ANDROIDREGRESSIONLOGINSPRINT2"/> --> 
+<!--        	<include name="ANDROIDREGRESSIONLOGINSPRINT3"/> --> 
+<!--         	<include name="ANDROIDREGRESSIONLOGINSPRINT4"/> --> 
+<!--         	<include name="ANDROIDREGRESSIONLOGINSPRINT5"/> -->
+      	</run>
+    	</groups>
+		<classes>
+			<class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory"></class>
+		</classes>
+	</test> 
+	
+<test name="Android - Samsung Galaxy S7" enabled="true">
+
+<!--  	<parameter name="scenario.file.loc" value="scenarios/version3/android/Lemonade_Android_Sprint3.bdd"></parameter>  -->	
+		<parameter name="appium.additional.capabilities"
+			value="{'deviceName':'79B57894','browser_name':'','user':'sgunthe1@its.jnj.com','password':'Perfecto123!','automationName':'Appium','appPackage':'com.lifescan.reveal.adhoctest','javascriptEnabled':true,'newCommandTimeout':'120','driver.class':'io.appium.java_client.android.AndroidDriver','platformName':'Android','locationServicesEnabled':true,'locationServicesAuthorized':true,'autoLaunch':true,'fullReset':true,'app':'PUBLIC:Automation_Team_Lemonade_Android/app-adhoctest-debug.apk','autoInstrument':true}"></parameter>
+		<groups>
+      	<run>
+      		<include name="P3"/>
+<!--         	<include name="ANDROIDREGRESSIONSIGNUPSPRINT1"/> -->
+<!--         	<include name="ANDROIDREGRESSIONSIGNUPSPRINT2"/> -->
+<!--         	<include name="ANDROIDREGRESSIONSIGNUPSPRINT3"/> -->
+<!--         	<include name="ANDROIDREGRESSIONSIGNUPSPRINT4"/> -->
+<!--         	<include name="ANDROIDREGRESSIONSIGNUPSPRINT5"/> -->
+        	
+<!--         	<include name="ANDROIDREGRESSIONLOGINSPRINT1"/> -->
+<!--         	<include name="ANDROIDREGRESSIONLOGINSPRINT2"/> -->
+<!--         	<include name="ANDROIDREGRESSIONLOGINSPRINT3"/> -->
+ <!--         	<include name="ANDROIDREGRESSIONLOGINSPRINT4"/> -->
+         	<include name="ANDROIDREGRESSIONLOGINSPRINT5"/> 
+      	</run>
+    	</groups>
+		<classes>
+			<class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory"></class>
+		</classes>
+	</test> 
+	
+	<test name="Android - Samsung Galaxy S8" enabled="true">
+
+<!--   	<parameter name="scenario.file.loc" value="scenarios/version3/android/Lemonade_Android_Sprint3.bdd"></parameter> 	  -->
+		<parameter name="appium.additional.capabilities"
+			value="{'deviceName':'9888D9304841484839','browser_name':'','user':'sgunthe1@its.jnj.com','password':'Perfecto123!','automationName':'Appium','appPackage':'com.lifescan.reveal.adhoctest','javascriptEnabled':true,'newCommandTimeout':'120','driver.class':'io.appium.java_client.android.AndroidDriver','platformName':'Android','locationServicesEnabled':true,'locationServicesAuthorized':true,'autoLaunch':true,'fullReset':true,'app':'PUBLIC:Automation_Team_Lemonade_Android/app-adhoctest-debug.apk','autoInstrument':true}"></parameter>
+		<groups>
+      	<run>
+      		<include name="P3"/>
+<!--         	<include name="ANDROIDREGRESSIONSIGNUPSPRINT1"/> -->
+<!--         	<include name="ANDROIDREGRESSIONSIGNUPSPRINT2"/> -->
+<!--         	<include name="ANDROIDREGRESSIONSIGNUPSPRINT3"/> -->
+<!--         	<include name="ANDROIDREGRESSIONSIGNUPSPRINT4"/> -->
+<!--         	<include name="ANDROIDREGRESSIONSIGNUPSPRINT5"/> -->
+        	
+<!--         	<include name="ANDROIDREGRESSIONLOGINSPRINT1"/>  -->
+<!--          	<include name="ANDROIDREGRESSIONLOGINSPRINT2"/>  -->
+<!--          	<include name="ANDROIDREGRESSIONLOGINSPRINT3"/>  -->
+<!--          	<include name="ANDROIDREGRESSIONLOGINSPRINT4"/>  -->
+         	<include name="ANDROIDREGRESSIONLOGINSPRINT5"/> 
+      	</run>
+    	</groups>
+		<classes>
+			<class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory"></class>
+		</classes>
+	</test> 
+
+
+
+<!-- ####################  Devices Below Are in JnJ local cradles ################### -->
+
+
+
+<!-- 	<test name="Android - Google Pixel" enabled="true"> -->
+
+<!--   	<parameter name="scenario.file.loc" value="scenarios/version3/android/Lemonade_Android_Sprint3.bdd"></parameter>  -->	 
+<!-- 		<parameter name="appium.additional.capabilities" -->
+<!-- 			value="{'deviceName':'FA71A0302408','browser_name':'','user':'sgunthe1@its.jnj.com','password':'Perfecto123!','automationName':'Appium','appPackage':'com.lifescan.reveal.adhoctest','javascriptEnabled':true,'newCommandTimeout':'120','driver.class':'io.appium.java_client.android.AndroidDriver','platformName':'Android','locationServicesEnabled':true,'locationServicesAuthorized':true,'autoLaunch':true,'fullReset':true,'app':'PUBLIC:Automation_Team_Lemonade_Android/app-adhoctest-debug.apk','autoInstrument':true}"></parameter> -->
+<!-- 		<groups> -->
+<!--       	<run> -->
+<!--         	<include name="ANDROIDREGRESSIONSIGNUPSPRINT1"/> -->
+<!--         	<include name="ANDROIDREGRESSIONSIGNUPSPRINT2"/> -->
+<!--         	<include name="ANDROIDREGRESSIONSIGNUPSPRINT3"/> -->
+<!--         	<include name="ANDROIDREGRESSIONSIGNUPSPRINT4"/> -->
+<!--         	<include name="ANDROIDREGRESSIONSIGNUPSPRINT5"/> -->
+        	
+<!--         	<include name="ANDROIDREGRESSIONLOGINSPRINT1"/>  -->
+<!--          	<include name="ANDROIDREGRESSIONLOGINSPRINT2"/> --> 
+<!--          	<include name="ANDROIDREGRESSIONLOGINSPRINT3"/> --> 
+<!--          	<include name="ANDROIDREGRESSIONLOGINSPRINT4"/> --> 
+<!--          	<include name="ANDROIDREGRESSIONLOGINSPRINT5"/> --> 
+<!--       	</run> -->
+<!--     	</groups> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory"></class> -->
+<!-- 		</classes> -->
+<!-- 	</test>  -->
+
+<!-- 	<test name="Android - Galaxy S7 Edge" enabled="true"> -->
+
+<!--   	<parameter name="scenario.file.loc" value="scenarios/version3/android/Lemonade_Android_Sprint3.bdd"></parameter>  -->	 
+<!-- 		<parameter name="appium.additional.capabilities" -->
+<!-- 			value="{'deviceName':'5C20DE62','browser_name':'','user':'sgunthe1@its.jnj.com','password':'Perfecto123!','automationName':'Appium','appPackage':'com.lifescan.reveal.adhoctest','javascriptEnabled':true,'newCommandTimeout':'120','driver.class':'io.appium.java_client.android.AndroidDriver','platformName':'Android','locationServicesEnabled':true,'locationServicesAuthorized':true,'autoLaunch':true,'fullReset':true,'app':'PUBLIC:Automation_Team_Lemonade_Android/app-adhoctest-debug.apk','autoInstrument':true}"></parameter> -->
+<!-- 		<groups> -->
+<!--       	<run> -->
+<!--         	<include name="ANDROIDREGRESSIONSIGNUPSPRINT1"/> -->
+<!--         	<include name="ANDROIDREGRESSIONSIGNUPSPRINT2"/> -->
+<!--         	<include name="ANDROIDREGRESSIONSIGNUPSPRINT3"/> -->
+<!--         	<include name="ANDROIDREGRESSIONSIGNUPSPRINT4"/> -->
+<!--         	<include name="ANDROIDREGRESSIONSIGNUPSPRINT5"/> -->
+        	
+<!--         	<include name="ANDROIDREGRESSIONLOGINSPRINT1"/>  -->
+<!--          	<include name="ANDROIDREGRESSIONLOGINSPRINT2"/> --> 
+<!--          	<include name="ANDROIDREGRESSIONLOGINSPRINT3"/> --> 
+<!--          	<include name="ANDROIDREGRESSIONLOGINSPRINT4"/> --> 
+<!--          	<include name="ANDROIDREGRESSIONLOGINSPRINT5"/> --> 
+<!--       	</run> -->
+<!--     	</groups> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory"></class> -->
+<!-- 		</classes> -->
+<!-- 	</test>  -->
+
+<!-- 	<test name="Android - LG G5" enabled="true"> -->
+
+<!--   	<parameter name="scenario.file.loc" value="scenarios/version3/android/Lemonade_Android_Sprint3.bdd"></parameter>  -->	 
+<!-- 		<parameter name="appium.additional.capabilities" -->
+<!-- 			value="{'deviceName':'VS9879F084A51','browser_name':'','user':'sgunthe1@its.jnj.com','password':'Perfecto123!','automationName':'Appium','appPackage':'com.lifescan.reveal.adhoctest','javascriptEnabled':true,'newCommandTimeout':'120','driver.class':'io.appium.java_client.android.AndroidDriver','platformName':'Android','locationServicesEnabled':true,'locationServicesAuthorized':true,'autoLaunch':true,'fullReset':true,'app':'PUBLIC:Automation_Team_Lemonade_Android/app-adhoctest-debug.apk','autoInstrument':true}"></parameter> -->
+<!-- 		<groups> -->
+<!--       	<run> -->
+<!--         	<include name="ANDROIDREGRESSIONSIGNUPSPRINT1"/> -->
+<!--         	<include name="ANDROIDREGRESSIONSIGNUPSPRINT2"/> -->
+<!--         	<include name="ANDROIDREGRESSIONSIGNUPSPRINT3"/> -->
+<!--         	<include name="ANDROIDREGRESSIONSIGNUPSPRINT4"/> -->
+<!--         	<include name="ANDROIDREGRESSIONSIGNUPSPRINT5"/> -->
+        	
+<!--         	<include name="ANDROIDREGRESSIONLOGINSPRINT1"/>  -->
+<!--          	<include name="ANDROIDREGRESSIONLOGINSPRINT2"/> --> 
+<!--          	<include name="ANDROIDREGRESSIONLOGINSPRINT3"/> --> 
+<!--          	<include name="ANDROIDREGRESSIONLOGINSPRINT4"/> --> 
+<!--          	<include name="ANDROIDREGRESSIONLOGINSPRINT5"/> --> 
+<!--       	</run> -->
+<!--     	</groups> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory"></class> -->
+<!-- 		</classes> -->
+<!-- 	</test>  -->
+	
+<!-- <test name="Android - Google Nexus 5" enabled="true"> -->
+
+<!--   	<parameter name="scenario.file.loc" value="scenarios/version3/android/Lemonade_Android_Sprint3.bdd"></parameter>  -->
+<!-- 		<parameter name="appium.additional.capabilities" -->
+<!-- 			value="{'deviceName':'096826B90B0E408D','browser_name':'','user':'sgunthe1@its.jnj.com','password':'Perfecto123!','automationName':'Appium','appPackage':'com.lifescan.reveal.adhoctest','javascriptEnabled':true,'newCommandTimeout':'120','driver.class':'io.appium.java_client.android.AndroidDriver','platformName':'Android','locationServicesEnabled':true,'locationServicesAuthorized':true,'autoLaunch':true,'fullReset':true,'app':'PUBLIC:Automation_Team_Lemonade_Android/app-adhoctest-debug.apk','autoInstrument':true}"></parameter> -->
+<!-- 		<groups> -->
+<!--       	<run> -->
+<!--          	<include name="ANDROIDREGRESSIONSIGNUPSPRINT1"/> -->
+<!--         	<include name="ANDROIDREGRESSIONSIGNUPSPRINT2"/> -->
+<!--         	<include name="ANDROIDREGRESSIONSIGNUPSPRINT3"/> -->
+<!--         	<include name="ANDROIDREGRESSIONSIGNUPSPRINT4"/> -->
+<!--         	<include name="ANDROIDREGRESSIONSIGNUPSPRINT5"/> -->
+        	
+<!--         	<include name="ANDROIDREGRESSIONLOGINSPRINT1"/> -->
+<!--         	<include name="ANDROIDREGRESSIONLOGINSPRINT2"/> -->
+<!--         	<include name="ANDROIDREGRESSIONLOGINSPRINT3"/> -->
+<!--         	<include name="ANDROIDREGRESSIONLOGINSPRINT4"/> -->
+<!--         	<include name="ANDROIDREGRESSIONLOGINSPRINT5"/>  -->
+<!--       	</run> -->
+<!--     	</groups> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.qmetry.qaf.automation.step.client.text.BDDTestFactory"></class> -->
+<!-- 		</classes> -->
+<!-- 	</test>  -->
+	
+</suite>

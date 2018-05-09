@@ -1,0 +1,41 @@
+otrios.mysettingpage.highRange.btn = {\"locator\":\"//*[@class=\\\"UIAScrollView\\\"]/button[1]\",\"desc\":\"High range button\"}
+otrios.mysettingpage.lowRange.btn = {\"locator\":\"//*[@class=\\\"UIAScrollView\\\"]/button[5]\",\"desc\":\"Low range button\"}
+otrios.mysettingpage.mealTagging.swch = {\"locator\":\"//*[@name=\\\"identiferAMMealTag\\\"]\",\"desc\":\"Meal Tagging toggle\"}
+otrios.mysettingpage.beforeMeal.btn = {\"locator\":\"//*[@name=\\\"identiferAMBefore\\\"]\",\"desc\":\"Before Meal Range button\"}
+otrios.mysettingpage.afterMeal.btn = {\"locator\":\"//*[@name=\\\"identiferAMAfter\\\"]\",\"desc\":\"After Meal range button\"}
+otrios.mysettingpage.beforeMealRangeDone.btn = {\"locator\":\"//*[@class=\\\"UIAScrollView\\\"]/button[9]\",\"desc\":\"Done button after clicking on before meal range\"}
+otrios.mysettingpage.beforeMealLowLimit.txt = {\"locator\":\"//*[@class=\\\"UIAScrollView\\\"]/text[11]\",\"desc\":\"Before Meal Low Limit text\"}
+otrios.mysettingpage.AfterMealRangeDone.btn = {\"locator\":\"//*[@class=\\\"UIAScrollView\\\"]/button[10]\",\"desc\":\"Done button after clicking on after meal range\"}
+otrios.mysettingpage.AfterMealLowLimit.txt = {\"locator\":\"//*[@class=\\\"UIAScrollView\\\"]/text[13]\",\"desc\":\"After Meal Low Limit text\"}
+otrios.mysettingpage.beforeAfterMealLeftArrow.btn = {\"locator\":\"//*[@class=\\\"UIAScrollView\\\"]/button[7]\",\"desc\":\"Left arrow on before and after meal range\"}
+otrios.mysettingpage.beforeAfterMealRightArrow.btn = {\"locator\":\"//*[@class=\\\"UIAScrollView\\\"]/button[8]\",\"desc\":\"Right arrow on before and after meal range\"}
+otrios.mysettingpage.beforemeal.picker = {\"locator\":\"xpath=//UIAPickerWheel[1]\",\"desc\":\"Picker for  BG reading\"}
+otrios.mysettingpage.beforemeal.backarrow.btn = {\"locator\":\"xpath=//*[@label=\\\"<\\\"]\",\"desc\":\"Back arrow button\"}
+otrios.mysettingpage.beforemeal.forwardarrow.btn = {\"locator\":\"xpath=//*[@label=\\\">\\\"]\",\"desc\":\"Forward arrow button\"}
+otrios.mysettingpage.beforemeal.statc.lbl = {\"locator\":\"xpath=//*[contains(@label,'%s')]|//*[contains(@value,'%s')]\",\"desc\":\"Static lable setting screen\"}
+otrios.mysettingpage.beforemeal.range\ text.lbl = {\"locator\":\"xpath=//*[@name=\\\"identiferAMBefore\\\"]/following-sibling::UIAStaticText[2]\",\"desc\":\"Before meal glucose range text\"}
+otrios.mysettingpage.aftermeal.range\ text.lbl = {\"locator\":\"xpath=//*[@name=\\\"identiferAMAfter\\\"]/following-sibling::UIAStaticText[2]\",\"desc\":\"After meal glucose range text\"}
+otrios.mysettingpage.insulin.btn = {\"locator\":\"xpath=//UIASwitch[2]|//*[@value=\\\"0\\\"]\",\"desc\":\"Insulin switch setting  page\"}
+otrios.mysettingpage.staticText.lbl = {\"locator\":\"xpath=//*[@label=\\\"%s\\\"]\",\"desc\":\"Ok Button on pattern change\"}
+otrios.mysettingpage.diabetiesquestion.chk.btn = {\"locator\":\"xpath=//*[@label=\\\"%s\\\"]/following-sibling::UIAImage[1]\",\"desc\":\"diabetes question check box\"}
+otrios.mysettingpage.diabetiesquestion.btn = {\"locator\":\"xpath=//*[@label=\\\"%s\\\"]/preceding-sibling::UIAButton[1]\",\"desc\":\"Diabetes button\"}
+otrios.mysettingpage.alertbtn.btn = {\"locator\":\"xpath=//UIAAlert//*[@label=\\\"%s\\\"]\",\"desc\":\"Yes no alert button\"}
+otrios.mysettingpage.beforemeal.picker2 = {\"locator\":\"xpath=//UIAPicker[2]/UIAPickerWheel[1]\",\"desc\":\"iphone 5s and 6s meal tag picker wheel\"}
+otrios.mysettingpage.mealTagging.btm = {\"locator\":\"//*[@name=\\\"identiferAMMealTag\\\"]\",\"desc\":\"Meal Tagging btn\"}
+otrios.mysettingpage.watchDiat.chckbox = {\"locator\":\"//UIAScrollView/UIAButton[11]\",\"desc\":\"Watch  diat checkbox\"}
+otrios.mysettingpage.OralMedication.chckbox = {\"locator\":\"//UIAScrollView/UIAButton[12]\",\"desc\":\"Oral medication\"}
+otrios.mysettingpage.injectmedication.chckbox = {\"locator\":\"//UIAScrollView/UIAButton[13]\",\"desc\":\"Inject other than insuline\"}
+otrios.mysettingpage.longeractioninsuline.chckbox = {\"locator\":\"//UIAScrollView/UIAButton[14]\",\"desc\":\"longer action insuline\"}
+otrios.mysettingpage.mixedinsuline.chckbox = {\"locator\":\"//UIAScrollView/UIAButton[15]\",\"desc\":\"Mixed insuline\"}
+otrios.mysettingpage.rapidactioninsuline.chckbox = {\"locator\":\"//UIAScrollView/UIAButton[16]\",\"desc\":\"Rapid action insuline\"}
+otrios.mysettingpage.insulinePump.chckbox = {\"locator\":\"//UIAScrollView/UIAButton[19]\",\"desc\":\"Insuline Pump\"}
+otrios.mysettingpage.timeOfDay.Breakfast = {\"locator\":\"//*[@name=\\\"identifierAMMS\\\"]\",\"desc\":\"TimeofDay for Breakfast_begin\"}
+otrios.mysettingpage.timeOfDay.Hour = {\"locator\":\"//*[contains(@value,\\\"clock\\\")]|//UIAPickerWheel[2]/preceding-sibling::UIAPickerWheel[1]\",\"desc\":\"Time of Day_hour\"}
+otrios.mysettingpage.timeOfDay.Min = {\"locator\":\"//*[contains(@value,\\\"minutes\\\")]\",\"desc\":\"Time of Day_min\"}
+otrios.mysettingpage.timeOfDay.over.begin = {\"locator\":\"//*[@name=\\\"identifierAMOS\\\"]\",\"desc\":\"TimeofDay for ovetnight_begin\"}
+otrios.mysettingpage.timeOfDay.over.end = {\"locator\":\"//*[@name=\\\"identifierAMOE\\\"]\",\"desc\":\"TimeofDay for ovetnight_end\"}
+otrios.mysettingpage.timeOfDay.Lunch.begin = {\"locator\":\"//*[@name=\\\"identifierAMAS\\\"]\",\"desc\":\"TimeofDay for Lunch_begin\"}
+otrios.mysettingpage.timeOfDay.Lunch.end = {\"locator\":\"//*[@name=\\\"identifierAMAE\\\"]\",\"desc\":\"TimeofDay for Lunch_end\"}
+otrios.mysettingpage.timeOfDay.Breakfast.end = {\"locator\":\"//*[@name=\\\"identifierAMME\\\"]\",\"desc\":\"TimeofDay for Breakfast_end\"}
+otrios.mysettingpage.lowBgValue.lbl = {\"locator\":\"xpath=//*[contains(@label,\\\":\\\") and contains(@label,\\\"/\\\")][2]|//*[contains(@label,'%s')]\",\"desc\":\"Low BG value label\"}
+otrios.mysettingpage.highBgValue.lbl = {\"locator\":\"xpath=//*[contains(@label,\\\":\\\") and contains(@label,\\\"/\\\")][1]|//*[contains(@label,'%s')]\",\"desc\":\"High BG value label\"}

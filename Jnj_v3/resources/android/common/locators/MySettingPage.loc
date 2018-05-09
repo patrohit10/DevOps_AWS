@@ -1,0 +1,48 @@
+otr.mysettingpage.titl = {\"locator\":\"xpath=//*[contains(@resource-id,'webview_toolbar_title')]\",\"desc\":\"Setting Logo\"}
+otr.mysettingpage.gen_male = {\"locator\":\"xpath=//*[contains(@resource-id,'rb_male')]\",\"desc\":\"Gender_male\"}
+otr.mysettingpage.gen_female = {\"locator\":\"xpath=//*[contains(@resource-id,'rb_female')]\",\"desc\":\"Gender_female\"}
+otr.mysettingpage.high.lbl = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_high_label')]\",\"desc\":\"Label_high\"}
+otr.mysettingpage.low.lbl = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_low_label')]\",\"desc\":\"Label_low\"}
+otr.mysettingpage.low.unit.lbl = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_overall_low_unit')]\",\"desc\":\"Low_Unit\"}
+otr.mysettingpage.high.unit.lbl = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_overall_high_unit')]\",\"desc\":\"High_Unit\"}
+otr.mysettingpage.mealtg.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'sw_meal_tagging')]\",\"desc\":\"Meal_tagging_button\"}
+otr.mysettingpage.premeal.logo = {\"locator\":\"xpath=//*[contains(@resource-id,'iv_pre_meal')]\",\"desc\":\"Pre_Meal_logo\"}
+otr.mysettingpage.post.logo = {\"locator\":\"xpath=//*[contains(@resource-id,'iv_post_meal')]\",\"desc\":\"Post_Meal_logo\"}
+otr.mysettingpage.premeallow.range = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_pre_meal_low')]\",\"desc\":\"PreMeal_low_Range\"}
+otr.mysettingpage.premealhigh.range = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_pre_meal_high')]\",\"desc\":\"PreMeal_High_Range\"}
+otr.mysettingpage.postmeallow.range = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_post_meal_low')]\",\"desc\":\"PostMeal_low_Range\"}
+otr.mysettingpage.preUnit = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_pre_meal_unit')]\",\"desc\":\"Pre_meal_unit\"}
+otr.mysettingpage.postUnit = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_post_meal_unit')]\",\"desc\":\"Post_meal_unit\"}
+otr.mysettingpage.postmealhigh.range = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_post_meal_high')]\",\"desc\":\"PostMeal_High_Range\"}
+otr.mysettingpage.diatExer.chkbox = {\"locator\":\"xpath=//*[contains(@resource-id,'cb_diet_exercise')]\",\"desc\":\"Diat_Exercise_ChkBox\"}
+otr.mysettingpage.oralMedication.chkbox = {\"locator\":\"xpath=//*[contains(@resource-id,'cb_oral_medication')]\",\"desc\":\"Oral_medication_chkBox\"}
+otr.mysettingpage.injMed.chkbox = {\"locator\":\"xpath=//*[contains(@resource-id,'cb_inject_other')]\",\"desc\":\"InjectMedication_chkBox\"}
+otr.mysettingpage.longInsuline.chkbox = {\"locator\":\"xpath=//*[contains(@resource-id,'cb_long_acting')]\",\"desc\":\"Long_acting_insuline\"}
+otr.mysettingpage.mixedInsuline.chkbox = {\"locator\":\"xpath=//*[contains(@resource-id,'cb_mixed_insulin')]\",\"desc\":\"Mixed_insuline\"}
+otr.mysettingpage.rapidInsuline.chkbox = {\"locator\":\"xpath=//*[contains(@resource-id,'cb_rapid_acting')]\",\"desc\":\"Rapid_insuline\"}
+otr.mysettingpage.InsulinePump.chkbox = {\"locator\":\"xpath=//*[contains(@resource-id,'cb_pump')]\",\"desc\":\"Insuline_Pump\"}
+otr.mysettingpage.diabetisQustn.ChkboxList = {\"locator\":\"xpath=//*[contains(@resource-id,'d/cb_checkbox')]\",\"desc\":\"Diabetis questions checkboxes\"}
+otr.mysettingpage.bg.rengehigh.lbl = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_overall_high')]\",\"desc\":\"High range value label\"}
+otr.mysettingpage.bg.rengelow.lbl = {\"locator\":\"xpath=//*[contains(@resource-id,'/tv_overall_low')]\",\"desc\":\"Low range value label\"}
+otr.mysettingpage.bg.rengeunit.lbl = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_overall_unit')]\",\"desc\":\"Range unit\"}
+otr.mysettingpage.bg.rengeok.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'button_positive')]\",\"desc\":\"Ok button on range picker\"}
+otr.mysettingpage.bg.renge.pkr = {\"locator\":\"xpath=//*[@resource-id=\\\"android:id/numberpicker_input\\\"]\",\"desc\":\"BG range picker\"}
+otr.mysettingpage.bg.ok.btn = {\"locator\":\"xpath=//*[@resource-id='android:id/button1']\",\"desc\":\"Ok button\"}
+otr.mysettingpage.brkfst.lbl = {\"locator\":\"xpath=//*[contains(@resource-id,'/tod_breakfast_item1')]\",\"desc\":\"Breakfast label on my settings page\"}
+otr.mysettingpage.brkfst.begintime.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'/tod_breakfast_item2')]\",\"desc\":\"Breakfast begin time button\"}
+otr.mysettingpage.brkfst.endtime.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'/tod_breakfast_item3')]\",\"desc\":\"Breakfast end time button\"}
+otr.mysettingpage.brkfsttime.frstvalue.pkr = {\"locator\":\"xpath=//hierarchy/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.TimePicker[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.NumberPicker[1]/android.widget.EditText[1]\",\"desc\":\"hour column\"}
+otr.mysettingpage.brkfsttime.scndvalue.pkr = {\"locator\":\"xpath=//hierarchy/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.TimePicker[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.NumberPicker[2]/android.widget.EditText[1]\",\"desc\":\"mints column\"}
+otr.mysettingpage.brkfsttime.thrdvalue.pkr = {\"locator\":\"xpath=//hierarchy/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.TimePicker[1]/android.widget.LinearLayout[1]/android.widget.NumberPicker[1]/android.widget.EditText[1]\",\"desc\":\"am_pm column\"}
+otr.mysettingpage.statictext.txt = {\"locator\":\"xpath= //*[contains(@text,'%s')]\",\"desc\":\"Static text\"}
+otr.mysettingpage.overnight.begintime.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'/tod_overnight_item2')]\",\"desc\":\"Overnight begin time\"}
+otr.mysettingpage.overnight.endtime.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'/tod_overnight_item3')]\",\"desc\":\"Overnight end time\"}
+otr.mysettingpage.lunch.begintime.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'/tod_lunch_item2')]\",\"desc\":\"Lunch begin time\"}
+otr.mysettingpage.lunch.endtime.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'/tod_lunch_item3')]\",\"desc\":\"Lunch End time\"}
+otr.mysettingpage.dinner.begintime.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'/tod_dinner_item2')]\",\"desc\":\"Dinner begin time\"}
+otr.mysettingpage.dinner.endtime.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'/tod_dinner_item3')]\",\"desc\":\"End time of Dinner\"}
+otr.mysettingpage.bedtime.begintime.btn\= = {\"locator\":\"xpath=//*[contains(@resource-id,'/tod_bedtime_item2')]\",\"desc\":\"Bedtime begin time\"}
+otr.mysettingpage.bedtime.endtime.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'/tod_bedtime_item3')]\",\"desc\":\"End time of bedtime\"}
+otr.mysettingpage.insulin.toggle.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'sw_insulin_logging')]\",\"desc\":\"Insulin toggle on off button\"}
+otr.mysettingpage.bg.patternok.btn = {\"locator\":\"xpath=//*[contains(@resource-id,'android:id/button1')]\",\"desc\":\"Pattern change pop up ok btn\"}
+otr.mysettingpage.bg.beforeaftermeal.reading.lbl = {\"locator\":\"xpath=//*[contains(@resource-id,'tv_pre_meal_unit')]\",\"desc\":\"Unit lable for high and low range\"}
